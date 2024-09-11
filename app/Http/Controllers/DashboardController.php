@@ -29,15 +29,8 @@ class DashboardController extends Controller
     }
     public function index():View
     {
-        $employeesCount = $this->employeeService->employeesCount();
-        $accidentTypes  = $this->accidentTypeService->getTypesWithCount()->transform(fn(AccidentTypeWithCountData $data) => AccidentTypeWithCountViewModel::fromDataObject($data));
-        $exams = $this->examService->all();
-        if ($this->medicalOrderService->lastMedicalOrder() != null){
 
-            $medicalOrder = MedicalOrderViewModel::fromDataObject( $this->medicalOrderService->lastMedicalOrder());
-            return view('dashboard.dashboard',compact('employeesCount','accidentTypes','exams','medicalOrder'));
-        }
-        return view('dashboard.dashboard',compact('employeesCount','accidentTypes','exams'));
+        return view('dashboard.dashboard');
 
     }
 
