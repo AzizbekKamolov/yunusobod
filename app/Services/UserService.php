@@ -11,7 +11,6 @@ use App\ActionData\User\UpdateUserProfileActionData;
 use App\DataObjects\User\UserData;
 use App\DataObjects\User\UserProfileData;
 use App\Models\User;
-use App\ViewModels\Admin\Users\UserViewModel;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
@@ -24,10 +23,9 @@ class UserService
      * @param array|null $filters
      * @return DataObjectCollection
      */
-    public  function paginate(int $page = 1, int $limit = 15, ?array $filters = []): DataObjectCollection
+    public function paginate(int $page = 1, int $limit = 15, ?array $filters = []): DataObjectCollection
     {
-//        dd($filters);
-        $query = User::applyEloquentFilters($filters)->with('roles')->orderBy('users.id','desc');
+        $query = User::applyEloquentFilters($filters)->with('roles')->orderBy('users.id', 'desc');
         $total = $query->count();
         $skip = ($page - 1) * $limit;
         $items = $query->skip($skip)->take($limit)->get();
@@ -70,17 +68,16 @@ class UserService
     {
         $user = $this->getOne($id);
         $actionData->addValidationRules([
-            'username' => 'string|unique:users,username,'.$id
+            'username' => 'string|unique:users,username,' . $id
         ]);
         $actionData->validateException();
-        if($actionData->password != null){
-            $user->update([
-                'password' => Hash::make($actionData->password),
-            ]);
+
+        $data['username'] = $actionData->username;
+        if ($actionData->password != null) {
+            $data['password'] = Hash::make($actionData->password);
         }
-        $user->update([
-            'username' => $actionData->username,
-        ]);
+
+        $user->update($data);
         $user->syncRoles($actionData->roles);
     }
 
@@ -103,32 +100,30 @@ class UserService
         return User::query()->with('roles')->findOrFail($id);
     }
 
-    public function  edit(int $id):UserProfileData
+    public function edit(int $id): UserProfileData
     {
         return UserProfileData::fromModel($this->getOne($id));
     }
 
     /**
-     * @param UpdateUserActionData $actionData
-     * @param int $id
+     * @param UpdateUserProfileActionData $actionData
      * @return void
      * @throws ValidationException
      */
-    public function updateProfile(UpdateUserProfileActionData  $actionData, int $id): void
+    public function updateProfile(UpdateUserProfileActionData $actionData): void
     {
-        $user = $this->getOne($id);
+        $user = auth()->user();
         $actionData->addValidationRules([
-            'username' => 'string|unique:users,username,'.$id
+            'username' => 'string|unique:users,username,' . $user->id
         ]);
         $actionData->validateException();
-        if($actionData->password != null){
-            $user->update([
-                'password' => Hash::make($actionData->password),
-            ]);
+
+        $data['username'] = $actionData->username;
+        if ($actionData->password != null) {
+            $data['password'] = Hash::make($actionData->password);
         }
-        $user->update([
-            'username' => $actionData->username,
-        ]);
+
+        $user->update($data);
     }
 
 }

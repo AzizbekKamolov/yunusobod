@@ -1,32 +1,44 @@
 <?php
+declare(strict_types=1);
 
 namespace App\Services;
 
 use Akbarali\DataObject\DataObjectCollection;
+use App\ActionData\Role\CreateRoleActionData;
 use App\DataObjects\Role\RoleData;
 use App\Models\Role;
-use App\ActionData\Role\CreateRoleActionData;
+use Illuminate\Support\Collection;
+use Illuminate\Validation\ValidationException;
 
 class RoleService
 {
-
-    public function paginate( int $page = 1 ,int $limit = 20, ?iterable $filters = null):DataObjectCollection
+    /**
+     * @param int $page
+     * @param int $limit
+     * @param iterable|null $filters
+     * @return DataObjectCollection
+     */
+    public function paginate(int $page = 1, int $limit = 20, ?iterable $filters = null): DataObjectCollection
     {
         $model = Role::applyEloquentFilters($filters)
             ->orderBy('roles.id', 'desc');
 
         $total = $model->count();
         $skip = ($page - 1) * $limit;
-        $items  = $model->skip($skip)->take($limit)->get();
-        $items->transform(function (Role $role){
-            return RoleData::createFromEloquentModel($role);
-        });
-        return new DataObjectCollection($items, $total,$limit,$page);
+
+        $items = $model->skip($skip)->take($limit)->get();
+
+        $items->transform(fn(Role $role) => RoleData::createFromEloquentModel($role));
+
+        return new DataObjectCollection($items, $total, $limit, $page);
     }
+
     /**
-     * @throws \Illuminate\Validation\ValidationException
+     * @param CreateRoleActionData $actionData
+     * @return RoleData
+     * @throws ValidationException
      */
-    public  function createRole(CreateRoleActionData $actionData): RoleData
+    public function createRole(CreateRoleActionData $actionData): RoleData
     {
 
         $actionData->addValidationRule('name', "required|string|unique:roles");
@@ -38,43 +50,58 @@ class RoleService
     }
 
     /**
-     * @throws \Illuminate\Validation\ValidationException
+     * @param CreateRoleActionData $actionData
+     * @param int $id
+     * @return void
+     * @throws ValidationException
      */
-    public  function updateRole(CreateRoleActionData $actionData,int $id): void
+    public function updateRole(CreateRoleActionData $actionData, int $id): void
     {
 
         $actionData->addValidationRule('name', "unique:roles,name,$id");
         $actionData->validateException();
+
         $role = $this->getOne($id);
         $role->fill($actionData->all());
         $role->save();
         $role->syncPermissions($actionData->permission_id);
-
     }
 
     /**
-     * @throws \Exception
+     * @param int $id
+     * @return void
      */
-    public  function deleteRole(int $id): void
+    public function deleteRole(int $id): void
     {
-        $role = Role::query()->find($id);
-        if (!$role) {
-            throw new \Exception('Role not found');
-        }
+        $role = $this->getOne($id);
         $role->delete();
     }
 
+    /**
+     * @param int $id
+     * @return RoleData
+     */
     public function getRole(int $id): RoleData
     {
 
         return RoleData::fromModel($this->getOne($id));
     }
 
-    public function getOne(int $id): Role
+    /**
+     * @param int $id
+     * @return Role
+     */
+    protected function getOne(int $id): Role
     {
         return Role::query()->with('permissions')->findOrFail($id);
-
     }
 
-
+    /**
+     * @return Collection
+     */
+    public function getRoles(): Collection
+    {
+        $roles = Role::query()->get();
+        return $roles->transform(fn(Role $role) => RoleData::fromModel($role));
+    }
 }

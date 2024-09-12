@@ -15,9 +15,9 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         $user = [
-            'name' => "superadmin",
+//            'name' => "superadmin",
             'username' => "superadmin",
-            'email' => 'username@gmail.com',
+//            'email' => 'username@gmail.com',
             'password' => bcrypt("superadmin")
         ];
         $newUser = User::query()->where('username', $user['username'])->first();

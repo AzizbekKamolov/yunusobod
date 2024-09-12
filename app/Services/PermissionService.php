@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace App\Services;
 
@@ -87,7 +88,7 @@ class PermissionService
      * @param int $id
      * @return Permission
      */
-    public function getOne(int $id): Permission
+    protected function getOne(int $id): Permission
     {
         return Permission::query()->findOrFail($id);
     }

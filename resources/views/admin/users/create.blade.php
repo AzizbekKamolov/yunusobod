@@ -26,7 +26,7 @@
 {{--                                                        @dd($errors)--}}
 
                             <div class="col-md-12 mb-3">
-                                @forelse($roles->items as $item)
+                                @forelse($roles as $item)
                                         <input type="checkbox" class="" name="roles[]"
                                                id="{{ $item->id }}" value="{{ $item->name }}">
                                         <label for="{{ $item->id }}" class="mr-2 ">{{ $item->name }}</label>

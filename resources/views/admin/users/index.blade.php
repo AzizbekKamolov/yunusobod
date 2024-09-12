@@ -7,7 +7,7 @@
                     <div class="card-header-title">
                         <h5><a href="{{ route('users.index') }}">{{ __('form.users.users') }}</a></h5>
                     </div>
-                    @can('create_user')
+                    @can('users.store')
                         <a href="{{ route("users.create") }}" class="btn btn-outline-success">
                             <i class="fa fa-plus button-2x"> {{ __('form.add') }}</i></a>
                     @endcan
@@ -39,7 +39,7 @@
                                             aria-hidden="true" id="role_id" name="role_id">
                                         <option value="" selected
                                                 disabled>{{ __('form.roles.role') }} {{ __('form.choose') }}</option>
-                                        @foreach($roles->items as $role)
+                                        @foreach($roles as $role)
                                             <option
                                                 value="{{ $role->id }}"
                                                 @selected(request('role_id') == $role->id)
@@ -74,11 +74,11 @@
                                     @endforeach
                                 </td>
                                 <td>
-                                    @can('update_user')
+                                    @can('users.update')
                                         <a href="{{ route("users.edit", [$item->id]) }}">
                                             <i class="fa fa-edit text-purple button-2x"></i></a>
                                     @endcan
-                                    @can('delete_user')
+                                    @can('users.delete')
                                         <a href="{{ route("users.delete", [$item->id]) }}" class=""
                                            onclick="return confirm(this.getAttribute('data-message'));"
                                            data-message="{{ __('table.confirm_delete') }}">

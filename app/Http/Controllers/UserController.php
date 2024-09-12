@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+
 namespace App\Http\Controllers;
 
 use Akbarali\ViewModel\PaginationViewModel;
@@ -35,10 +36,11 @@ class UserController extends Controller
     {
 
         $filters[] = UsersSearchFilter::getRequest($request);
-        $users = $this->service->paginate(filters:$filters);
-        $roles = $this->roleService->paginate();
-        $viewModel = new PaginationViewModel($users, UserViewModel::class);
-        return $viewModel->toView('admin.users.index',compact('roles'));
+        $users = $this->service->paginate(page: (int)$request->get('page'), limit: (int)$request->get('limit', 10), filters: $filters);
+
+        $roles = $this->roleService->getRoles();
+
+        return (new PaginationViewModel($users, UserViewModel::class))->toView('admin.users.index', compact('roles'));
     }
 
     /**
@@ -46,7 +48,7 @@ class UserController extends Controller
      */
     public function create(): View
     {
-        $roles = $this->roleService->paginate();
+        $roles = $this->roleService->getRoles();
         return view('admin.users.create', compact('roles'));
     }
 
@@ -57,19 +59,17 @@ class UserController extends Controller
     public function store(CreateUserActionData $actionData): RedirectResponse
     {
         $this->service->createUser($actionData);
-        return redirect()->route('users.index')->with('res', [
-            'method' => 'success',
-            'msg' => trans('form.success_create', ['attribute' => trans('form.users.user')])
-        ]);
+        return redirect()->route('users.index')
+            ->with('success', trans('form.success_create', ['attribute' => trans('form.users.user')]));
     }
 
     /**
      * @param int $id
      * @return View
      */
-    public function edit( int $id): View
+    public function edit(int $id): View
     {
-        $roles = $this->roleService->paginate();
+        $roles = $this->roleService->getRoles();
         $user = $this->service->getOne($id);
         $viewModel = UserViewModel::fromDataObject(UserData::fromModel($user));
         return $viewModel->toView('admin.users.edit', compact('roles'));
@@ -84,10 +84,8 @@ class UserController extends Controller
     public function update(UpdateUserActionData $actionData, int $id): RedirectResponse
     {
         $this->service->updateUser($actionData, $id);
-        return redirect()->route('users.index')->with('res', [
-            'method' => 'success',
-            'msg' => trans('form.success_update', ['attribute' => trans('form.users.user')])
-        ]);
+        return redirect()->route('users.index')
+            ->with('success', trans('form.success_update', ['attribute' => trans('form.users.user')]));
     }
 
     /**
@@ -97,19 +95,16 @@ class UserController extends Controller
     public function delete(int $id): RedirectResponse
     {
         $this->service->deleteUser($id);
-        return redirect()->route('users.index')->with('res', [
-            'method' => 'success',
-            'msg' => trans('form.success_delete', ['attribute' => trans('form.users.user')])
-        ]);
+        return redirect()->route('users.index')
+            ->with('success', trans('form.success_delete', ['attribute' => trans('form.users.user')]));
     }
 
     /**
      * @return View
      */
-    public function profile():View
+    public function profile(): View
     {
-        $id = auth()->user()->id;
-        $viewModel = UserProfieViewModel::fromDataObject($this->service->edit($id));
+        $viewModel = UserProfieViewModel::fromDataObject($this->service->edit(auth()->id()));
         return $viewModel->toView('admin.users.profile');
     }
 
@@ -120,11 +115,8 @@ class UserController extends Controller
      */
     public function updateProfile(UpdateUserProfileActionData $actionData): RedirectResponse
     {
-        $id = auth()->user()->id;
-        $this->service->updateProfile($actionData, $id);
-        return redirect()->route('dashboard.index')->with('res', [
-            'method' => 'success',
-            'msg' => trans('form.success_update', ['attribute' => trans('form.users.user')])
-        ]);
+        $this->service->updateProfile($actionData);
+        return redirect()->route('dashboard.index')
+            ->with('success', trans('form.success_update', ['attribute' => trans('form.users.user')]));
     }
 }

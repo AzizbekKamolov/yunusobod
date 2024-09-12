@@ -8,7 +8,7 @@
                     <h4 class="card-header-title">
                         {{ __('form.roles.roles') }}
                     </h4>
-                    @can('create_role')
+                    @can('roles.store')
                         <a href="{{ route("roles.create") }}" class="btn btn-outline-success">
                             <i class="fa fa-plus button-2x"> {{ __('form.add') }}</i></a>
                     @endcan
@@ -34,11 +34,11 @@
                                 <td>{{ $item->guard_name }}</td>
                                 <td>{{ $item->created_at }}</td>
                                 <td>
-                                    @can('update_role')
+                                    @can('roles.update')
                                         <a href="{{ route("roles.edit", [$item->id]) }}">
                                             <i class="fa fa-edit text-purple button-2x"></i></a>
                                     @endcan
-                                    @can('delete_role')
+                                    @can('roles.delete')
                                         <a href="{{ route("roles.delete", [$item->id]) }}" class=""
                                            onclick="return confirm(this.getAttribute('data-message'));"
                                            data-message="{{ __('form.confirm_delete') }}">

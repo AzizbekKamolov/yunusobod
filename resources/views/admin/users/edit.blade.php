@@ -27,7 +27,7 @@
                             {{--                                                        @dd($errors)--}}
 
                             <div class="col-md-12 mb-3">
-                                @forelse($roles->items as $role)
+                                @forelse($roles as $role)
 {{--                                    @dd($item->roles)--}}
                                     <input type="checkbox" class="" name="roles[]"
                                            @checked(in_array($role->id, array_column($item->roles, 'id')))
@@ -44,7 +44,7 @@
                         <div class="form-group text-center ">
                                 <a href="{{ route('users.index') }}"
                                    class="btn btn-slack ">{{{ __('form.cancel') }}}</a>
-                                <button class="btn btn-info">{{ __('form.add') }}</button>
+                                <button class="btn btn-info">{{ __('form.save') }}</button>
                         </div>
                     </form>
                 </div>

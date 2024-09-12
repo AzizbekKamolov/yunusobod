@@ -9,7 +9,7 @@
     <meta name="keyword" content="">
     <meta name="author" content=""/>
     <!-- Page Title -->
-    <title>labourpro.uz</title>
+    <title>Middleware</title>
     <!-- Main CSS -->
     <link href="{{ asset("assets/plugins/bootstrap/css/bootstrap.min.css") }}" rel="stylesheet"/>
     <link href="{{ asset("assets/plugins/font-awesome/css/font-awesome.min.css") }}" rel="stylesheet"/>
@@ -132,7 +132,7 @@
 <script src="{{ asset("assets/plugins/toastr/toastr.min.js") }}"></script>
 <script src="{{ asset("assets/js/custom.js") }}"></script>
 @yield('script')
-@if(session()->has('res'))
+@if(session()->has('success'))
     <script>
         $(document).ready(function () {
             setTimeout(function () {
@@ -143,7 +143,43 @@
                     showMethod: 'slideDown',
                     timeOut: 3500
                 };
-                toastr.{{ session('res.method') }}("{{ session('res.msg') }}");
+                toastr.success("{{ session('success') }}");
+
+            }, 300);
+
+        });
+    </script>
+@endif
+@if(session()->has('error'))
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                toastr.options = {
+                    positionClass: 'toast-top-right',
+                    closeButton: true,
+                    progressBar: true,
+                    showMethod: 'slideDown',
+                    timeOut: 3500
+                };
+                toastr.error("{{ session('error') }}");
+
+            }, 300);
+
+        });
+    </script>
+@endif
+@if(session()->has('info'))
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                toastr.options = {
+                    positionClass: 'toast-top-right',
+                    closeButton: true,
+                    progressBar: true,
+                    showMethod: 'slideDown',
+                    timeOut: 3500
+                };
+                toastr.info("{{ session('info') }}");
 
             }, 300);
 
