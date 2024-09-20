@@ -3,8 +3,8 @@
 use App\Http\Controllers\{AuthController, DashboardController, PermissionController, RoleController, UserController};
 use Illuminate\Support\Facades\Route;
 
+Route::view('/', 'web.home')->name('login');
 Route::controller(AuthController::class)->group(function () {
-    Route::get('/', 'index')->name('login');
     Route::get('/login', 'index')->name('web.login');
     Route::post('login', 'login')->name('web.loginPost');
 });
