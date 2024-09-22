@@ -11,6 +11,10 @@
                     <a href="{{ route('dashboard.index') }}"><i class="fa fa-home"></i>
                         <span>{{__('form.dashboard')}}</span></a>
                 </li>
+                <li @if(request()->routeIs('sliders.*')) class="active" @endif >
+                    <a href="{{ route('sliders.index') }}"><i class="fa fa-sliders"></i>
+                        <span>{{__('web.sliders')}}</span></a>
+                </li>
                 @canany(['roles.index','permissions.index','users.index'])
                     <li class="@if(request()->routeIs('roles.*','permissions.*','users.*')) active open @endif">
                         <a href="javascript:void(0);"><i class="fa fa-cogs"></i>

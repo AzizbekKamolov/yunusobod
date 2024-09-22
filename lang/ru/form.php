@@ -18,91 +18,10 @@ return [
         "add_permission" => "Добавить разрешение",
         "edit_permission" => "Редактировать разрешение",
     ],
-
-    'departments' => [
-        'department' => "Отдел",
-        'departments' => 'Отделы',
-        "add_department" => "Добавить отдел",
-        "edit_department" => "Редактировать отдел",
-    ],
-    'documents' => [
-        'documents' => 'Документы',
-        'document' => 'Документ',
-    ],
-    'medical' => [
-        'medical' => 'Медицинский отдел',
-        'medical_status' => 'Состояние здоровья',
-        'medical_results' => 'Результаты',
-        'medical_result_date' => 'Дата результата',
-    ],
-    'medical_orders' => [
-        'medical_order' => 'Медицинский осмотр',
-        'content' => 'Текст команды',
-        'description' =>'Прокомментируйте команду',
-        'date' =>'Дата заказа',
-        'medical_order_file' => 'Основа',
-        'medical_result_file' => 'Подтверждён'
-    ],
-    'accident' => [
-        'accident' => 'Авария',
-        'accidenttype' => 'Тип аварии',
-        'accidentrecord' => 'Авария',
-        'accidentrecords' => 'Количество аварий'
-    ],
-    'warehouse' => [
-        'warehouse' => 'Склад',
-        'warehousecategories' => 'Типы продуктов',
-        'warehousecategory' => 'Тип продукта',
-        'products' => 'Продукты',
-        'products_count' => 'В наличии',
-        'employee_product'=> 'Сотруднику выдали товар.',
-        'empty' => 'Нет в наличии',
-        'not_empty' => 'В наличии на складе',
-
-
-    ],
-    'positions' => [
-        'position' => "Должность",
-        'positions' => 'Должности',
-        'add_position' => "Добавить должность",
-        'edit_position' => "Редактировать должность",
-    ],
-
-    'branches' => [
-        'branch' => "Филиал",
-        'branches' => 'Филиалы',
-        'add_branch' => "Добавить филиал",
-        'edit_branch' => "Редактировать филиал",
-    ],
     'admin' => 'Администратор',
-    'files' => [
-        'files' => 'Файлы',
-        'file' => 'Файл',
-        'lang' => 'Язык файла'
-    ],
-    'employees' => [
-        'employee' => "Сотрудник",
-        'employees' => "Сотрудники",
-        'add_employee' => "Добавить сотрудника",
-        'edit_employee' => "Редактировать сотрудника",
-        'profile' => "Информация о пользователе",
-        'edit_profile' => 'Изменить данные',
-        'employees_count' => 'Количество сотрудников',
-    ],
-    'categories' => [
-        'categories' => 'Категории',
-        'category' => 'Категория',
-
-    ],
     'users' => [
         'users' => 'Пользователи',
         'user' => 'Пользователь'
-    ],
-    'organizations' => [
-        'organization' => "Организация",
-        'organizations' => 'Организации',
-        'add_organization' => "Добавить организацию",
-        'edit_organization' => "Редактировать организацию"
     ],
     'lang' => 'Язык',
     'settings' => 'Настройки',
@@ -137,5 +56,15 @@ return [
     'my_profile' => 'Мой профиль',
     'download' => 'Скачать',
     'upload' => 'Загрузить',
-    'submitted' => 'Поданный'
+    'submitted' => 'Поданный',
+    'status' => 'Статус',
+    'active' => 'Активный',
+    'inactive' => 'Не активен',
+    "sliders" => [
+        "sliders" => "Слайды",
+        "title" => "Заголовок",
+        "content" => "Содержимое",
+        "body" => "Текст",
+        "file" => "Файл",
+    ],
 ];
