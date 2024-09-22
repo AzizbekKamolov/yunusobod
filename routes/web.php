@@ -3,16 +3,18 @@
 use App\Http\Controllers\{AuthController, DashboardController, PermissionController, RoleController, UserController};
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'web.home')->name('login');
+Route::view('/', 'web.saved_resource')->name('home');
+Route::view('/saved_resource', 'web.saved_resource');
 Route::controller(AuthController::class)->group(function () {
-    Route::get('/login', 'index')->name('web.login');
+    Route::get('/login', 'index')->name('login');
     Route::post('login', 'login')->name('web.loginPost');
 });
-
-Route::middleware(['auth', 'lang'])->prefix('admin')->group(function () {
+Route::controller(DashboardController::class)->name('dashboard.')->group(function () {
+    Route::get('change-lang/{lang}', 'changeLang')->name('changeLang');
+});
+Route::middleware(['auth'])->prefix('admin')->group(function () {
     Route::controller(DashboardController::class)->name('dashboard.')->group(function () {
         Route::get('/', 'index')->name('index');
-        Route::get('change-lang/{lang}', 'changeLang')->name('changeLang');
     });
 
     Route::get('logout', [AuthController::class, 'logout'])->name('auth.logout');

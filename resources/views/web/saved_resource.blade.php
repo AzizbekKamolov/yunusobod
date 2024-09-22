@@ -1,550 +1,54 @@
 <!DOCTYPE html>
-<!-- saved from url=(0031)https://bizmax-wp.laralink.com/ -->
 <html lang="en-US">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <style>.jquery-ripples {
-        position: relative;
-        z-index: 0;
-    }</style>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
 
-    <title>Bizmax</title>
+    <title>Bar Association Yunusobod</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
     <link rel="alternate" type="application/rss+xml" title="Bizmax » Feed" href="https://bizmax-wp.laralink.com/feed/">
     <link rel="alternate" type="application/rss+xml" title="Bizmax » Comments Feed"
           href="https://bizmax-wp.laralink.com/comments/feed/">
-    <script async="" src="./saved_resource"></script>
-    <script type="text/javascript">
-        /* <![CDATA[ */
-        window._wpemojiSettings = {
-            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
-            "ext": ".png",
-            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
-            "svgExt": ".svg",
-            "source": {"concatemoji": "https:\/\/bizmax-wp.laralink.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.1"}
-        };
-        /*! This file is auto-generated */
-        !function (i, n) {
-            var o, s, e;
-
-            function c(e) {
-                try {
-                    var t = {supportTests: e, timestamp: (new Date).valueOf()};
-                    sessionStorage.setItem(o, JSON.stringify(t))
-                } catch (e) {
-                }
-            }
-
-            function p(e, t, n) {
-                e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
-                var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
-                    r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
-                return t.every(function (e, t) {
-                    return e === r[t]
-                })
-            }
-
-            function u(e, t, n) {
-                switch (t) {
-                    case"flag":
-                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
-                    case"emoji":
-                        return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b")
-                }
-                return !1
-            }
-
-            function f(e, t, n) {
-                var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"),
-                    a = r.getContext("2d", {willReadFrequently: !0}),
-                    o = (a.textBaseline = "top", a.font = "600 32px Arial", {});
-                return e.forEach(function (e) {
-                    o[e] = t(a, e, n)
-                }), o
-            }
-
-            function t(e) {
-                var t = i.createElement("script");
-                t.src = e, t.defer = !0, i.head.appendChild(t)
-            }
-
-            "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = {
-                everything: !0,
-                everythingExceptFlag: !0
-            }, e = new Promise(function (e) {
-                i.addEventListener("DOMContentLoaded", e, {once: !0})
-            }), new Promise(function (t) {
-                var n = function () {
-                    try {
-                        var e = JSON.parse(sessionStorage.getItem(o));
-                        if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
-                    } catch (e) {
-                    }
-                    return null
-                }();
-                if (!n) {
-                    if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
-                        var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));",
-                            r = new Blob([e], {type: "text/javascript"}),
-                            a = new Worker(URL.createObjectURL(r), {name: "wpTestEmojiSupports"});
-                        return void (a.onmessage = function (e) {
-                            c(n = e.data), a.terminate(), t(n)
-                        })
-                    } catch (e) {
-                    }
-                    c(n = f(s, u, p))
-                }
-                t(n)
-            }).then(function (e) {
-                for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
-                n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () {
-                    n.DOMReady = !0
-                }
-            }).then(function () {
-                return e
-            }).then(function () {
-                var e;
-                n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
-            }))
-        }((window, document), window._wpemojiSettings);
-        /* ]]> */
-    </script>
-    <link rel="stylesheet" id="hfe-widgets-style-css" href="./frontend.css" type="text/css" media="all">
-    <style id="wp-emoji-styles-inline-css" type="text/css">
-
-        img.wp-smiley, img.emoji {
-            display: inline !important;
-            border: none !important;
-            box-shadow: none !important;
-            height: 1em !important;
-            width: 1em !important;
-            margin: 0 0.07em !important;
-            vertical-align: -0.1em !important;
-            background: none !important;
-            padding: 0 !important;
-        }
-    </style>
-    <style id="classic-theme-styles-inline-css" type="text/css">
-        /*! This file is auto-generated */
-        .wp-block-button__link {
-            color: #fff;
-            background-color: #32373c;
-            border-radius: 9999px;
-            box-shadow: none;
-            text-decoration: none;
-            padding: calc(.667em + 2px) calc(1.333em + 2px);
-            font-size: 1.125em
-        }
-
-        .wp-block-file__button {
-            background: #32373c;
-            color: #fff;
-            text-decoration: none
-        }
-    </style>
-    <style id="global-styles-inline-css" type="text/css">
-        :root {
-            --wp--preset--aspect-ratio--square: 1;
-            --wp--preset--aspect-ratio--4-3: 4/3;
-            --wp--preset--aspect-ratio--3-4: 3/4;
-            --wp--preset--aspect-ratio--3-2: 3/2;
-            --wp--preset--aspect-ratio--2-3: 2/3;
-            --wp--preset--aspect-ratio--16-9: 16/9;
-            --wp--preset--aspect-ratio--9-16: 9/16;
-            --wp--preset--color--black: #000000;
-            --wp--preset--color--cyan-bluish-gray: #abb8c3;
-            --wp--preset--color--white: #ffffff;
-            --wp--preset--color--pale-pink: #f78da7;
-            --wp--preset--color--vivid-red: #cf2e2e;
-            --wp--preset--color--luminous-vivid-orange: #ff6900;
-            --wp--preset--color--luminous-vivid-amber: #fcb900;
-            --wp--preset--color--light-green-cyan: #7bdcb5;
-            --wp--preset--color--vivid-green-cyan: #00d084;
-            --wp--preset--color--pale-cyan-blue: #8ed1fc;
-            --wp--preset--color--vivid-cyan-blue: #0693e3;
-            --wp--preset--color--vivid-purple: #9b51e0;
-            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
-            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
-            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
-            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
-            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
-            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
-            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
-            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
-            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
-            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
-            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
-            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
-            --wp--preset--font-size--small: 13px;
-            --wp--preset--font-size--medium: 20px;
-            --wp--preset--font-size--large: 36px;
-            --wp--preset--font-size--x-large: 42px;
-            --wp--preset--spacing--20: 0.44rem;
-            --wp--preset--spacing--30: 0.67rem;
-            --wp--preset--spacing--40: 1rem;
-            --wp--preset--spacing--50: 1.5rem;
-            --wp--preset--spacing--60: 2.25rem;
-            --wp--preset--spacing--70: 3.38rem;
-            --wp--preset--spacing--80: 5.06rem;
-            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
-            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
-            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
-            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
-            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
-        }
-
-        :where(.is-layout-flex) {
-            gap: 0.5em;
-        }
-
-        :where(.is-layout-grid) {
-            gap: 0.5em;
-        }
-
-        body .is-layout-flex {
-            display: flex;
-        }
-
-        .is-layout-flex {
-            flex-wrap: wrap;
-            align-items: center;
-        }
-
-        .is-layout-flex > :is(*, div) {
-            margin: 0;
-        }
-
-        body .is-layout-grid {
-            display: grid;
-        }
-
-        .is-layout-grid > :is(*, div) {
-            margin: 0;
-        }
-
-        :where(.wp-block-columns.is-layout-flex) {
-            gap: 2em;
-        }
-
-        :where(.wp-block-columns.is-layout-grid) {
-            gap: 2em;
-        }
-
-        :where(.wp-block-post-template.is-layout-flex) {
-            gap: 1.25em;
-        }
-
-        :where(.wp-block-post-template.is-layout-grid) {
-            gap: 1.25em;
-        }
-
-        .has-black-color {
-            color: var(--wp--preset--color--black) !important;
-        }
-
-        .has-cyan-bluish-gray-color {
-            color: var(--wp--preset--color--cyan-bluish-gray) !important;
-        }
-
-        .has-white-color {
-            color: var(--wp--preset--color--white) !important;
-        }
-
-        .has-pale-pink-color {
-            color: var(--wp--preset--color--pale-pink) !important;
-        }
-
-        .has-vivid-red-color {
-            color: var(--wp--preset--color--vivid-red) !important;
-        }
-
-        .has-luminous-vivid-orange-color {
-            color: var(--wp--preset--color--luminous-vivid-orange) !important;
-        }
-
-        .has-luminous-vivid-amber-color {
-            color: var(--wp--preset--color--luminous-vivid-amber) !important;
-        }
-
-        .has-light-green-cyan-color {
-            color: var(--wp--preset--color--light-green-cyan) !important;
-        }
-
-        .has-vivid-green-cyan-color {
-            color: var(--wp--preset--color--vivid-green-cyan) !important;
-        }
-
-        .has-pale-cyan-blue-color {
-            color: var(--wp--preset--color--pale-cyan-blue) !important;
-        }
-
-        .has-vivid-cyan-blue-color {
-            color: var(--wp--preset--color--vivid-cyan-blue) !important;
-        }
-
-        .has-vivid-purple-color {
-            color: var(--wp--preset--color--vivid-purple) !important;
-        }
-
-        .has-black-background-color {
-            background-color: var(--wp--preset--color--black) !important;
-        }
-
-        .has-cyan-bluish-gray-background-color {
-            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
-        }
-
-        .has-white-background-color {
-            background-color: var(--wp--preset--color--white) !important;
-        }
-
-        .has-pale-pink-background-color {
-            background-color: var(--wp--preset--color--pale-pink) !important;
-        }
-
-        .has-vivid-red-background-color {
-            background-color: var(--wp--preset--color--vivid-red) !important;
-        }
-
-        .has-luminous-vivid-orange-background-color {
-            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
-        }
-
-        .has-luminous-vivid-amber-background-color {
-            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
-        }
-
-        .has-light-green-cyan-background-color {
-            background-color: var(--wp--preset--color--light-green-cyan) !important;
-        }
-
-        .has-vivid-green-cyan-background-color {
-            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
-        }
-
-        .has-pale-cyan-blue-background-color {
-            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
-        }
-
-        .has-vivid-cyan-blue-background-color {
-            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
-        }
-
-        .has-vivid-purple-background-color {
-            background-color: var(--wp--preset--color--vivid-purple) !important;
-        }
-
-        .has-black-border-color {
-            border-color: var(--wp--preset--color--black) !important;
-        }
-
-        .has-cyan-bluish-gray-border-color {
-            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
-        }
-
-        .has-white-border-color {
-            border-color: var(--wp--preset--color--white) !important;
-        }
-
-        .has-pale-pink-border-color {
-            border-color: var(--wp--preset--color--pale-pink) !important;
-        }
-
-        .has-vivid-red-border-color {
-            border-color: var(--wp--preset--color--vivid-red) !important;
-        }
-
-        .has-luminous-vivid-orange-border-color {
-            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
-        }
-
-        .has-luminous-vivid-amber-border-color {
-            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
-        }
-
-        .has-light-green-cyan-border-color {
-            border-color: var(--wp--preset--color--light-green-cyan) !important;
-        }
-
-        .has-vivid-green-cyan-border-color {
-            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
-        }
-
-        .has-pale-cyan-blue-border-color {
-            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
-        }
-
-        .has-vivid-cyan-blue-border-color {
-            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
-        }
-
-        .has-vivid-purple-border-color {
-            border-color: var(--wp--preset--color--vivid-purple) !important;
-        }
-
-        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
-            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
-        }
-
-        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
-            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
-        }
-
-        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
-            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
-        }
-
-        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
-            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
-        }
-
-        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
-            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
-        }
-
-        .has-cool-to-warm-spectrum-gradient-background {
-            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
-        }
-
-        .has-blush-light-purple-gradient-background {
-            background: var(--wp--preset--gradient--blush-light-purple) !important;
-        }
-
-        .has-blush-bordeaux-gradient-background {
-            background: var(--wp--preset--gradient--blush-bordeaux) !important;
-        }
-
-        .has-luminous-dusk-gradient-background {
-            background: var(--wp--preset--gradient--luminous-dusk) !important;
-        }
-
-        .has-pale-ocean-gradient-background {
-            background: var(--wp--preset--gradient--pale-ocean) !important;
-        }
-
-        .has-electric-grass-gradient-background {
-            background: var(--wp--preset--gradient--electric-grass) !important;
-        }
-
-        .has-midnight-gradient-background {
-            background: var(--wp--preset--gradient--midnight) !important;
-        }
-
-        .has-small-font-size {
-            font-size: var(--wp--preset--font-size--small) !important;
-        }
-
-        .has-medium-font-size {
-            font-size: var(--wp--preset--font-size--medium) !important;
-        }
-
-        .has-large-font-size {
-            font-size: var(--wp--preset--font-size--large) !important;
-        }
-
-        .has-x-large-font-size {
-            font-size: var(--wp--preset--font-size--x-large) !important;
-        }
-
-        :where(.wp-block-post-template.is-layout-flex) {
-            gap: 1.25em;
-        }
-
-        :where(.wp-block-post-template.is-layout-grid) {
-            gap: 1.25em;
-        }
-
-        :where(.wp-block-columns.is-layout-flex) {
-            gap: 2em;
-        }
-
-        :where(.wp-block-columns.is-layout-grid) {
-            gap: 2em;
-        }
-
-        :root :where(.wp-block-pullquote) {
-            font-size: 1.5em;
-            line-height: 1.6;
-        }
-    </style>
-    <link rel="stylesheet" id="odometer-css-css" href="./odometer.css" type="text/css" media="all">
-    <link rel="stylesheet" id="bizmax-toolkit-css" href="./bizmax-toolkit.css" type="text/css" media="all">
-    <link rel="stylesheet" id="bizmax-updated-css" href="./bizmax-updated.css" type="text/css" media="all">
-    <link rel="stylesheet" id="slick-css" href="./slick.css" type="text/css" media="all">
-    <link rel="stylesheet" id="contact-form-7-css" href="./styles.css" type="text/css" media="all">
-    <link rel="stylesheet" id="hfe-style-css" href="./header-footer-elementor.css" type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-icons-css" href="./elementor-icons.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-frontend-css" href="./frontend-lite.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="swiper-css" href="./swiper.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-post-9-css" href="./post-9.css" type="text/css" media="all">
-    <link rel="stylesheet" id="bizmax-essentials-css" href="./bizmax-essentials.css" type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-global-css" href="./global.css" type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-post-17-css" href="./post-17.css" type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-post-4144-css" href="./post-4144.css" type="text/css" media="all">
-    <link rel="stylesheet" id="sorex-google-fonts-css" href="./css" type="text/css" media="all">
-    <link rel="stylesheet" id="animate-css" href="./animate.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="bootstrap-css" href="./bootstrap.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="fontawesome-pro-css" href="./font-awesome-pro.css" type="text/css" media="all">
-    <link rel="stylesheet" id="meanmenu-css" href="./meanmenu.css" type="text/css" media="all">
-    <link rel="stylesheet" id="bizmax-reset-css" href="./reset.css" type="text/css" media="all">
-    <link rel="stylesheet" id="bizmax-style-css" href="./style.css" type="text/css" media="all">
-    <link rel="stylesheet" id="bizmax-custom-style-css" href="./theme-style.css" type="text/css" media="all">
-    <style id="bizmax-custom-style-inline-css" type="text/css">
-
-        body {
-            font-family: Poppins, sans-serif;
-            font-weight: 400;
-        }
-
-        h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-            font-family: "Poppins", sans-serif !important;
-            font-weight: 700 !important;
-        }
-
-        .cs_nav .cs_nav_list a {
-            font-family: "Poppins", sans-serif !important;
-            font-weight: 500 !important;
-        }
-
-        .footer .single-widget .widget-title, .footer .wp-block-heading,
-        .footer .widget_nav_menu ul li a, .footer .widget_nav_menu ul li {
-            color: #fff !important;
-        }
-
-
-        .footer-news-list li .wp-block-latest-posts__post-title, .footer-news-list li a,
-        .wp-block-heading.footer-inside-heading {
-            color: #fff !important;
-        }
-
-
-        .footer p {
-            color: #ccc
-        }
-
-
-        :root {
-            --accent-color: #e9a132
-        }
-
-
-    </style>
-    <link rel="stylesheet" id="csf-google-web-fonts-css" href="./css(1)" type="text/css" media="all">
-    <link rel="stylesheet" id="google-fonts-1-css" href="./css(2)" type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-icons-shared-0-css" href="./fontawesome.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-icons-fa-brands-css" href="./brands.min.css" type="text/css" media="all">
+{{--    <script async="" src="{{ asset('source/./saved_resource') }}"></script>--}}
+    <link rel="stylesheet" href="{{ asset('source/widget-icon-list.min.css') }}">
+    <link rel="stylesheet" id="hfe-widgets-style-css" href="{{ asset('/source/frontend.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" id="hfe-widgets-style-css" href="{{ asset('/source/styles/custom.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" id="odometer-css-css" href="{{ asset('source/odometer.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" id="bizmax-toolkit-css" href="{{ asset('source/bizmax-toolkit.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" id="bizmax-updated-css" href="{{ asset("source/bizmax-updated.css") }}" type="text/css" media="all">
+    <link rel="stylesheet" id="slick-css" href="{{ asset("source/slick.css") }}" type="text/css" media="all">
+    <link rel="stylesheet" id="contact-form-7-css" href="{{ asset("source/styles.css") }}" type="text/css" media="all">
+    <link rel="stylesheet" id="hfe-style-css" href="{{ asset("source/header-footer-elementor.css") }}" type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-icons-css" href="{{ asset("source/elementor-icons.min.css") }}" type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-frontend-css" href="{{ asset("source/frontend-lite.min.css") }}" type="text/css" media="all">
+    <link rel="stylesheet" id="swiper-css" href="{{ asset("source/swiper.min.css") }}" type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-post-9-css" href="{{ asset("source/post-9.css") }}" type="text/css" media="all">
+{{--    <link rel="stylesheet" id="bizmax-essentials-css" href="{{ asset("source/bizmax-essentials.css") }}" type="text/css" media="all">--}}
+    <link rel="stylesheet" id="elementor-global-css" href="{{ asset("source/global.css") }}" type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-post-17-css" href="{{ asset("source/post-17.css") }}" type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-post-4144-css" href="{{ asset("source/post-4144.css") }}" type="text/css" media="all">
+    <link rel="stylesheet" id="sorex-google-fonts-css" href{{ asset("source/./css") }}" type="text/css" media="all">
+    <link rel="stylesheet" id="animate-css" href="{{ asset("source/animate.min.css") }}" type="text/css" media="all">
+    <link rel="stylesheet" id="bootstrap-css" href="{{ asset("source/bootstrap.min.css") }}" type="text/css" media="all">
+    <link rel="stylesheet" id="fontawesome-pro-css" href="{{ asset("source/font-awesome-pro.css") }}" type="text/css" media="all">
+    <link rel="stylesheet" id="meanmenu-css" href="{{ asset("source/meanmenu.css") }}" type="text/css" media="all">
+    <link rel="stylesheet" id="bizmax-reset-css" href="{{ asset("source/reset.css") }}" type="text/css" media="all">
+    <link rel="stylesheet" id="bizmax-style-css" href="{{ asset("source/style.css") }}" type="text/css" media="all">
+{{--    <link rel="stylesheet" id="bizmax-custom-style-css" href="{{ asset("source/theme-style.css") }}" type="text/css" media="all">--}}
+    <link rel="stylesheet" id="csf-google-web-fonts-css" href="{{ asset('source/css(1)') }}" type="text/css" media="all">
+    <link rel="stylesheet" id="google-fonts-1-css" href="{{ asset('source/css(2)') }}" type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-icons-shared-0-css" href="{{ asset('source/fontawesome.min.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-icons-fa-brands-css" href="{{ asset('source/brands.min.css') }}" type="text/css" media="all">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <script type="text/javascript" src="./jquery.min.js" id="jquery-core-js"></script>
-    <script type="text/javascript" src="./jquery-migrate.min.js" id="jquery-migrate-js"></script>
+    <script type="text/javascript" src="{{ asset('source/jquery.min.js') }}" id="jquery-core-js"></script>
+    <script type="text/javascript" src="{{ asset('source/jquery-migrate.min.js') }}" id="jquery-migrate-js"></script>
     <link rel="https://api.w.org/" href="https://bizmax-wp.laralink.com/wp-json/">
     <link rel="alternate" title="JSON" type="application/json"
           href="https://bizmax-wp.laralink.com/wp-json/wp/v2/pages/17">
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://bizmax-wp.laralink.com/xmlrpc.php?rsd">
-    <meta name="generator" content="WordPress 6.6.1">
     <link rel="canonical" href="https://bizmax-wp.laralink.com/">
     <link rel="shortlink" href="https://bizmax-wp.laralink.com/">
     <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
@@ -554,36 +58,16 @@
     <meta name="cdp-version" content="1.4.8">
     <meta name="generator"
           content="Elementor 3.23.4; features: e_optimized_css_loading, additional_custom_breakpoints, e_lazyload; settings: css_print_method-external, google_font-enabled, font_display-swap">
-    <style>
-        .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
-        .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
-            background-image: none !important;
-        }
-
-        @media screen and (max-height: 1024px) {
-            .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
-            .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
-                background-image: none !important;
-            }
-        }
-
-        @media screen and (max-height: 640px) {
-            .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
-            .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
-                background-image: none !important;
-            }
-        }
-    </style>
-    <link rel="icon" href="https://bizmax-wp.laralink.com/wp-content/uploads/2023/07/cropped-favicon-1-150x150.png"
+    <link rel="icon" href="{{ asset('source/logos/logo2.png') }}"
           sizes="32x32">
-    <link rel="icon" href="https://bizmax-wp.laralink.com/wp-content/uploads/2023/07/cropped-favicon-1-300x300.png"
+    <link rel="icon" href="{{ asset('source/logos/logo2.png') }}"
           sizes="192x192">
     <link rel="apple-touch-icon"
-          href="https://bizmax-wp.laralink.com/wp-content/uploads/2023/07/cropped-favicon-1-300x300.png">
+          href="{{ asset('source/logos/logo2.png') }}">
     <meta name="msapplication-TileImage"
-          content="https://bizmax-wp.laralink.com/wp-content/uploads/2023/07/cropped-favicon-1-300x300.png">
+          content="{{ asset('source/logos/logo2.png') }}">
 
-    <script src="./ajax.php" id="aHR0cHM6Ly9iaXptYXgtd3AubGFyYWxpbmsuY29t"></script>
+    <script src="{{ asset('source/ajax.php') }}" id="aHR0cHM6Ly9iaXptYXgtd3AubGFyYWxpbmsuY29t"></script>
 </head>
 
 <body
@@ -594,7 +78,7 @@
 <div class="cs_preloader cs_accent_color cs_white_bg" style="display: none;">
     <div class="cs_preloader bg-white d-flex justify-content-center align-items-center" style="display: none;">
         <div class="cs_preloader_in" style="display: none;">
-            <img src="./favicon-2.png" alt="Bizmax">
+            <img src="{{ asset('source/logo2.png') }}" alt="Bar Association Yunusobod">
         </div>
     </div>
 </div>
@@ -609,224 +93,7 @@
 <!-- back to top end -->
 
 <div id="page" class="site">
-
-    <header class="cs_site_header cs_style_1 cs_sticky_header cs_site_header_full_width header-style-v2">
-
-
-              <div class="cs_top_header">
-                 <div class="container">
-                       <div class="cs_top_header_in">
-                          <div class="cs_top_header_left">
-                                                  <ul class="cs_top_nav d-flex flex-wrap align-items-center cs_fs_12 text-white m-0 p-0">
-                                                              <li>
-                                                                       <a href="https://bizmax-wp.laralink.com/#">
-                                            <b class="fw-medium text-white">Address:</b>
-                                            Address: 3517 W. Gray St. Utica, Pennsylvania 57867                                 </a>
-                                                                 </li>
-                                                              <li>
-                                                                       <a href="mailto:info@company.com">
-                                            <b class="fw-medium text-white">Email</b>
-                                            info@company.com                                 </a>
-                                                                 </li>
-                                                        </ul>
-                                               </div>
-                          <div class="cs_top_header_right">
-                                                  <ul class="cs_top_nav d-flex flex-wrap align-items-center cs_fs_12 text-white m-0 p-0">
-                                                              <li><a href="https://bizmax-wp.laralink.com/#">Help</a></li>
-                                                              <li><a href="https://bizmax-wp.laralink.com/#">Support</a></li>
-                                                              <li><a href="https://bizmax-wp.laralink.com/#">Contact</a></li>
-                                                        </ul>
-                                               </div>
-                       </div>
-                 </div>
-              </div>
-        <div class="cs_main_header">
-            <div class="container">
-                <div class="cs_main_header_in">
-                    <div class="cs_main_header_left">
-
-                        <div class="cs_site_branding">
-                            <div class="logo">
-                                <!-- Image Logo -->
-                                <div class="img-logo">
-                                    <a href="/"><img style="max-height:90px" src="./logos/logo2.png"
-                                                     alt="Yunusobod"></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="cs_nav cs_primary_font fw-medium">
-                            <div class="menu-defualt-menu-container">
-                                <ul id="primary-menu" class="nav cs_nav_list fw-medium text-uppercase">
-                                    <li id="menu-item-2019"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-2019 dropdown ">
-                                        <a href="https://bizmax-wp.laralink.com/#">Home</a>
-                                        <ul class="sub-menu">
-                                            <li id="menu-item-2018"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-17 current_page_item menu-item-2018 active ">
-                                                <a href="https://bizmax-wp.laralink.com/"
-                                                   aria-current="page">Business</a></li>
-                                            <li id="menu-item-5815"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5815">
-                                                <a href="https://bizmax-wp.laralink.com/homepage-v2/">Consulting</a>
-                                            </li>
-                                            <li id="menu-item-6919"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6919">
-                                                <a href="https://bizmax-wp.laralink.com/homepage-v3/">Financial
-                                                    Institute</a></li>
-                                            <li id="menu-item-7078"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7078">
-                                                <a href="https://bizmax-wp.laralink.com/homepage-v4/">Insurance
-                                                    Company</a></li>
-                                            <li id="menu-item-7188"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7188">
-                                                <a href="https://bizmax-wp.laralink.com/homepage-v5/">Consulting
-                                                    Agency</a></li>
-                                        </ul>
-                                        <span class="cs-munu_dropdown_toggle"></span></li>
-                                    <li id="menu-item-758"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758">
-                                        <a href="https://bizmax-wp.laralink.com/about-us/">About</a></li>
-                                    <li id="menu-item-756"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-756 dropdown ">
-                                        <a href="https://bizmax-wp.laralink.com/#">Services</a>
-                                        <ul class="sub-menu">
-                                            <li id="menu-item-87"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87">
-                                                <a href="https://bizmax-wp.laralink.com/service-v1/">Services</a></li>
-                                            <li id="menu-item-3014"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3014">
-                                                <a href="https://bizmax-wp.laralink.com/service-details/">Services
-                                                    Details</a></li>
-                                        </ul>
-                                        <span class="cs-munu_dropdown_toggle"></span></li>
-                                    <li id="menu-item-768"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-768 dropdown ">
-                                        <a href="https://bizmax-wp.laralink.com/#">Portfolio</a>
-                                        <ul class="sub-menu">
-                                            <li id="menu-item-3045"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3045">
-                                                <a href="https://bizmax-wp.laralink.com/portfolio/">Portfolio</a></li>
-                                            <li id="menu-item-3051"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3051">
-                                                <a href="https://bizmax-wp.laralink.com/project-details/">Project
-                                                    Details</a></li>
-                                        </ul>
-                                        <span class="cs-munu_dropdown_toggle"></span></li>
-                                    <li id="menu-item-760"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-760 dropdown ">
-                                        <a href="https://bizmax-wp.laralink.com/#">Pages</a>
-                                        <ul class="sub-menu">
-                                            <li id="menu-item-769"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-769">
-                                                <a href="https://bizmax-wp.laralink.com/price/">Pricing Page</a></li>
-                                            <li id="menu-item-6479"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6479">
-                                                <a href="https://bizmax-wp.laralink.com/team-member/">Team Member</a>
-                                            </li>
-                                            <li id="menu-item-6478"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6478">
-                                                <a href="https://bizmax-wp.laralink.com/team-details/">Team Details</a>
-                                            </li>
-                                            <li id="menu-item-6524"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6524">
-                                                <a href="https://bizmax-wp.laralink.com/testimonial/">Testimonial</a>
-                                            </li>
-                                        </ul>
-                                        <span class="cs-munu_dropdown_toggle"></span></li>
-                                    <li id="menu-item-762"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-762 dropdown ">
-                                        <a href="https://bizmax-wp.laralink.com/#">Blog</a>
-                                        <ul class="sub-menu">
-                                            <li id="menu-item-763"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-763">
-                                                <a href="https://bizmax-wp.laralink.com/blog/">Blog Grid</a></li>
-                                            <li id="menu-item-6504"
-                                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-6504">
-                                                <a href="https://bizmax-wp.laralink.com/introducing-the-latest-tech-features-for-you/">Blog
-                                                    Details – Right Side</a></li>
-                                            <li id="menu-item-6505"
-                                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-6505">
-                                                <a href="https://bizmax-wp.laralink.com/the-honest-way-to-achievement-your-goal/">Blog
-                                                    Details – Left Side</a></li>
-                                            <li id="menu-item-6506"
-                                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-6506">
-                                                <a href="https://bizmax-wp.laralink.com/how-to-start-your-own-business-with-no-risk/">Blog
-                                                    Details</a></li>
-                                        </ul>
-                                        <span class="cs-munu_dropdown_toggle"></span></li>
-                                    <li id="menu-item-6538"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6538 dropdown ">
-                                        <a href="https://bizmax-wp.laralink.com/#">Contact</a>
-                                        <ul class="sub-menu">
-                                            <li id="menu-item-761"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-761">
-                                                <a href="https://bizmax-wp.laralink.com/contact/">Contact V1</a></li>
-                                            <li id="menu-item-6537"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6537">
-                                                <a href="https://bizmax-wp.laralink.com/contact-v2/">Contact V2</a></li>
-                                        </ul>
-                                        <span class="cs-munu_dropdown_toggle"></span></li>
-                                </ul>
-                            </div>
-                            <span class="cs-munu_toggle"><span></span></span></div>
-                    </div>
-                    <div class="cs_main_header_right">
-                        <div class="cs_toolbox">
-                            <div class="cs_header_search_wrap position-relative">
-                              <span class="cs_header_search_btn d-flex">
-                                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                      xmlns="http://www.w3.org/2000/svg">
-                                       <path
-                                           d="M24.7628 23.6399L18.3082 17.2884C19.9984 15.452 21.037 13.0234 21.037 10.3509C21.0362 4.63387 16.3273 0 10.5181 0C4.70891 0 0 4.63387 0 10.3509C0 16.0678 4.70891 20.7017 10.5181 20.7017C13.0281 20.7017 15.3301 19.8335 17.1384 18.3902L23.618 24.7667C23.9338 25.0777 24.4463 25.0777 24.7621 24.7667C25.0785 24.4557 25.0785 23.9509 24.7628 23.6399ZM10.5181 19.1092C5.60289 19.1092 1.61836 15.1879 1.61836 10.3509C1.61836 5.51376 5.60289 1.59254 10.5181 1.59254C15.4333 1.59254 19.4178 5.51376 19.4178 10.3509C19.4178 15.1879 15.4333 19.1092 10.5181 19.1092Z"
-                                           fill="currentColor"></path>
-                                 </svg>
-                              </span>
-                                <form action="https://bizmax-wp.laralink.com/" method="get"
-                                      class="cs_header_search_form position-absolute bg-white cs_transition_3 cs_rounded_5 end-0 cs_pt_20 cs_pb_20 cs_pl_20 cs_pr_20">
-                                    <input type="text" name="s" value="" placeholder="Type your keyword...">
-                                    <button type="submit" class="cs_header_search_sumbit_btn">
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M24.7628 23.6399L18.3082 17.2884C19.9984 15.452 21.037 13.0234 21.037 10.3509C21.0362 4.63387 16.3273 0 10.5181 0C4.70891 0 0 4.63387 0 10.3509C0 16.0678 4.70891 20.7017 10.5181 20.7017C13.0281 20.7017 15.3301 19.8335 17.1384 18.3902L23.618 24.7667C23.9338 25.0777 24.4463 25.0777 24.7621 24.7667C25.0785 24.4557 25.0785 23.9509 24.7628 23.6399ZM10.5181 19.1092C5.60289 19.1092 1.61836 15.1879 1.61836 10.3509C1.61836 5.51376 5.60289 1.59254 10.5181 1.59254C15.4333 1.59254 19.4178 5.51376 19.4178 10.3509C19.4178 15.1879 15.4333 19.1092 10.5181 19.1092Z"
-                                                fill="currentColor"></path>
-                                        </svg>
-                                    </button>
-                                </form>
-                            </div>
-                            <div class="cs_header_contact">
-                                <div class="cs_header_contact_icon text-accent">
-                                    <svg width="35" height="36" viewBox="0 0 35 36" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_81_254)">
-                                            <path
-                                                d="M18.1846 18.6831C18.1846 19.0607 17.8786 19.3667 17.501 19.3667C17.1234 19.3667 16.8174 19.0607 16.8174 18.6831C16.8174 18.3055 17.1234 17.9995 17.501 17.9995C17.8786 17.9995 18.1846 18.3055 18.1846 18.6831Z"
-                                                fill="currentColor"></path>
-                                            <path
-                                                d="M28.9669 19.1887C28.2043 18.4264 26.9696 18.425 26.2069 19.1885L23.9057 21.4892C23.4576 21.9378 22.7657 22.0294 22.2608 21.7065C21.5959 21.282 20.9029 20.7818 20.2015 20.2197C19.9067 19.9837 19.4765 20.0312 19.2404 20.3257C19.0044 20.6205 19.0519 21.0507 19.3467 21.2868C20.0861 21.879 20.8188 22.408 21.5246 22.8588C22.566 23.5242 23.9743 23.3549 24.8726 22.4558L27.1741 20.1551C27.3989 19.93 27.7672 19.9225 28.0022 20.1575L33.4626 25.5697C33.6904 25.7974 33.6901 26.1683 33.4626 26.3961L32.0615 27.7975C30.0521 29.8061 26.8756 30.3396 24.3361 29.0944C13.2881 23.6775 7.80304 13.9181 6.38512 11.0561C5.12742 8.51667 5.64999 5.44317 7.68555 3.40761L9.05487 2.03722C9.28292 1.80944 9.65382 1.80944 9.88159 2.03695L15.2964 7.45176C15.5244 7.6798 15.5247 8.04937 15.2964 8.27741L12.9954 10.5787C12.0963 11.4777 11.927 12.8858 12.5925 13.9267C13.212 14.8965 13.9687 15.9037 14.8414 16.9206C15.0873 17.2068 15.5188 17.24 15.8056 16.994C16.0919 16.7481 16.125 16.3166 15.8791 16.0298C15.0478 15.0615 14.3298 14.1064 13.7444 13.1902C13.4219 12.6858 13.5135 11.9942 13.9623 11.5453L16.2633 9.24432C17.0257 8.48195 17.0259 7.24748 16.2633 6.48511L10.8482 1.07004C10.088 0.310076 8.85006 0.309809 8.08823 1.07031L6.71837 2.44096C4.26812 4.89149 3.64167 8.59731 5.15999 11.6628C6.62625 14.6225 12.2995 24.7154 23.7342 30.322C24.8373 30.8627 26.0344 31.1383 27.2555 31.1383C27.2694 31.1383 27.2833 31.1375 27.2972 31.1372C27.0993 32.8214 25.6641 34.1325 23.9278 34.1325H19.5117C18.218 34.1325 17.0551 33.4136 16.4767 32.2563L15.5648 30.4333C15.4489 30.2015 15.2123 30.0555 14.9533 30.0555C14.6945 30.0555 14.4577 30.2018 14.342 30.4333L12.9148 33.2876L11.4878 30.4333C11.3719 30.2015 11.1353 30.0555 10.8763 30.0555C10.6175 30.0555 10.3807 30.2018 10.265 30.4333L8.83778 33.2876L7.41078 30.4333C7.29489 30.2015 7.0583 30.0555 6.79928 30.0555C6.54053 30.0555 6.30368 30.2018 6.18805 30.4333L4.76079 33.2876L3.33379 30.4333C3.21789 30.2015 2.98131 30.0555 2.72229 30.0555C2.46354 30.0555 2.22668 30.2018 2.11106 30.4333L0.072297 34.5106C-0.0964651 34.8481 0.0402536 35.2588 0.378045 35.4276C0.717171 35.5971 1.12706 35.4583 1.29529 35.1218L2.72229 32.2678L4.14929 35.1218C4.26518 35.3536 4.50177 35.4996 4.76079 35.4996C5.0198 35.4996 5.25639 35.3533 5.37228 35.1218L6.79928 32.2678L8.22628 35.1218C8.34217 35.3536 8.57876 35.4996 8.83778 35.4996C9.0968 35.4996 9.33339 35.3533 9.44928 35.1218L10.8763 32.2678L12.3033 35.1218C12.4192 35.3536 12.6558 35.4996 12.9148 35.4996C13.1738 35.4996 13.4104 35.3533 13.5263 35.1218L14.9535 32.2675L15.2537 32.8678C16.0649 34.4913 17.6965 35.4996 19.5117 35.4996H23.9278C26.4609 35.4996 28.5376 33.5111 28.6801 31.013C30.3435 30.7222 31.846 29.9457 33.0282 28.7641L34.4298 27.3622C35.19 26.6012 35.1898 25.3632 34.4274 24.6006L28.9669 19.1887Z"
-                                                fill="currentColor"></path>
-                                        </g>
-                                        <defs>
-                                            <clippath id="clip0_81_254">
-                                                <rect width="35" height="35" fill="white"
-                                                      transform="translate(0 0.5)"></rect>
-                                            </clippath>
-                                        </defs>
-                                    </svg>
-                                </div>
-
-                                <div class="cs_header_contact_right">
-                                    <h3 class=" text-white  fw-normal cs_mb_6 cs_fs_13">Need help? Call us:</h3>
-                                    <h3 class=" text-white  m-0 cs_fs_13">(+800) 1234 5678 90</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+@include('web.header')
     <!-- End Header Section -->
 
 
@@ -865,109 +132,7 @@
                                                                 <div class="elementor-widget-container">
 
 
-                                                                    <script>
 
-                                                                        // Swiper Initialization
-
-                                                                        document.addEventListener("DOMContentLoaded", function () {
-
-                                                                            let mainSliderSelector = ".cs_parallax_slider--272731362",
-
-                                                                                interleaveOffset = 0.5;
-
-
-                                                                            let mainSliderOptions = {
-
-                                                                                loop: true,
-
-                                                                                speed: 1000,
-
-                                                                                autoplay: true,
-
-                                                                                loopAdditionalSlides: 10,
-
-                                                                                grabCursor: true,
-
-                                                                                watchSlidesProgress: true,
-
-                                                                                navigation: {
-
-                                                                                    nextEl: ".cs_swiper_button_next",
-
-                                                                                    prevEl: ".cs_swiper_button_prev",
-
-                                                                                },
-
-
-                                                                                on: {
-
-                                                                                    init: function () {
-
-                                                                                        this.autoplay.stop();
-
-                                                                                    },
-
-                                                                                    imagesReady: function () {
-
-                                                                                        this.el.classList.remove("loading");
-
-                                                                                        this.autoplay.start();
-
-                                                                                    },
-
-                                                                                    progress: function (swiper) {
-
-                                                                                        for (let i = 0; i < swiper.slides.length; i++) {
-
-                                                                                            let slideProgress = swiper.slides[i].progress,
-
-                                                                                                innerOffset = swiper.width * interleaveOffset,
-
-                                                                                                innerTranslate = slideProgress * innerOffset;
-
-
-                                                                                            swiper.slides[i].querySelector(
-                                                                                                ".cs_swiper_parallax_bg",
-                                                                                            ).style.transform = "translateX(" + innerTranslate + "px)";
-
-                                                                                        }
-
-                                                                                    },
-
-                                                                                    touchStart: function (swiper) {
-
-                                                                                        for (let i = 0; i < swiper.slides.length; i++) {
-
-                                                                                            swiper.slides[i].style.transition = "";
-
-                                                                                        }
-
-                                                                                    },
-
-                                                                                    setTransition: function (swiper, transition) {
-
-                                                                                        for (let i = 0; i < swiper.slides.length; i++) {
-
-                                                                                            swiper.slides[i].style.transition = transition + "ms";
-
-                                                                                            swiper.slides[i].querySelector(
-                                                                                                ".cs_swiper_parallax_bg",
-                                                                                            ).style.transition = transition + "ms";
-
-                                                                                        }
-
-                                                                                    },
-
-                                                                                },
-
-                                                                            };
-
-
-                                                                            let mainSlider = new Swiper(mainSliderSelector, mainSliderOptions);
-
-                                                                        });
-
-                                                                    </script>
 
                                                                     <!-- Start Hero -->
 
@@ -979,16 +144,16 @@
                                                                             class="cs_social_btns d-flex flex-column cs_column_gap_15 cs_row_gap_15 cs_transition_5 position-absolute cs_zindex_5 ">
                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i
-                                                                                class="fab fa-facebook-f"></i></a><a
-                                                                            href="https://bizmax-wp.laralink.com/#"
-                                                                            class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i
-                                                                            class="fab fa-twitter"></i></a><a
-                                                                            href="https://bizmax-wp.laralink.com/#"
-                                                                            class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i
-                                                                            class="fab fa-linkedin-in"></i></a><a
-                                                                            href="https://bizmax-wp.laralink.com/#"
-                                                                            class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i
-                                                                            class="fab fa-dribbble"></i></a>
+                                                                                    class="fab fa-facebook-f"></i></a><a
+                                                                                href="https://bizmax-wp.laralink.com/#"
+                                                                                class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i
+                                                                                    class="fab fa-twitter"></i></a><a
+                                                                                href="https://bizmax-wp.laralink.com/#"
+                                                                                class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i
+                                                                                    class="fab fa-linkedin-in"></i></a><a
+                                                                                href="https://bizmax-wp.laralink.com/#"
+                                                                                class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i
+                                                                                    class="fab fa-dribbble"></i></a>
 
                                                                         </div>
 
@@ -1012,10 +177,11 @@
 
                                                                                             <figure
                                                                                                 class="cs_swiper_parallax_bg"
-                                                                                                style="background-image: url(&quot;https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_1.jpeg&quot;); transform: translateX(1921.5px); transition: all;">
+                                                                                                style="background-image:
+                                                                                                url('https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_1.jpeg'); transform: translateX(1921.5px); transition: all;">
 
                                                                                                 <img decoding="async"
-                                                                                                     src="./hero_slider_1.jpeg"
+                                                                                                     src="{{ asset('source/hero_slider_1.jpeg') }}"
                                                                                                      alt="Slider"
                                                                                                      class="cs_entity_img">
 
@@ -1086,10 +252,10 @@
 
                                                                                             <figure
                                                                                                 class="cs_swiper_parallax_bg"
-                                                                                                style="background-image: url(&quot;https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_2.jpeg&quot;); transform: translateX(1281px); transition: all;">
+                                                                                                style="background-image: url('https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_2.jpeg'); transform: translateX(1281px); transition: all;">
 
                                                                                                 <img decoding="async"
-                                                                                                     src="./hero_slider_2.jpeg"
+                                                                                                     src="{{ asset('source/hero_slider_2.jpeg') }}"
                                                                                                      alt="Slider"
                                                                                                      class="cs_entity_img">
 
@@ -1160,10 +326,10 @@
 
                                                                                             <figure
                                                                                                 class="cs_swiper_parallax_bg"
-                                                                                                style="background-image: url(&quot;https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_3.jpeg&quot;); transform: translateX(640.5px); transition: all;">
+                                                                                                style="background-image: url('https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_3.jpeg'); transform: translateX(640.5px); transition: all;">
 
                                                                                                 <img decoding="async"
-                                                                                                     src="./hero_slider_3.jpeg"
+                                                                                                     src="{{ asset('source/hero_slider_3.jpeg') }}"
                                                                                                      alt="Slider"
                                                                                                      class="cs_entity_img">
 
@@ -1235,10 +401,10 @@
 
                                                                                             <figure
                                                                                                 class="cs_swiper_parallax_bg"
-                                                                                                style="background-image: url(&quot;https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_1.jpeg&quot;); transform: translateX(0px); transition: all;">
+                                                                                                style="background-image: url('https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_1.jpeg'); transform: translateX(0px); transition: all;">
 
                                                                                                 <img decoding="async"
-                                                                                                     src="./hero_slider_1.jpeg"
+                                                                                                     src="{{ asset('source/hero_slider_1.jpeg') }}"
                                                                                                      alt="Slider"
                                                                                                      class="cs_entity_img">
 
@@ -1311,10 +477,10 @@
 
                                                                                             <figure
                                                                                                 class="cs_swiper_parallax_bg"
-                                                                                                style="background-image: url(&quot;https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_2.jpeg&quot;); transform: translateX(-640.5px); transition: all;">
+                                                                                                style="background-image: url('https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_2.jpeg'); transform: translateX(-640.5px); transition: all;">
 
                                                                                                 <img decoding="async"
-                                                                                                     src="./hero_slider_2.jpeg"
+                                                                                                     src="{{ asset('source/hero_slider_2.jpeg') }}"
                                                                                                      alt="Slider"
                                                                                                      class="cs_entity_img">
 
@@ -1387,10 +553,10 @@
 
                                                                                             <figure
                                                                                                 class="cs_swiper_parallax_bg"
-                                                                                                style="background-image: url(&quot;https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_3.jpeg&quot;); transform: translateX(-1281px); transition: all;">
+                                                                                                style="background-image: url('https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_3.jpeg'); transform: translateX(-1281px); transition: all;">
 
                                                                                                 <img decoding="async"
-                                                                                                     src="./hero_slider_3.jpeg"
+                                                                                                     src="{{ asset('source/hero_slider_3.jpeg') }}"
                                                                                                      alt="Slider"
                                                                                                      class="cs_entity_img">
 
@@ -1463,10 +629,10 @@
 
                                                                                             <figure
                                                                                                 class="cs_swiper_parallax_bg"
-                                                                                                style="background-image: url(&quot;https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_1.jpeg&quot;); transform: translateX(-1921.5px); transition: all;">
+                                                                                                style="background-image: url('https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_1.jpeg'); transform: translateX(-1921.5px); transition: all;">
 
                                                                                                 <img decoding="async"
-                                                                                                     src="./hero_slider_1.jpeg"
+                                                                                                     src="{{ asset('source/hero_slider_1.jpeg') }}"
                                                                                                      alt="Slider"
                                                                                                      class="cs_entity_img">
 
@@ -1537,10 +703,10 @@
 
                                                                                             <figure
                                                                                                 class="cs_swiper_parallax_bg"
-                                                                                                style="background-image: url(&quot;https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_2.jpeg&quot;); transform: translateX(-2562px); transition: all;">
+                                                                                                style="background-image: url('https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_2.jpeg'); transform: translateX(-2562px); transition: all;">
 
                                                                                                 <img decoding="async"
-                                                                                                     src="./hero_slider_2.jpeg"
+                                                                                                     src="{{ asset('source/hero_slider_2.jpeg') }}"
                                                                                                      alt="Slider"
                                                                                                      class="cs_entity_img">
 
@@ -1611,10 +777,10 @@
 
                                                                                             <figure
                                                                                                 class="cs_swiper_parallax_bg"
-                                                                                                style="background-image: url(&quot;https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_3.jpeg&quot;); transform: translateX(-3202.5px); transition: all;">
+                                                                                                style="background-image: url('https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_3.jpeg'); transform: translateX(-3202.5px); transition: all;">
 
                                                                                                 <img decoding="async"
-                                                                                                     src="./hero_slider_3.jpeg"
+                                                                                                     src="{{ asset('source/hero_slider_3.jpeg') }}"
                                                                                                      alt="Slider"
                                                                                                      class="cs_entity_img">
 
@@ -1944,14 +1110,14 @@
                                                                                             <div
                                                                                                 class="cs_section_text m-0"
                                                                                                 style="color:#666"><p>I
-                                                                                                have been a loyal
-                                                                                                customer of this auto
-                                                                                                parts company for years
-                                                                                                and I cannot recommend
-                                                                                                them enough. Their
-                                                                                                extensive selection of
-                                                                                                high-quality parts and
-                                                                                                accessories.</p></div>
+                                                                                                    have been a loyal
+                                                                                                    customer of this auto
+                                                                                                    parts company for years
+                                                                                                    and I cannot recommend
+                                                                                                    them enough. Their
+                                                                                                    extensive selection of
+                                                                                                    high-quality parts and
+                                                                                                    accessories.</p></div>
 
                                                                                         </div>
 
@@ -1990,7 +1156,7 @@
                                                                                             <div
                                                                                                 class="cs_service_icon d-flex align-items-center justify-content-center cs_rounded_5 cs_mr_15 cs_transition_4 flex-none">
                                                                                                 <img decoding="async"
-                                                                                                     src="./1-4.png"
+                                                                                                     src="{{ asset('source/1-4.png') }}"
                                                                                                      alt="service image">
 
                                                                                             </div>
@@ -2006,10 +1172,10 @@
                                                                                         </div>
 
                                                                                         <div class="cs_mb_24"><p>
-                                                                                            Services related to
-                                                                                            financial record-keeping,
-                                                                                            bookkeeping,
-                                                                                            preparation.</p></div>
+                                                                                                Services related to
+                                                                                                financial record-keeping,
+                                                                                                bookkeeping,
+                                                                                                preparation.</p></div>
 
                                                                                         <div
                                                                                             class="cs_service_thumb position-relative cs_rounded_5">
@@ -2066,7 +1232,7 @@
                                                                                             <div
                                                                                                 class="cs_service_icon d-flex align-items-center justify-content-center cs_rounded_5 cs_mr_15 cs_transition_4 flex-none">
                                                                                                 <img decoding="async"
-                                                                                                     src="./2-3.png"
+                                                                                                     src="{{ asset('source/2-3.png') }}"
                                                                                                      alt="service image">
 
                                                                                             </div>
@@ -2083,10 +1249,10 @@
                                                                                         </div>
 
                                                                                         <div class="cs_mb_24"><p>
-                                                                                            Services related to
-                                                                                            financial record-keeping,
-                                                                                            bookkeeping,
-                                                                                            preparation.</p></div>
+                                                                                                Services related to
+                                                                                                financial record-keeping,
+                                                                                                bookkeeping,
+                                                                                                preparation.</p></div>
 
                                                                                         <div
                                                                                             class="cs_service_thumb position-relative cs_rounded_5">
@@ -2143,7 +1309,7 @@
                                                                                             <div
                                                                                                 class="cs_service_icon d-flex align-items-center justify-content-center cs_rounded_5 cs_mr_15 cs_transition_4 flex-none">
                                                                                                 <img decoding="async"
-                                                                                                     src="./3-2.png"
+                                                                                                     src="{{ asset('source/3-2.png') }}"
                                                                                                      alt="service image">
 
                                                                                             </div>
@@ -2159,10 +1325,10 @@
                                                                                         </div>
 
                                                                                         <div class="cs_mb_24"><p>
-                                                                                            Services related to
-                                                                                            financial record-keeping,
-                                                                                            bookkeeping,
-                                                                                            preparation.</p></div>
+                                                                                                Services related to
+                                                                                                financial record-keeping,
+                                                                                                bookkeeping,
+                                                                                                preparation.</p></div>
 
                                                                                         <div
                                                                                             class="cs_service_thumb position-relative cs_rounded_5">
@@ -2219,7 +1385,7 @@
                                                                                             <div
                                                                                                 class="cs_service_icon d-flex align-items-center justify-content-center cs_rounded_5 cs_mr_15 cs_transition_4 flex-none">
                                                                                                 <img decoding="async"
-                                                                                                     src="./4-1.png"
+                                                                                                     src="{{ asset('source/4-1.png') }}"
                                                                                                      alt="service image">
 
                                                                                             </div>
@@ -2235,10 +1401,10 @@
                                                                                         </div>
 
                                                                                         <div class="cs_mb_24"><p>
-                                                                                            Services related to
-                                                                                            financial record-keeping,
-                                                                                            bookkeeping,
-                                                                                            preparation.</p></div>
+                                                                                                Services related to
+                                                                                                financial record-keeping,
+                                                                                                bookkeeping,
+                                                                                                preparation.</p></div>
 
                                                                                         <div
                                                                                             class="cs_service_thumb position-relative cs_rounded_5">
@@ -2334,26 +1500,9 @@
                                                                 data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
                                                                 data-widget_type="image.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <style>/*! elementor - v3.23.0 - 05-08-2024 */
-                                                                    .elementor-widget-image {
-                                                                        text-align: center
-                                                                    }
-
-                                                                    .elementor-widget-image a {
-                                                                        display: inline-block
-                                                                    }
-
-                                                                    .elementor-widget-image a img[src$=".svg"] {
-                                                                        width: 48px
-                                                                    }
-
-                                                                    .elementor-widget-image img {
-                                                                        vertical-align: middle;
-                                                                        display: inline-block
-                                                                    }</style>
                                                                     <img fetchpriority="high" decoding="async"
                                                                          width="1080" height="1080"
-                                                                         src="./section-shape-1.png"
+                                                                         src="{{ asset('source/section-shape-1.png') }}"
                                                                          class="attachment-full size-full wp-image-6076"
                                                                          alt=""
                                                                          srcset="https://bizmax-wp.laralink.com/wp-content/uploads/2023/08/section-shape-1.png 1080w, https://bizmax-wp.laralink.com/wp-content/uploads/2023/08/section-shape-1-300x300.png 300w, https://bizmax-wp.laralink.com/wp-content/uploads/2023/08/section-shape-1-1024x1024.png 1024w, https://bizmax-wp.laralink.com/wp-content/uploads/2023/08/section-shape-1-150x150.png 150w, https://bizmax-wp.laralink.com/wp-content/uploads/2023/08/section-shape-1-768x768.png 768w"
@@ -2386,14 +1535,14 @@
                                                                                             class="cs_experience_thumb">
 
                                                                                             <img decoding="async"
-                                                                                                 src="./experience_img.jpeg"
+                                                                                                 src="{{ asset('source/experience_img.jpeg') }}"
                                                                                                  alt="Thumb"
                                                                                                  class="position-relative cs_zindex_3 cs_rounded_15">
 
                                                                                             <div
                                                                                                 class="cs_experience_shape">
                                                                                                 <img decoding="async"
-                                                                                                     src="./experience_shape_1.png"
+                                                                                                     src="{{ asset('source/experience_shape_1.png') }}"
                                                                                                      alt="Shape"
                                                                                                      class="moving_x">
                                                                                             </div>
@@ -2405,7 +1554,7 @@
                                                                                             style="background-image:url(https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/experience_bg.jpeg);">
 
                                                                                             <img decoding="async"
-                                                                                                 src="./experience_icon-1-1.svg"
+                                                                                                 src="{{ asset('source/experience_icon-1-1.svg') }}"
                                                                                                  alt="Icon"
                                                                                                  class="cs_mb_5">
 
@@ -2413,13 +1562,13 @@
 
                                                                                                 <span data-count-to="40"
                                                                                                       class="odometer odometer-auto-theme"><div
-                                                                                                    class="odometer-inside"><span
-                                                                                                    class="odometer-digit"><span
-                                                                                                    class="odometer-digit-spacer">8</span><span
-                                                                                                    class="odometer-digit-inner"><span
-                                                                                                    class="odometer-ribbon"><span
-                                                                                                    class="odometer-ribbon-inner"><span
-                                                                                                    class="odometer-value">0</span></span></span></span></span></div></span>
+                                                                                                        class="odometer-inside"><span
+                                                                                                            class="odometer-digit"><span
+                                                                                                                class="odometer-digit-spacer">8</span><span
+                                                                                                                class="odometer-digit-inner"><span
+                                                                                                                    class="odometer-ribbon"><span
+                                                                                                                        class="odometer-ribbon-inner"><span
+                                                                                                                            class="odometer-value">0</span></span></span></span></span></div></span>
 
                                                                                                 <span
                                                                                                     class="fw-light">+</span>
@@ -2473,17 +1622,17 @@
                                                                                             <div
                                                                                                 class="cs_section_text m-0"
                                                                                                 style="color:#666"><p
-                                                                                                class="m-0">Providing
-                                                                                                legal advice, contract
-                                                                                                drafting, compliance
-                                                                                                assistance, intellectual
-                                                                                                property protection, and
-                                                                                                other legal support for
-                                                                                                businesses. Creating
-                                                                                                visual content, such as
-                                                                                                logos, brochures,
-                                                                                                infographics, and other
-                                                                                                branding materials.</p>
+                                                                                                    class="m-0">Providing
+                                                                                                    legal advice, contract
+                                                                                                    drafting, compliance
+                                                                                                    assistance, intellectual
+                                                                                                    property protection, and
+                                                                                                    other legal support for
+                                                                                                    businesses. Creating
+                                                                                                    visual content, such as
+                                                                                                    logos, brochures,
+                                                                                                    infographics, and other
+                                                                                                    branding materials.</p>
                                                                                             </div>
 
                                                                                         </div>
@@ -2537,7 +1686,7 @@
 
                                                                                                 <span
                                                                                                     class="position-absolute cs_height_20 cs_width_20 top-0 start-0 cs_mt_5 bg-accent text-white cs_fs_10 d-flex align-items-center justify-content-center cs_rounded_30"><i
-                                                                                                    class="fas fa-angle-double-right"></i></span>
+                                                                                                        class="fas fa-angle-double-right"></i></span>
 
                                                                                                 <h3 class="cs_fs_16 cs_pl_35 cs_mb_12 cs_lh_lg">
                                                                                                     Accounting and
@@ -2559,7 +1708,7 @@
 
                                                                                                 <span
                                                                                                     class="position-absolute cs_height_20 cs_width_20 top-0 start-0 cs_mt_5 bg-accent text-white cs_fs_10 d-flex align-items-center justify-content-center cs_rounded_30"><i
-                                                                                                    class="fas fa-angle-double-right"></i></span>
+                                                                                                        class="fas fa-angle-double-right"></i></span>
 
                                                                                                 <h3 class="cs_fs_16 cs_pl_35 cs_mb_12 cs_lh_lg">
                                                                                                     Human Resources (HR)
@@ -3154,7 +2303,7 @@
 
                                                                                                 <h2 class="cs_fs_48 cs_fs_lg_36 cs_mb_20 text-white">
                                                                                                     Developing a <span
-                                                                                                    class="text-accent">design that <br> is easy</span>
+                                                                                                        class="text-accent">design that <br> is easy</span>
                                                                                                     to use and <br>
                                                                                                     navigate</h2>
 
@@ -3191,7 +2340,7 @@
 
                                                                                                         <img
                                                                                                             decoding="async"
-                                                                                                            src="./f-1-1.png">
+                                                                                                            src="{{ asset('source/f-1-1.png') }}">
 
                                                                                                     </div>
 
@@ -3220,7 +2369,7 @@
 
                                                                                                         <img
                                                                                                             decoding="async"
-                                                                                                            src="./f-2-1.png">
+                                                                                                            src="{{ asset('source/f-2-1.png') }}">
 
                                                                                                     </div>
 
@@ -3249,7 +2398,7 @@
 
                                                                                                         <img
                                                                                                             decoding="async"
-                                                                                                            src="./f-3-1.png">
+                                                                                                            src="{{ asset('source/f-3-1.png') }}">
 
                                                                                                     </div>
 
@@ -3277,7 +2426,7 @@
 
                                                                                                         <img
                                                                                                             decoding="async"
-                                                                                                            src="./f-4-1.png">
+                                                                                                            src="{{ asset('source/f-4-1.png') }}">
 
                                                                                                     </div>
 
@@ -3413,7 +2562,7 @@
                                                                     <!-- Start Testimonial Section -->
                                                                     <section
                                                                         class="background-filled cs_pt_140 cs_pt_lg_75 cs_pb_135 cs_pb_lg_75 bizmax-testimonial-style-1 "
-                                                                        style="background-image:url(https://bizmax.laralink.com/wp-content/uploads/2023/07/testimonial_bg.jpeg);">
+                                                                        style="background-image:url({{ asset('source/logos/logo.png') }});">
                                                                         <div class="cs_testimonial_slider cs_gap_30">
                                                                             <div class="container">
                                                                                 <div class="row">
@@ -3504,7 +2653,7 @@
                                                                                                                             class="cs_testimonial_img cs_mb_15">
                                                                                                                             <img
                                                                                                                                 decoding="async"
-                                                                                                                                src="./avatar_4.png"
+                                                                                                                                src="{{ asset('source/avatar_4.png') }}"
                                                                                                                                 alt="Max Lawrence"
                                                                                                                                 class="cs_height_75 cs_width_75 rounded-circle">
                                                                                                                         </div>
@@ -3582,7 +2731,7 @@
                                                                                                                             class="cs_testimonial_img cs_mb_15">
                                                                                                                             <img
                                                                                                                                 decoding="async"
-                                                                                                                                src="./avatar_5.png"
+                                                                                                                                src="{{ asset('source/avatar_5.png') }}"
                                                                                                                                 alt="Darlene Robertson"
                                                                                                                                 class="cs_height_75 cs_width_75 rounded-circle">
                                                                                                                         </div>
@@ -3660,7 +2809,7 @@
                                                                                                                             class="cs_testimonial_img cs_mb_15">
                                                                                                                             <img
                                                                                                                                 decoding="async"
-                                                                                                                                src="./avatar_6.png"
+                                                                                                                                src="{{ asset('source/avatar_6.png') }}"
                                                                                                                                 alt="Carol McCarthy"
                                                                                                                                 class="cs_height_75 cs_width_75 rounded-circle">
                                                                                                                         </div>
@@ -3737,7 +2886,7 @@
                                                                                                                             class="cs_testimonial_img cs_mb_15">
                                                                                                                             <img
                                                                                                                                 decoding="async"
-                                                                                                                                src="./avatar_1.png"
+                                                                                                                                src="{{ asset('source/avatar_1.png') }}"
                                                                                                                                 alt="Darlene Robertson"
                                                                                                                                 class="cs_height_75 cs_width_75 rounded-circle">
                                                                                                                         </div>
@@ -3814,7 +2963,7 @@
                                                                                                                             class="cs_testimonial_img cs_mb_15">
                                                                                                                             <img
                                                                                                                                 decoding="async"
-                                                                                                                                src="./avatar_2.jpeg"
+                                                                                                                                src="{{ asset('source/avatar_2.jpeg') }}"
                                                                                                                                 alt="Carol McCarthy"
                                                                                                                                 class="cs_height_75 cs_width_75 rounded-circle">
                                                                                                                         </div>
@@ -3891,7 +3040,7 @@
                                                                                                                             class="cs_testimonial_img cs_mb_15">
                                                                                                                             <img
                                                                                                                                 decoding="async"
-                                                                                                                                src="./avatar_3.png"
+                                                                                                                                src="{{ asset('source/avatar_3.png') }}"
                                                                                                                                 alt="Peter Johnson"
                                                                                                                                 class="cs_height_75 cs_width_75 rounded-circle">
                                                                                                                         </div>
@@ -3968,7 +3117,7 @@
                                                                                                                             class="cs_testimonial_img cs_mb_15">
                                                                                                                             <img
                                                                                                                                 decoding="async"
-                                                                                                                                src="./avatar_4.png"
+                                                                                                                                src="{{ asset('source/avatar_4.png') }}"
                                                                                                                                 alt="Max Lawrence"
                                                                                                                                 class="cs_height_75 cs_width_75 rounded-circle">
                                                                                                                         </div>
@@ -4045,7 +3194,7 @@
                                                                                                                             class="cs_testimonial_img cs_mb_15">
                                                                                                                             <img
                                                                                                                                 decoding="async"
-                                                                                                                                src="./avatar_5.png"
+                                                                                                                                src="{{ asset('source/avatar_5.png') }}"
                                                                                                                                 alt="Darlene Robertson"
                                                                                                                                 class="cs_height_75 cs_width_75 rounded-circle">
                                                                                                                         </div>
@@ -4122,7 +3271,7 @@
                                                                                                                             class="cs_testimonial_img cs_mb_15">
                                                                                                                             <img
                                                                                                                                 decoding="async"
-                                                                                                                                src="./avatar_6.png"
+                                                                                                                                src="{{ asset('source/avatar_6.png') }}"
                                                                                                                                 alt="Carol McCarthy"
                                                                                                                                 class="cs_height_75 cs_width_75 rounded-circle">
                                                                                                                         </div>
@@ -4200,7 +3349,7 @@
                                                                                                                             class="cs_testimonial_img cs_mb_15">
                                                                                                                             <img
                                                                                                                                 decoding="async"
-                                                                                                                                src="./avatar_1.png"
+                                                                                                                                src="{{ asset('source/avatar_1.png') }}"
                                                                                                                                 alt="Darlene Robertson"
                                                                                                                                 class="cs_height_75 cs_width_75 rounded-circle">
                                                                                                                         </div>
@@ -4278,7 +3427,7 @@
                                                                                                                             class="cs_testimonial_img cs_mb_15">
                                                                                                                             <img
                                                                                                                                 decoding="async"
-                                                                                                                                src="./avatar_2.jpeg"
+                                                                                                                                src="{{ asset('source/avatar_2.jpeg') }}"
                                                                                                                                 alt="Carol McCarthy"
                                                                                                                                 class="cs_height_75 cs_width_75 rounded-circle">
                                                                                                                         </div>
@@ -4356,7 +3505,7 @@
                                                                                                                             class="cs_testimonial_img cs_mb_15">
                                                                                                                             <img
                                                                                                                                 decoding="async"
-                                                                                                                                src="./avatar_3.png"
+                                                                                                                                src="{{ asset('source/avatar_3.png') }}"
                                                                                                                                 alt="Peter Johnson"
                                                                                                                                 class="cs_height_75 cs_width_75 rounded-circle">
                                                                                                                         </div>
@@ -4434,7 +3583,7 @@
                                                                                                                             class="cs_testimonial_img cs_mb_15">
                                                                                                                             <img
                                                                                                                                 decoding="async"
-                                                                                                                                src="./avatar_4.png"
+                                                                                                                                src="{{ asset('source/avatar_4.png') }}"
                                                                                                                                 alt="Max Lawrence"
                                                                                                                                 class="cs_height_75 cs_width_75 rounded-circle">
                                                                                                                         </div>
@@ -4512,7 +3661,7 @@
                                                                                                                             class="cs_testimonial_img cs_mb_15">
                                                                                                                             <img
                                                                                                                                 decoding="async"
-                                                                                                                                src="./avatar_5.png"
+                                                                                                                                src="{{ asset('source/avatar_5.png') }}"
                                                                                                                                 alt="Darlene Robertson"
                                                                                                                                 class="cs_height_75 cs_width_75 rounded-circle">
                                                                                                                         </div>
@@ -4590,7 +3739,7 @@
                                                                                                                             class="cs_testimonial_img cs_mb_15">
                                                                                                                             <img
                                                                                                                                 decoding="async"
-                                                                                                                                src="./avatar_6.png"
+                                                                                                                                src="{{ asset('source/avatar_6.png') }}"
                                                                                                                                 alt="Carol McCarthy"
                                                                                                                                 class="cs_height_75 cs_width_75 rounded-circle">
                                                                                                                         </div>
@@ -4765,7 +3914,7 @@
                                                                                                                 <img
                                                                                                                     decoding="async"
                                                                                                                     class="w-100 cs_rounded_50"
-                                                                                                                    src="./team_member_1.jpeg"
+                                                                                                                    src="{{ asset('source/team_member_1.jpeg') }}"
                                                                                                                     alt="Ralph Edwards">
 
                                                                                                             </a>
@@ -4775,15 +3924,15 @@
 
                                                                                                                 <a href="https://bizmax-wp.laralink.com/#"
                                                                                                                    class="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i
-                                                                                                                    class="fab fa-facebook-f"></i></a>
+                                                                                                                        class="fab fa-facebook-f"></i></a>
 
                                                                                                                 <a href="https://bizmax-wp.laralink.com/#"
                                                                                                                    class="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i
-                                                                                                                    class="fab fa-twitter"></i></a>
+                                                                                                                        class="fab fa-twitter"></i></a>
 
                                                                                                                 <a href="https://bizmax-wp.laralink.com/#"
                                                                                                                    class="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i
-                                                                                                                    class="fab fa-dribbble"></i></a>
+                                                                                                                        class="fab fa-dribbble"></i></a>
 
                                                                                                             </div>
 
@@ -4824,7 +3973,7 @@
                                                                                                                 <img
                                                                                                                     decoding="async"
                                                                                                                     class="w-100 cs_rounded_50"
-                                                                                                                    src="./team_member_2.jpeg"
+                                                                                                                    src="{{ asset('source/team_member_2.jpeg') }}"
                                                                                                                     alt="Ralph Edwards">
 
                                                                                                             </a>
@@ -4834,15 +3983,15 @@
 
                                                                                                                 <a href="https://bizmax-wp.laralink.com/#"
                                                                                                                    class="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i
-                                                                                                                    class="fab fa-facebook-f"></i></a>
+                                                                                                                        class="fab fa-facebook-f"></i></a>
 
                                                                                                                 <a href="https://bizmax-wp.laralink.com/#"
                                                                                                                    class="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i
-                                                                                                                    class="fab fa-twitter"></i></a>
+                                                                                                                        class="fab fa-twitter"></i></a>
 
                                                                                                                 <a href="https://bizmax-wp.laralink.com/#"
                                                                                                                    class="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i
-                                                                                                                    class="fab fa-dribbble"></i></a>
+                                                                                                                        class="fab fa-dribbble"></i></a>
 
                                                                                                             </div>
 
@@ -4883,7 +4032,7 @@
                                                                                                                 <img
                                                                                                                     decoding="async"
                                                                                                                     class="w-100 cs_rounded_50"
-                                                                                                                    src="./team_member_3.jpeg"
+                                                                                                                    src="{{ asset('source/team_member_3.jpeg') }}"
                                                                                                                     alt="Ralph Edwards">
 
                                                                                                             </a>
@@ -4893,15 +4042,15 @@
 
                                                                                                                 <a href="https://bizmax-wp.laralink.com/#"
                                                                                                                    class="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i
-                                                                                                                    class="fab fa-facebook-f"></i></a>
+                                                                                                                        class="fab fa-facebook-f"></i></a>
 
                                                                                                                 <a href="https://bizmax-wp.laralink.com/#"
                                                                                                                    class="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i
-                                                                                                                    class="fab fa-twitter"></i></a>
+                                                                                                                        class="fab fa-twitter"></i></a>
 
                                                                                                                 <a href="https://bizmax-wp.laralink.com/#"
                                                                                                                    class="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i
-                                                                                                                    class="fab fa-dribbble"></i></a>
+                                                                                                                        class="fab fa-dribbble"></i></a>
 
                                                                                                             </div>
 
@@ -5022,7 +4171,7 @@
                                                                                         <div
                                                                                             class="d-flex align-items-center justify-content-center cs_height_90 cs_width_90 cs_height_lg_80 cs_width_lg-80 cs_rounded_10 flex-none cs_mr_20 bg-accent">
                                                                                             <img decoding="async"
-                                                                                                 src="./1-1-1.png">
+                                                                                                 src="{{ asset('source/1-1-1.png') }}">
 
                                                                                         </div>
 
@@ -5033,9 +4182,9 @@
 
                                                                                             <h2 class="m-0 fw-medium cs_fs_22 cs_fs_lg_18 cs_lh_base"
                                                                                                 style="color:#FFFFFF"><a
-                                                                                                href="tel:070 4531 9507"
-                                                                                                style="color:#FFFFFF">+
-                                                                                                070 4531 9507 </a>
+                                                                                                    href="tel:070 4531 9507"
+                                                                                                    style="color:#FFFFFF">+
+                                                                                                    070 4531 9507 </a>
 
                                                                                             </h2>
 
@@ -5049,7 +4198,7 @@
                                                                                         <div
                                                                                             class="d-flex align-items-center justify-content-center cs_height_90 cs_width_90 cs_height_lg_80 cs_width_lg-80 cs_rounded_10 flex-none cs_mr_20 bg-accent">
                                                                                             <img decoding="async"
-                                                                                                 src="./2-1-1.png">
+                                                                                                 src="{{ asset('source/2-1-1.png') }}">
 
                                                                                         </div>
 
@@ -5060,8 +4209,8 @@
 
                                                                                             <h2 class="m-0 fw-medium cs_fs_22 cs_fs_lg_18 cs_lh_base"
                                                                                                 style="color:#FFFFFF"><a
-                                                                                                href="mailto:bizmax@laralink.com"
-                                                                                                style="color:#FFFFFF">bizmax@laralink.com</a>
+                                                                                                    href="mailto:bizmax@laralink.com"
+                                                                                                    style="color:#FFFFFF">bizmax@laralink.com</a>
 
                                                                                             </h2>
 
@@ -5075,7 +4224,7 @@
                                                                                         <div
                                                                                             class="d-flex align-items-center justify-content-center cs_height_90 cs_width_90 cs_height_lg_80 cs_width_lg-80 cs_rounded_10 flex-none cs_mr_20 bg-accent">
                                                                                             <img decoding="async"
-                                                                                                 src="./3-1-1.png">
+                                                                                                 src="{{ asset('source/3-1-1.png') }}">
 
                                                                                         </div>
 
@@ -5086,10 +4235,10 @@
 
                                                                                             <h2 class="m-0 fw-medium cs_fs_22 cs_fs_lg_18 cs_lh_base"
                                                                                                 style="color:#FFFFFF"><a
-                                                                                                href="https://bizmax-wp.laralink.com/"
-                                                                                                style="color:#FFFFFF">Yewtree
-                                                                                                Cottage, Kings Pyon, HR4
-                                                                                                8PZ</a>
+                                                                                                    href="https://bizmax-wp.laralink.com/"
+                                                                                                    style="color:#FFFFFF">Yewtree
+                                                                                                    Cottage, Kings Pyon, HR4
+                                                                                                    8PZ</a>
 
                                                                                             </h2>
 
@@ -5189,15 +4338,15 @@
                                                                                                                         <span
                                                                                                                             class="wpcf7-form-control-wrap"
                                                                                                                             data-name="your-name"><input
-                                                                                                                            size="40"
-                                                                                                                            maxlength="400"
-                                                                                                                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                                                                                            aria-required="true"
-                                                                                                                            aria-invalid="false"
-                                                                                                                            placeholder="Your Name"
-                                                                                                                            value=""
-                                                                                                                            type="text"
-                                                                                                                            name="your-name"></span>
+                                                                                                                                size="40"
+                                                                                                                                maxlength="400"
+                                                                                                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                                                                                                aria-required="true"
+                                                                                                                                aria-invalid="false"
+                                                                                                                                placeholder="Your Name"
+                                                                                                                                value=""
+                                                                                                                                type="text"
+                                                                                                                                name="your-name"></span>
                                                                                                                     </p>
                                                                                                                 </div>
                                                                                                             </div>
@@ -5209,15 +4358,15 @@
                                                                                                                         <span
                                                                                                                             class="wpcf7-form-control-wrap"
                                                                                                                             data-name="your-email"><input
-                                                                                                                            size="40"
-                                                                                                                            maxlength="400"
-                                                                                                                            class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
-                                                                                                                            aria-required="true"
-                                                                                                                            aria-invalid="false"
-                                                                                                                            placeholder="Your Email"
-                                                                                                                            value=""
-                                                                                                                            type="email"
-                                                                                                                            name="your-email"></span>
+                                                                                                                                size="40"
+                                                                                                                                maxlength="400"
+                                                                                                                                class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
+                                                                                                                                aria-required="true"
+                                                                                                                                aria-invalid="false"
+                                                                                                                                placeholder="Your Email"
+                                                                                                                                value=""
+                                                                                                                                type="email"
+                                                                                                                                name="your-email"></span>
                                                                                                                     </p>
                                                                                                                 </div>
                                                                                                             </div>
@@ -5229,13 +4378,13 @@
                                                                                                                         <span
                                                                                                                             class="wpcf7-form-control-wrap"
                                                                                                                             data-name="your-message"><textarea
-                                                                                                                            cols="40"
-                                                                                                                            rows="10"
-                                                                                                                            maxlength="2000"
-                                                                                                                            class="wpcf7-form-control wpcf7-textarea"
-                                                                                                                            aria-invalid="false"
-                                                                                                                            placeholder="Message here ..."
-                                                                                                                            name="your-message"></textarea></span>
+                                                                                                                                cols="40"
+                                                                                                                                rows="10"
+                                                                                                                                maxlength="2000"
+                                                                                                                                class="wpcf7-form-control wpcf7-textarea"
+                                                                                                                                aria-invalid="false"
+                                                                                                                                placeholder="Message here ..."
+                                                                                                                                name="your-message"></textarea></span>
                                                                                                                     </p>
                                                                                                                 </div>
                                                                                                             </div>
@@ -5264,9 +4413,9 @@
                                                                                             class="cs_contact_image d-none d-xl-block wow fadeInRight"
                                                                                             data-wow-duration="0.8s"
                                                                                             data-wow-delay="0.4s"><img
-                                                                                            decoding="async"
-                                                                                            src="./contact_img_1.png"
-                                                                                            alt=""></div>
+                                                                                                decoding="async"
+                                                                                                src="{{ asset('source/contact_img_1.png') }}"
+                                                                                                alt=""></div>
 
                                                                                     </div>
 
@@ -5295,48 +4444,6 @@
                                                                 data-widget_type="bizmax-brand-logos.default">
                                                                 <div class="elementor-widget-container">
 
-                                                                    <script>
-                                                                        jQuery(document).ready(function () {
-                                                                            setInterval(function () {
-                                                                                jQuery(".brand__active--292004845").slick({
-                                                                                    slidesToShow: 5,
-                                                                                    slidesToScroll: 1,
-                                                                                    autoplay: true,
-                                                                                    loop: true,
-                                                                                    speed: 600,
-                                                                                    autoplayHoverPause: true,
-                                                                                    arrows: false,
-                                                                                    dots: false, autoplaySpeed: 3500,
-                                                                                    responsive: [
-                                                                                        {
-                                                                                            breakpoint: 767,
-                                                                                            settings: {
-                                                                                                slidesToShow: 1,
-                                                                                            }
-                                                                                        },
-                                                                                        {
-                                                                                            breakpoint: 1025,
-                                                                                            settings: {
-                                                                                                slidesToShow: 3,
-                                                                                            }
-                                                                                        },
-                                                                                        {
-                                                                                            breakpoint: 1500,
-                                                                                            settings: {
-                                                                                                slidesToShow: 5,
-                                                                                            }
-                                                                                        },
-                                                                                        {
-                                                                                            breakpoint: 3000,
-                                                                                            settings: {
-                                                                                                slidesToShow: 5,
-                                                                                            }
-                                                                                        },
-                                                                                    ]
-                                                                                });
-                                                                            }, 10);
-                                                                        });
-                                                                    </script>
                                                                     <div
                                                                         class="brand__active--292004845 brand-logos style-1 slick-initialized slick-slider">
                                                                         <div class="slick-list draggable">
@@ -5351,8 +4458,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_4-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_4-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5365,8 +4472,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_5-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_5-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5379,8 +4486,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_1-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_1-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5393,8 +4500,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_3-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_3-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5407,8 +4514,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_2-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_2-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5421,8 +4528,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_1-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_1-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5435,8 +4542,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_2-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_2-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5449,8 +4556,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_3-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_3-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5463,8 +4570,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_4-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_4-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5478,8 +4585,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_5-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_5-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5492,8 +4599,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_1-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_1-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5506,8 +4613,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_3-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_3-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5520,8 +4627,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_2-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_2-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5535,8 +4642,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_1-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_1-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5549,8 +4656,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_2-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_2-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5563,8 +4670,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_3-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_3-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5577,8 +4684,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_4-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_4-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5591,8 +4698,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_5-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_5-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5605,8 +4712,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_1-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_1-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5619,8 +4726,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_3-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_3-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5633,8 +4740,8 @@
                                                                                              style="width: 100%; display: inline-block;">
                                                                                             <a href="https://bizmax-wp.laralink.com/#"
                                                                                                target="_blank"><img
-                                                                                                decoding="async"
-                                                                                                src="./brand_2-2.svg)"></a>
+                                                                                                    decoding="async"
+                                                                                                    src="{{ asset('source/brand_2-2.svg)') }}"></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5749,16 +4856,16 @@
                                                                                                             <ul class="cs_post_meta d-flex flex-wrap cs_fs_12 p-0 cs_mb_16">
                                                                                                                 <li>
                                                                                                                     <span><i
-                                                                                                                        class="fas fa-user"></i> By: </span>
+                                                                                                                            class="fas fa-user"></i> By: </span>
                                                                                                                     <a href="https://bizmax-wp.laralink.com/">bizmax</a>
                                                                                                                 </li>
                                                                                                                 <li>
                                                                                                                     <span><i
-                                                                                                                        class="fas fa-calendar-alt"></i> July 30, 2023</span>
+                                                                                                                            class="fas fa-calendar-alt"></i> July 30, 2023</span>
                                                                                                                 </li>
                                                                                                                 <li>
                                                                                                                     <span><i
-                                                                                                                        class="fas fa-comment-dots"></i></span>
+                                                                                                                            class="fas fa-comment-dots"></i></span>
                                                                                                                     <a href="https://bizmax-wp.laralink.com/#">0
                                                                                                                         comments</a>
                                                                                                                 </li>
@@ -5832,16 +4939,16 @@
                                                                                                             <ul class="cs_post_meta d-flex flex-wrap cs_fs_12 p-0 cs_mb_16">
                                                                                                                 <li>
                                                                                                                     <span><i
-                                                                                                                        class="fas fa-user"></i> By: </span>
+                                                                                                                            class="fas fa-user"></i> By: </span>
                                                                                                                     <a href="https://bizmax-wp.laralink.com/">bizmax</a>
                                                                                                                 </li>
                                                                                                                 <li>
                                                                                                                     <span><i
-                                                                                                                        class="fas fa-calendar-alt"></i> July 30, 2023</span>
+                                                                                                                            class="fas fa-calendar-alt"></i> July 30, 2023</span>
                                                                                                                 </li>
                                                                                                                 <li>
                                                                                                                     <span><i
-                                                                                                                        class="fas fa-comment-dots"></i></span>
+                                                                                                                            class="fas fa-comment-dots"></i></span>
                                                                                                                     <a href="https://bizmax-wp.laralink.com/#">0
                                                                                                                         comments</a>
                                                                                                                 </li>
@@ -5915,16 +5022,16 @@
                                                                                                             <ul class="cs_post_meta d-flex flex-wrap cs_fs_12 p-0 cs_mb_16">
                                                                                                                 <li>
                                                                                                                     <span><i
-                                                                                                                        class="fas fa-user"></i> By: </span>
+                                                                                                                            class="fas fa-user"></i> By: </span>
                                                                                                                     <a href="https://bizmax-wp.laralink.com/">bizmax</a>
                                                                                                                 </li>
                                                                                                                 <li>
                                                                                                                     <span><i
-                                                                                                                        class="fas fa-calendar-alt"></i> July 30, 2023</span>
+                                                                                                                            class="fas fa-calendar-alt"></i> July 30, 2023</span>
                                                                                                                 </li>
                                                                                                                 <li>
                                                                                                                     <span><i
-                                                                                                                        class="fas fa-comment-dots"></i></span>
+                                                                                                                            class="fas fa-comment-dots"></i></span>
                                                                                                                     <a href="https://bizmax-wp.laralink.com/#">0
                                                                                                                         comments</a>
                                                                                                                 </li>
@@ -6026,38 +5133,6 @@
                                                                 data-id="ab73a44" data-element_type="widget"
                                                                 data-widget_type="heading.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <style>/*! elementor - v3.23.0 - 05-08-2024 */
-                                                                    .elementor-heading-title {
-                                                                        padding: 0;
-                                                                        margin: 0;
-                                                                        line-height: 1
-                                                                    }
-
-                                                                    .elementor-widget-heading .elementor-heading-title[class*=elementor-size-] > a {
-                                                                        color: inherit;
-                                                                        font-size: inherit;
-                                                                        line-height: inherit
-                                                                    }
-
-                                                                    .elementor-widget-heading .elementor-heading-title.elementor-size-small {
-                                                                        font-size: 15px
-                                                                    }
-
-                                                                    .elementor-widget-heading .elementor-heading-title.elementor-size-medium {
-                                                                        font-size: 19px
-                                                                    }
-
-                                                                    .elementor-widget-heading .elementor-heading-title.elementor-size-large {
-                                                                        font-size: 29px
-                                                                    }
-
-                                                                    .elementor-widget-heading .elementor-heading-title.elementor-size-xl {
-                                                                        font-size: 39px
-                                                                    }
-
-                                                                    .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
-                                                                        font-size: 59px
-                                                                    }</style>
                                                                     <p class="elementor-heading-title elementor-size-default">
                                                                         Have Any Question?</p></div>
                                                             </div>
@@ -6082,7 +5157,7 @@
                                                                 data-id="d0e778f" data-element_type="widget"
                                                                 data-widget_type="image.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <img width="157" height="48" src="./logo-2.svg"
+                                                                    <img width="157" height="48" src="{{ asset('source/logo-2.svg') }}"
                                                                          class="attachment-large size-large wp-image-4747"
                                                                          alt=""></div>
                                                             </div>
@@ -6128,36 +5203,36 @@
                                                                 data-widget_type="text-editor.default">
                                                                 <div class="elementor-widget-container">
                                                                     <style>/*! elementor - v3.23.0 - 05-08-2024 */
-                                                                    .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
-                                                                        background-color: #69727d;
-                                                                        color: #fff
-                                                                    }
+                                                                        .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
+                                                                            background-color: #69727d;
+                                                                            color: #fff
+                                                                        }
 
-                                                                    .elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
-                                                                        color: #69727d;
-                                                                        border: 3px solid;
-                                                                        background-color: transparent
-                                                                    }
+                                                                        .elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
+                                                                            color: #69727d;
+                                                                            border: 3px solid;
+                                                                            background-color: transparent
+                                                                        }
 
-                                                                    .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
-                                                                        margin-top: 8px
-                                                                    }
+                                                                        .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
+                                                                            margin-top: 8px
+                                                                        }
 
-                                                                    .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
-                                                                        width: 1em;
-                                                                        height: 1em
-                                                                    }
+                                                                        .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
+                                                                            width: 1em;
+                                                                            height: 1em
+                                                                        }
 
-                                                                    .elementor-widget-text-editor .elementor-drop-cap {
-                                                                        float: left;
-                                                                        text-align: center;
-                                                                        line-height: 1;
-                                                                        font-size: 50px
-                                                                    }
+                                                                        .elementor-widget-text-editor .elementor-drop-cap {
+                                                                            float: left;
+                                                                            text-align: center;
+                                                                            line-height: 1;
+                                                                            font-size: 50px
+                                                                        }
 
-                                                                    .elementor-widget-text-editor .elementor-drop-cap-letter {
-                                                                        display: inline-block
-                                                                    }</style>
+                                                                        .elementor-widget-text-editor .elementor-drop-cap-letter {
+                                                                            display: inline-block
+                                                                        }</style>
                                                                     <div class="cs_text_widget">
                                                                         <p>I’ve been using [business name] for the past
                                                                             year
@@ -6174,305 +5249,7 @@
                                                                 data-id="ec899fd" data-element_type="widget"
                                                                 data-widget_type="social-icons.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <style>/*! elementor - v3.23.0 - 05-08-2024 */
-                                                                    .elementor-widget-social-icons.elementor-grid-0 .elementor-widget-container, .elementor-widget-social-icons.elementor-grid-mobile-0 .elementor-widget-container, .elementor-widget-social-icons.elementor-grid-tablet-0 .elementor-widget-container {
-                                                                        line-height: 1;
-                                                                        font-size: 0
-                                                                    }
 
-                                                                    .elementor-widget-social-icons:not(.elementor-grid-0):not(.elementor-grid-tablet-0):not(.elementor-grid-mobile-0) .elementor-grid {
-                                                                        display: inline-grid
-                                                                    }
-
-                                                                    .elementor-widget-social-icons .elementor-grid {
-                                                                        grid-column-gap: var(--grid-column-gap, 5px);
-                                                                        grid-row-gap: var(--grid-row-gap, 5px);
-                                                                        grid-template-columns:var(--grid-template-columns);
-                                                                        justify-content: var(--justify-content, center);
-                                                                        justify-items: var(--justify-content, center)
-                                                                    }
-
-                                                                    .elementor-icon.elementor-social-icon {
-                                                                        font-size: var(--icon-size, 25px);
-                                                                        line-height: var(--icon-size, 25px);
-                                                                        width: calc(var(--icon-size, 25px) + 2 * var(--icon-padding, .5em));
-                                                                        height: calc(var(--icon-size, 25px) + 2 * var(--icon-padding, .5em))
-                                                                    }
-
-                                                                    .elementor-social-icon {
-                                                                        --e-social-icon-icon-color: #fff;
-                                                                        display: inline-flex;
-                                                                        background-color: #69727d;
-                                                                        align-items: center;
-                                                                        justify-content: center;
-                                                                        text-align: center;
-                                                                        cursor: pointer
-                                                                    }
-
-                                                                    .elementor-social-icon i {
-                                                                        color: var(--e-social-icon-icon-color)
-                                                                    }
-
-                                                                    .elementor-social-icon svg {
-                                                                        fill: var(--e-social-icon-icon-color)
-                                                                    }
-
-                                                                    .elementor-social-icon:last-child {
-                                                                        margin: 0
-                                                                    }
-
-                                                                    .elementor-social-icon:hover {
-                                                                        opacity: .9;
-                                                                        color: #fff
-                                                                    }
-
-                                                                    .elementor-social-icon-android {
-                                                                        background-color: #a4c639
-                                                                    }
-
-                                                                    .elementor-social-icon-apple {
-                                                                        background-color: #999
-                                                                    }
-
-                                                                    .elementor-social-icon-behance {
-                                                                        background-color: #1769ff
-                                                                    }
-
-                                                                    .elementor-social-icon-bitbucket {
-                                                                        background-color: #205081
-                                                                    }
-
-                                                                    .elementor-social-icon-codepen {
-                                                                        background-color: #000
-                                                                    }
-
-                                                                    .elementor-social-icon-delicious {
-                                                                        background-color: #39f
-                                                                    }
-
-                                                                    .elementor-social-icon-deviantart {
-                                                                        background-color: #05cc47
-                                                                    }
-
-                                                                    .elementor-social-icon-digg {
-                                                                        background-color: #005be2
-                                                                    }
-
-                                                                    .elementor-social-icon-dribbble {
-                                                                        background-color: #ea4c89
-                                                                    }
-
-                                                                    .elementor-social-icon-elementor {
-                                                                        background-color: #d30c5c
-                                                                    }
-
-                                                                    .elementor-social-icon-envelope {
-                                                                        background-color: #ea4335
-                                                                    }
-
-                                                                    .elementor-social-icon-facebook, .elementor-social-icon-facebook-f {
-                                                                        background-color: #3b5998
-                                                                    }
-
-                                                                    .elementor-social-icon-flickr {
-                                                                        background-color: #0063dc
-                                                                    }
-
-                                                                    .elementor-social-icon-foursquare {
-                                                                        background-color: #2d5be3
-                                                                    }
-
-                                                                    .elementor-social-icon-free-code-camp, .elementor-social-icon-freecodecamp {
-                                                                        background-color: #006400
-                                                                    }
-
-                                                                    .elementor-social-icon-github {
-                                                                        background-color: #333
-                                                                    }
-
-                                                                    .elementor-social-icon-gitlab {
-                                                                        background-color: #e24329
-                                                                    }
-
-                                                                    .elementor-social-icon-globe {
-                                                                        background-color: #69727d
-                                                                    }
-
-                                                                    .elementor-social-icon-google-plus, .elementor-social-icon-google-plus-g {
-                                                                        background-color: #dd4b39
-                                                                    }
-
-                                                                    .elementor-social-icon-houzz {
-                                                                        background-color: #7ac142
-                                                                    }
-
-                                                                    .elementor-social-icon-instagram {
-                                                                        background-color: #262626
-                                                                    }
-
-                                                                    .elementor-social-icon-jsfiddle {
-                                                                        background-color: #487aa2
-                                                                    }
-
-                                                                    .elementor-social-icon-link {
-                                                                        background-color: #818a91
-                                                                    }
-
-                                                                    .elementor-social-icon-linkedin, .elementor-social-icon-linkedin-in {
-                                                                        background-color: #0077b5
-                                                                    }
-
-                                                                    .elementor-social-icon-medium {
-                                                                        background-color: #00ab6b
-                                                                    }
-
-                                                                    .elementor-social-icon-meetup {
-                                                                        background-color: #ec1c40
-                                                                    }
-
-                                                                    .elementor-social-icon-mixcloud {
-                                                                        background-color: #273a4b
-                                                                    }
-
-                                                                    .elementor-social-icon-odnoklassniki {
-                                                                        background-color: #f4731c
-                                                                    }
-
-                                                                    .elementor-social-icon-pinterest {
-                                                                        background-color: #bd081c
-                                                                    }
-
-                                                                    .elementor-social-icon-product-hunt {
-                                                                        background-color: #da552f
-                                                                    }
-
-                                                                    .elementor-social-icon-reddit {
-                                                                        background-color: #ff4500
-                                                                    }
-
-                                                                    .elementor-social-icon-rss {
-                                                                        background-color: #f26522
-                                                                    }
-
-                                                                    .elementor-social-icon-shopping-cart {
-                                                                        background-color: #4caf50
-                                                                    }
-
-                                                                    .elementor-social-icon-skype {
-                                                                        background-color: #00aff0
-                                                                    }
-
-                                                                    .elementor-social-icon-slideshare {
-                                                                        background-color: #0077b5
-                                                                    }
-
-                                                                    .elementor-social-icon-snapchat {
-                                                                        background-color: #fffc00
-                                                                    }
-
-                                                                    .elementor-social-icon-soundcloud {
-                                                                        background-color: #f80
-                                                                    }
-
-                                                                    .elementor-social-icon-spotify {
-                                                                        background-color: #2ebd59
-                                                                    }
-
-                                                                    .elementor-social-icon-stack-overflow {
-                                                                        background-color: #fe7a15
-                                                                    }
-
-                                                                    .elementor-social-icon-steam {
-                                                                        background-color: #00adee
-                                                                    }
-
-                                                                    .elementor-social-icon-stumbleupon {
-                                                                        background-color: #eb4924
-                                                                    }
-
-                                                                    .elementor-social-icon-telegram {
-                                                                        background-color: #2ca5e0
-                                                                    }
-
-                                                                    .elementor-social-icon-threads {
-                                                                        background-color: #000
-                                                                    }
-
-                                                                    .elementor-social-icon-thumb-tack {
-                                                                        background-color: #1aa1d8
-                                                                    }
-
-                                                                    .elementor-social-icon-tripadvisor {
-                                                                        background-color: #589442
-                                                                    }
-
-                                                                    .elementor-social-icon-tumblr {
-                                                                        background-color: #35465c
-                                                                    }
-
-                                                                    .elementor-social-icon-twitch {
-                                                                        background-color: #6441a5
-                                                                    }
-
-                                                                    .elementor-social-icon-twitter {
-                                                                        background-color: #1da1f2
-                                                                    }
-
-                                                                    .elementor-social-icon-viber {
-                                                                        background-color: #665cac
-                                                                    }
-
-                                                                    .elementor-social-icon-vimeo {
-                                                                        background-color: #1ab7ea
-                                                                    }
-
-                                                                    .elementor-social-icon-vk {
-                                                                        background-color: #45668e
-                                                                    }
-
-                                                                    .elementor-social-icon-weibo {
-                                                                        background-color: #dd2430
-                                                                    }
-
-                                                                    .elementor-social-icon-weixin {
-                                                                        background-color: #31a918
-                                                                    }
-
-                                                                    .elementor-social-icon-whatsapp {
-                                                                        background-color: #25d366
-                                                                    }
-
-                                                                    .elementor-social-icon-wordpress {
-                                                                        background-color: #21759b
-                                                                    }
-
-                                                                    .elementor-social-icon-x-twitter {
-                                                                        background-color: #000
-                                                                    }
-
-                                                                    .elementor-social-icon-xing {
-                                                                        background-color: #026466
-                                                                    }
-
-                                                                    .elementor-social-icon-yelp {
-                                                                        background-color: #af0606
-                                                                    }
-
-                                                                    .elementor-social-icon-youtube {
-                                                                        background-color: #cd201f
-                                                                    }
-
-                                                                    .elementor-social-icon-500px {
-                                                                        background-color: #0099e5
-                                                                    }
-
-                                                                    .elementor-shape-rounded .elementor-icon.elementor-social-icon {
-                                                                        border-radius: 10%
-                                                                    }
-
-                                                                    .elementor-shape-circle .elementor-icon.elementor-social-icon {
-                                                                        border-radius: 50%
-                                                                    }</style>
                                                                     <div
                                                                         class="elementor-social-icons-wrapper elementor-grid">
 							<span class="elementor-grid-item">
@@ -6521,8 +5298,6 @@
                                                                 data-id="3b9e932" data-element_type="widget"
                                                                 data-widget_type="icon-list.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <link rel="stylesheet"
-                                                                          href="./widget-icon-list.min.css">
                                                                     <ul class="elementor-icon-list-items">
                                                                         <li class="elementor-icon-list-item">
                                                                             <a href="https://bizmax-wp.laralink.com/about-us/">
@@ -6609,22 +5384,6 @@
                                                                 data-widget_type="shortcode.default">
                                                                 <div class="elementor-widget-container">
                                                                     <div class="elementor-shortcode">
-                                                                        <script>(function () {
-                                                                            window.mc4wp = window.mc4wp || {
-                                                                                listeners: [],
-                                                                                forms: {
-                                                                                    on: function (evt, cb) {
-                                                                                        window.mc4wp.listeners.push(
-                                                                                            {
-                                                                                                event: evt,
-                                                                                                callback: cb
-                                                                                            }
-                                                                                        );
-                                                                                    }
-                                                                                }
-                                                                            }
-                                                                        })();
-                                                                        </script>
                                                                         <!-- Mailchimp for WordPress v4.9.15 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
                                                                         <form id="mc4wp-form-1"
                                                                               class="mc4wp-form mc4wp-form-2172"
@@ -6650,12 +5409,12 @@
                                                                                     type="text" name="_mc4wp_honeypot"
                                                                                     value="" tabindex="-1"
                                                                                     autocomplete="off"></label><input
-                                                                            type="hidden" name="_mc4wp_timestamp"
-                                                                            value="1726856619"><input type="hidden"
-                                                                                                      name="_mc4wp_form_id"
-                                                                                                      value="2172"><input
-                                                                            type="hidden" name="_mc4wp_form_element_id"
-                                                                            value="mc4wp-form-1">
+                                                                                type="hidden" name="_mc4wp_timestamp"
+                                                                                value="1726856619"><input type="hidden"
+                                                                                                          name="_mc4wp_form_id"
+                                                                                                          value="2172"><input
+                                                                                type="hidden" name="_mc4wp_form_element_id"
+                                                                                value="mc4wp-form-1">
                                                                             <div class="mc4wp-response"></div>
                                                                         </form><!-- / Mailchimp for WordPress Plugin -->
                                                                     </div>
@@ -6680,8 +5439,8 @@
                                                                 data-widget_type="text-editor.default">
                                                                 <div class="elementor-widget-container">
                                                                     <p style="text-align: center;">Copyright © 2024 <a
-                                                                        href="https://bizmax.laralink.com/"
-                                                                        data-wplink-url-error="true">bizmax.</a> All
+                                                                            href="https://bizmax.laralink.com/"
+                                                                            data-wplink-url-error="true">bizmax.</a> All
                                                                         rights reserved.</p></div>
                                                             </div>
                                                         </div>
@@ -6697,195 +5456,34 @@
                 </footer>
             </main>
         </div><!-- #page -->
-        <script>(function () {
-            function maybePrefixUrlField() {
-                const value = this.value.trim()
-                if (value !== '' && value.indexOf('http') !== 0) {
-                    this.value = 'http://' + value
-                }
-            }
-
-            const urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]')
-            for (let j = 0; j < urlFields.length; j++) {
-                urlFields[j].addEventListener('blur', maybePrefixUrlField)
-            }
-        })();</script>
-        <script type="text/javascript">
-            const lazyloadRunObserver = () => {
-                const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
-                const lazyloadBackgroundObserver = new IntersectionObserver((entries) => {
-                    entries.forEach((entry) => {
-                        if (entry.isIntersecting) {
-                            let lazyloadBackground = entry.target;
-                            if (lazyloadBackground) {
-                                lazyloadBackground.classList.add('e-lazyloaded');
-                            }
-                            lazyloadBackgroundObserver.unobserve(entry.target);
-                        }
-                    });
-                }, {rootMargin: '200px 0px 200px 0px'});
-                lazyloadBackgrounds.forEach((lazyloadBackground) => {
-                    lazyloadBackgroundObserver.observe(lazyloadBackground);
-                });
-            };
-            const events = [
-                'DOMContentLoaded',
-                'elementor/lazyload/observe',
-            ];
-            events.forEach((event) => {
-                document.addEventListener(event, lazyloadRunObserver);
-            });
-        </script>
-        <link rel="stylesheet" id="e-animations-css" href="./animations.min.css" type="text/css" media="all">
-        <script type="text/javascript" src="./imagesloaded-pkgd.js" id="imagesloaded-pkgd-js"></script>
-        <script type="text/javascript" src="./isotope-pkgd.js" id="isotope-pkgd-js"></script>
-        <script type="text/javascript" src="./ripples.min.js" id="ripples-js"></script>
-        <script type="text/javascript" src="./magnific-popup.js" id="magnific-popup-js"></script>
-        <script type="text/javascript" src="./counter-up.min.js" id="counterup-js"></script>
-        <script type="text/javascript" src="./odometer.js" id="odometer-js"></script>
-        <script type="text/javascript" src="./slick.min.js" id="slick-js-js"></script>
-        <script type="text/javascript" src="./swiper.min.js" id="swiper-js-js"></script>
-        <script type="text/javascript" src="./youtube-video.min.js" id="yt-player-js"></script>
-        <script type="text/javascript" src="./plugin-active.js" id="plugin-js"></script>
-        <script type="text/javascript" src="./hooks.min.js" id="wp-hooks-js"></script>
-        <script type="text/javascript" src="./i18n.min.js" id="wp-i18n-js"></script>
-        <script type="text/javascript" id="wp-i18n-js-after">
-            /* <![CDATA[ */
-            wp.i18n.setLocaleData({'text direction\u0004ltr': ['ltr']});
-            /* ]]> */
-        </script>
-        <script type="text/javascript" src="./index.js" id="swv-js"></script>
-        <script type="text/javascript" id="contact-form-7-js-extra">
-            /* <![CDATA[ */
-            var wpcf7 = {
-                "api": {
-                    "root": "https:\/\/bizmax-wp.laralink.com\/wp-json\/",
-                    "namespace": "contact-form-7\/v1"
-                }
-            };
-            /* ]]> */
-        </script>
-        <script type="text/javascript" src="./index(1).js" id="contact-form-7-js"></script>
-        <script type="text/javascript" src="./bootstrap.min.js" id="bootstrap-js"></script>
-        <script type="text/javascript" src="./meanmenu.js" id="meanmenu-js"></script>
-        <script type="text/javascript" src="./imagesloaded.min.js" id="imagesloaded-js"></script>
-        <script type="text/javascript" src="./masonry.min.js" id="masonry-js"></script>
-        <script type="text/javascript" src="./jquery.masonry.min.js" id="jquery-masonry-js"></script>
-        <script type="text/javascript" src="./main.js" id="bizmax-active-js"></script>
-        <script type="text/javascript" defer="" src="./forms.js" id="mc4wp-forms-api-js"></script>
-        <script type="text/javascript" src="./webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
-        <script type="text/javascript" src="./frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
-        <script type="text/javascript" src="./waypoints.min.js" id="elementor-waypoints-js"></script>
-        <script type="text/javascript" src="./core.min.js" id="jquery-ui-core-js"></script>
-        <script type="text/javascript" id="elementor-frontend-js-before">
-            /* <![CDATA[ */
-            var elementorFrontendConfig = {
-                "environmentMode": {"edit": false, "wpPreview": false, "isScriptDebug": false},
-                "i18n": {
-                    "shareOnFacebook": "Share on Facebook",
-                    "shareOnTwitter": "Share on Twitter",
-                    "pinIt": "Pin it",
-                    "download": "Download",
-                    "downloadImage": "Download image",
-                    "fullscreen": "Fullscreen",
-                    "zoom": "Zoom",
-                    "share": "Share",
-                    "playVideo": "Play Video",
-                    "previous": "Previous",
-                    "next": "Next",
-                    "close": "Close",
-                    "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right",
-                    "a11yCarouselPrevSlideMessage": "Previous slide",
-                    "a11yCarouselNextSlideMessage": "Next slide",
-                    "a11yCarouselFirstSlideMessage": "This is the first slide",
-                    "a11yCarouselLastSlideMessage": "This is the last slide",
-                    "a11yCarouselPaginationBulletMessage": "Go to slide"
-                },
-                "is_rtl": false,
-                "breakpoints": {"xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600},
-                "responsive": {
-                    "breakpoints": {
-                        "mobile": {
-                            "label": "Mobile Portrait",
-                            "value": 767,
-                            "default_value": 767,
-                            "direction": "max",
-                            "is_enabled": true
-                        },
-                        "mobile_extra": {
-                            "label": "Mobile Landscape",
-                            "value": 880,
-                            "default_value": 880,
-                            "direction": "max",
-                            "is_enabled": false
-                        },
-                        "tablet": {
-                            "label": "Tablet Portrait",
-                            "value": 1024,
-                            "default_value": 1024,
-                            "direction": "max",
-                            "is_enabled": true
-                        },
-                        "tablet_extra": {
-                            "label": "Tablet Landscape",
-                            "value": 1200,
-                            "default_value": 1200,
-                            "direction": "max",
-                            "is_enabled": false
-                        },
-                        "laptop": {
-                            "label": "Laptop",
-                            "value": 1366,
-                            "default_value": 1366,
-                            "direction": "max",
-                            "is_enabled": false
-                        },
-                        "widescreen": {
-                            "label": "Widescreen",
-                            "value": 2400,
-                            "default_value": 2400,
-                            "direction": "min",
-                            "is_enabled": false
-                        }
-                    }
-                },
-                "version": "3.23.4",
-                "is_static": false,
-                "experimentalFeatures": {
-                    "e_optimized_css_loading": true,
-                    "additional_custom_breakpoints": true,
-                    "container": true,
-                    "container_grid": true,
-                    "e_swiper_latest": true,
-                    "e_nested_atomic_repeaters": true,
-                    "e_onboarding": true,
-                    "home_screen": true,
-                    "ai-layout": true,
-                    "landing-pages": true,
-                    "e_lazyload": true
-                },
-                "urls": {
-                    "assets": "https:\/\/bizmax-wp.laralink.com\/wp-content\/plugins\/elementor\/assets\/",
-                    "ajaxurl": "https:\/\/bizmax-wp.laralink.com\/wp-admin\/admin-ajax.php"
-                },
-                "nonces": {"floatingButtonsClickTracking": "efa09fff94"},
-                "swiperClass": "swiper",
-                "settings": {"page": [], "editorPreferences": []},
-                "kit": {
-                    "active_breakpoints": ["viewport_mobile", "viewport_tablet"],
-                    "global_image_lightbox": "yes",
-                    "lightbox_enable_counter": "yes",
-                    "lightbox_enable_fullscreen": "yes",
-                    "lightbox_enable_zoom": "yes",
-                    "lightbox_enable_share": "yes",
-                    "lightbox_title_src": "title",
-                    "lightbox_description_src": "description"
-                },
-                "post": {"id": 17, "title": "Bizmax", "excerpt": "", "featuredImage": false}
-            };
-            /* ]]> */
-        </script>
-        <script type="text/javascript" src="./frontend.min.js" id="elementor-frontend-js"></script>
+        <link rel="stylesheet" id="e-animations-css" href="{{ asset('source/animations.min.css') }}" type="text/css" media="all">
+        <script type="text/javascript" src="{{ asset('source/imagesloaded-pkgd.js') }}" id="imagesloaded-pkgd-js"></script>
+        <script type="text/javascript" src="{{ asset('source/isotope-pkgd.js') }}" id="isotope-pkgd-js"></script>
+        <script type="text/javascript" src="{{ asset('source/ripples.min.js') }}" id="ripples-js"></script>
+{{--        <script type="text/javascript" src="{{ asset('source/magnific-popup.js') }}" id="magnific-popup-js"></script>--}}
+        <script type="text/javascript" src="{{ asset('source/counter-up.min.js') }}" id="counterup-js"></script>
+        <script type="text/javascript" src="{{ asset('source/odometer.js') }}" id="odometer-js"></script>
+        <script type="text/javascript" src="{{ asset('source/slick.min.js') }}" id="slick-js-js"></script>
+        <script type="text/javascript" src="{{ asset('source/swiper.min.js') }}" id="swiper-js-js"></script>
+        <script type="text/javascript" src="{{ asset('source/youtube-video.min.js') }}" id="yt-player-js"></script>
+        <script type="text/javascript" src="{{ asset('source/plugin-active.js') }}" id="plugin-js"></script>
+        <script type="text/javascript" src="{{ asset('source/hooks.min.js') }}" id="wp-hooks-js"></script>
+        <script type="text/javascript" src="{{ asset('source/i18n.min.js') }}" id="wp-i18n-js"></script>
+        <script type="text/javascript" src="{{ asset('source/index.js') }}" id="swv-js"></script>
+        <script type="text/javascript" src="{{ asset('source/scripts/custom.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('source/index(1).js') }}" id="contact-form-7-js"></script>
+        <script type="text/javascript" src="{{ asset('source/bootstrap.min.js') }}" id="bootstrap-js"></script>
+        <script type="text/javascript" src="{{ asset('source/meanmenu.js') }}" id="meanmenu-js"></script>
+        <script type="text/javascript" src="{{ asset('source/imagesloaded.min.js') }}" id="imagesloaded-js"></script>
+        <script type="text/javascript" src="{{ asset('source/masonry.min.js') }}" id="masonry-js"></script>
+        <script type="text/javascript" src="{{ asset('source/jquery.masonry.min.js') }}" id="jquery-masonry-js"></script>
+        <script type="text/javascript" src="{{ asset('source/main.js') }}" id="bizmax-active-js"></script>
+        <script type="text/javascript" defer="" src="{{ asset('source/forms.js') }}" id="mc4wp-forms-api-js"></script>
+        <script type="text/javascript" src="{{ asset('source/webpack.runtime.min.js') }}" id="elementor-webpack-runtime-js"></script>
+        <script type="text/javascript" src="{{ asset('source/frontend-modules.min.js') }}" id="elementor-frontend-modules-js"></script>
+        <script type="text/javascript" src="{{ asset('source/waypoints.min.js') }}" id="elementor-waypoints-js"></script>
+        <script type="text/javascript" src="{{ asset('source/core.min.js') }}" id="jquery-ui-core-js"></script>
+        <script type="text/javascript" src="{{ asset("source/frontend.min.js") }}" id="elementor-frontend-js"></script>
 
 
     </div>
@@ -6898,7 +5496,7 @@
         <div class="cs_video_popup-container">
             <div class="cs_video_popup-align">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="./saved_resource(2).html"></iframe>
+                    <iframe class="embed-responsive-item" src="{{ asset('source/saved_resource(2).html') }}"></iframe>
                 </div>
             </div>
             <div class="cs_video_popup-close"></div>

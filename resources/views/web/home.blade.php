@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<!-- saved from url=(0265)https://preview.themeforest.net/item/bizmax-corporate-and-consulting-business-wordpress-theme/full_screen_preview/47410493?_ga=2.228493789.1920409877.1722238292-655095871.1722238292&_gac=1.144837120.1722242424.EAIaIQobChMIof2e_ezLhwMVoWaRBR0TaSrxEAAYASAAEgKm5fD_BwE -->
 <html lang="en" class="no-js">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <link rel="dns-prefetch" href="https://s3.envato.com/">
+{{--    <link rel="dns-prefetch" href="https://s3.envato.com/">--}}
     <link rel="preload"
           href="https://public-assets.envato-static.com/assets/generated_sprites/logos-20f56d7ae7a08da2c6698db678490c591ce302aedb1fcd05d3ad1e1484d3caf9.png"
           as="image">
@@ -13,14 +12,16 @@
           as="image">
 
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Bizmax - Corporate And Consulting Business WordPress Theme Preview - ThemeForest</title>
+    <title>Yunusobod</title>
     <meta name="description"
-          content="&amp;lt;a target=&amp;quot;_blank&amp;quot; href=&amp;quot;https://themeforest.net/item/bizmax-corporate-and-cons...">
+          content="&amp;lt;a target=&amp;quot;_blank&amp;quot; href=&amp;quot;
+          https://themeforest.net/item/bizmax-corporate-and-cons...">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
     <meta name="turbo-visit-control" content="reload">
 
-    <script type="text/javascript" async="" src="{{ asset("./source/js") }}" nonce="/xK9pcVeqNdkf5qeBPg/uw=="></script>
+    <script type="text/javascript" async="" src="{{ asset("./source/js") }}"
+            nonce="/xK9pcVeqNdkf5qeBPg/uw=="></script>
     <script async="" src="{{ asset("./source/gtm.js") }}"></script>
     <script type="text/javascript" async="" src="{{ asset("./source/js(1)") }}"
             nonce="/xK9pcVeqNdkf5qeBPg/uw=="></script>
@@ -55,9 +56,9 @@
         //]]>
     </script>
     <link rel="stylesheet" media="all"
-          href="./source/index-dd9847f84fb155bc40f7567e229024b41421fea59832d7b3387b43b4edfcd38a.css">
+          href="{{ asset('source/index-dd9847f84fb155bc40f7567e229024b41421fea59832d7b3387b43b4edfcd38a.css') }}">
     <link rel="stylesheet" media="all"
-          href="./source/index-457550c0311c719db250e79989e7462091be593549fb6bcb3801c9182189d1e5.css">
+          href="{{ asset('source/index-457550c0311c719db250e79989e7462091be593549fb6bcb3801c9182189d1e5.css') }}">
 
     <link rel="apple-touch-icon-precomposed" type="image/x-icon"
           href="https://public-assets.envato-static.com/assets/icons/favicons/apple-touch-icon-72x72-precomposed-ea6fb08063069270d41814bdcea6a36fee5fffaba8ec1f0be6ccf3ebbb63dddb.png"
@@ -112,19 +113,20 @@
 <div class="preview__header">
     <div class="preview__envato-logo">
         <a class="header-envato_market"
-           href="https://themeforest.net/item/bizmax-corporate-and-consulting-business-wordpress-theme/47410493?_gl=1*q3be8l*_ga*MTI2NzYwNjE3LjE3MjY1MDI2MDI.*_ga_ZKBVC1X78F*MTcyNjg1NjYyNS4yLjEuMTcyNjg1Njg2NS41Ni4wLjA.&amp;_ga=2.18494832.831193712.1726856619-126760617.1726502602">Envato
+           href="https://themeforest.net/item/bizmax-corporate-and-consulting-business-wordpress-theme/47410493?_gl=1*q3be8l*_ga*MTI2NzYwNjE3LjE3MjY1MDI2MDI.*_ga_ZKBVC1X78F*MTcyNjg1NjYyNS4yLjEuMTcyNjg1Njg2NS41Ni4wLjA.&amp;_ga=2.18494832.831193712.1726856619-126760617.1726502602">
+            Envato
             Market</a>
     </div>
 
     <div id="js-preview__actions" class="preview__actions">
         <div class="preview__action--buy">
             <a class="header-buy-now e-btn--3d -color-primary"
-               href="https://themeforest.net/checkout/from_item/47410493?license=regular&amp;support=bundle_6month">Buy
-                now</a>
+               href="https://themeforest.net/checkout/from_item/47410493?license=regular&amp;support=bundle_6month">
+                Buy now</a>
         </div>
     </div>
 </div>
-<iframe class="full-screen-preview__frame" src="{{ asset("./source/saved_resource.html") }}" name="preview-frame"
+<iframe class="full-screen-preview__frame" src="{{ url("/saved_resource") }}" name="preview-frame"
         frameborder="0" noresize="noresize" data-view="fullScreenPreview"
         allow="geolocation &#39;self&#39;; autoplay &#39;self&#39;" style="height: 563px;">
 </iframe>
@@ -206,7 +208,7 @@
 
 <div id="affiliate-tracker" class="is-hidden" data-view="affiliatesTracker" data-cookiebot-enabled="true"></div>
 
-<script src="{{ asset("./source/uc.js") }}" data-cbid="d10f7659-aa82-4007-9cf1-54a9496002bf"
+<script src="{{ asset("source/uc.js") }}" data-cbid="d10f7659-aa82-4007-9cf1-54a9496002bf"
         data-georegions="{&quot;region&quot;:&quot;US&quot;,&quot;cbid&quot;:&quot;d9683f70-895f-4427-97dc-f1087cddf9d8&quot;}"
         async="async" id="Cookiebot" nonce="/xK9pcVeqNdkf5qeBPg/uw=="></script>
 
@@ -651,5 +653,6 @@
 <iframe tabindex="-1" role="presentation" aria-hidden="true" title="Blank" src="{{ asset("./source/bc-v4.min.html") }}"
         style="position: absolute; width: 1px; height: 1px; top: -9999px;"></iframe>
 <img id="CookiebotSessionPixel" src="{{ asset("./source/1.gif") }}" alt="Cookiebot session tracker icon loaded"
-     data-cookieconsent="ignore" style="display: none;"></body>
+     data-cookieconsent="ignore" style="display: none;">
+</body>
 </html>

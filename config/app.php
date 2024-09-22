@@ -81,7 +81,8 @@ return [
     'locale' => env('APP_LOCALE', 'uz'),
     'languages' => [
         "uz",
-        "ru"
+        "ru",
+        "en",
     ],
 
     'fallback_locale' => env('APP_FALLBACK_LOCALE', 'uz'),

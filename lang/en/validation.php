@@ -189,6 +189,37 @@ return [
     |
     */
 
-    'attributes' => [],
-
+    'attributes' => [
+        'name' => 'Name',
+        'address' => 'Address',
+        'description' => "Description",
+        'created_at' => 'Created Time',
+        'phone' => 'Phone number',
+        'pinfl' => 'PINFL',
+        'birthdate' => 'Date of Birth',
+        'fullname' => 'FISH',
+        'passport' => 'Passport Series and Number',
+        'password' => 'Password',
+        'name.uz' =>'Name(uz)',
+        'name.ru' =>'Name(ru)',
+        'title' => 'Title',
+        'title.uz' => 'Title (uz)',
+        'title.ru' => 'Title (ru)',
+        'files.*.file' => 'File',
+        'file' => 'File',
+        'username' => 'Username',
+        'date' => 'Date',
+        'duration' => 'Duration',
+        'begin_date' => 'Start Date',
+        'end_date' => 'End Date',
+        'quantity' => 'Quantity',
+        'remaining_quantity' => 'Remaining Quantity',
+        'date_entered' => 'Date Entered',
+        'expiry_date' => 'Expiry date',
+        'date_given' => 'Date Given',
+        'entry_date' => 'Expiry date',
+        'from' => "Start Date ",
+        'to' => "End Date ",
+        'photo' => "Profile Picture"
+    ],
 ];
