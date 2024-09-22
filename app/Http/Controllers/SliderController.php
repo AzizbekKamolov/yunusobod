@@ -1,10 +1,11 @@
 <?php
+declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
-use Akbarali\ActionData\ActionDataException;
 use Akbarali\ViewModel\PaginationViewModel;
 use App\ActionData\Slider\SliderActionData;
+use App\ActionData\Slider\UpdateSliderActionData;
 use App\Services\SliderService;
 use App\ViewModels\Slider\SliderViewModel;
 use Illuminate\Http\RedirectResponse;
@@ -44,13 +45,23 @@ class SliderController extends Controller
      * @param Request $request
      * @return RedirectResponse
      * @throws ValidationException
-     * @throws ActionDataException
      */
     public function store(SliderActionData $actionData): RedirectResponse
     {
         $this->service->createSlider($actionData);
         return redirect()->route('sliders.index')
             ->with('success', trans('form.success_create', ['attribute' => trans('form.sliders.sliders')]));
+    }
+
+    /**
+     * @param int $id
+     * @return RedirectResponse
+     */
+    public function setOrder(int $id): RedirectResponse
+    {
+        $this->service->setOrder($id);
+        return redirect()->route('sliders.index')
+            ->with('success', trans('form.success_update', ['attribute' => trans('form.sliders.sliders')]));
     }
 
     /**
@@ -66,19 +77,15 @@ class SliderController extends Controller
     }
 
     /**
-     * @param Request $request
+     * @param UpdateSliderActionData $actionData
      * @param int $id
      * @return RedirectResponse
-     * @throws ValidationException
-     * @throws ActionDataException
      */
-    public function update(Request $request, int $id): RedirectResponse
+    public function update(UpdateSliderActionData $actionData, int $id): RedirectResponse
     {
-
-        $actionDAta = CreatePermissionActionData::fromRequest($request);
-        $this->service->updatePermission($actionDAta, $id);
-        return redirect()->route('permissions.index')
-            ->with('success', trans('form.success_update', ['attribute' => trans('form.permissions.permission')]));
+        $this->service->updateSlider($actionData, $id);
+        return redirect()->route('sliders.index')
+            ->with('success', trans('form.success_update', ['attribute' => trans('form.sliders.slider')]));
     }
 
     /**
@@ -87,8 +94,8 @@ class SliderController extends Controller
      */
     public function delete(int $id): RedirectResponse
     {
-        $this->service->deletePermission($id);
-        return redirect()->route('permissions.index')
-            ->with('success', trans('form.success_delete', ['attribute' => trans('form.permissions.permission')]));
+        $this->service->deleteSlider($id);
+        return redirect()->route('sliders.index')
+            ->with('success', trans('form.success_delete', ['attribute' => trans('form.sliders.slider')]));
     }
 }

@@ -62,6 +62,7 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
         Route::post('store', 'store')->name('store')->can('sliders.store');
         Route::get('create', 'create')->name('create')->can('sliders.store');
         Route::put('update/{id}', 'update')->name('update')->can('sliders.update');
+        Route::get('set-order/{id}', 'setOrder')->name('setOrder')->can('sliders.update');
         Route::get('edit/{id}', 'edit')->name('edit')->can('sliders.update');
         Route::get('delete/{id}', 'delete')->name('delete')->can('sliders.delete');
     });

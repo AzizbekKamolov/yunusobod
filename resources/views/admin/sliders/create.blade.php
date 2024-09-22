@@ -47,13 +47,6 @@
                                                 <div class="text-danger">{{ $errors->first('body.uz') }}</div>
                                             @endif
                                         </div>
-                                        <div class="col-md-12 mb-3">
-                                            <label for="file">{{ __('form.sliders.file') }}</label>
-                                            <input type="file" class="form-control" id="file" name="file">
-                                            @if($errors->has('file'))
-                                                <div class="text-danger">{{ $errors->first('file') }}</div>
-                                            @endif
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade active show" id="navs-top-profile-bgcolor">
@@ -79,13 +72,7 @@
                                                 <div class="text-danger">{{ $errors->first('body.ru') }}</div>
                                             @endif
                                         </div>
-                                        <div class="col-md-12 mb-3">
-                                            <label for="file">{{ __('form.sliders.file') }}</label>
-                                            <input type="file" class="form-control" id="file" name="file">
-                                            @if($errors->has('file'))
-                                                <div class="text-danger">{{ $errors->first('file') }}</div>
-                                            @endif
-                                        </div>
+
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="navs-top-messages-bgcolor">
@@ -111,15 +98,16 @@
                                                 <div class="text-danger">{{ $errors->first('body.en') }}</div>
                                             @endif
                                         </div>
-                                        <div class="col-md-12 mb-3">
-                                            <label for="file">{{ __('form.sliders.file') }}</label>
-                                            <input type="file" class="form-control" id="file" name="file">
-                                            @if($errors->has('file'))
-                                                <div class="text-danger">{{ $errors->first('file') }}</div>
-                                            @endif
-                                        </div>
+
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="file">{{ __('form.sliders.file') }}</label>
+                                <input type="file" class="form-control" id="file" name="file">
+                                @if($errors->has('file'))
+                                    <div class="text-danger">{{ $errors->first('file') }}</div>
+                                @endif
                             </div>
                         </div>
 

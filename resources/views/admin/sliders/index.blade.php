@@ -42,10 +42,10 @@
                                 <td>{{ $item->bodyH }}</td>
                                 <td>
                                     @if(!$loop->first)
-                                        <a href=""><i class="fa fa-arrow-up"></i></a>
+                                        <a href="{{ route('sliders.setOrder', [-$item->id]) }}"><i class="fa fa-arrow-up"></i></a>
                                     @endif
                                     @if(!$loop->last)
-                                        <a href=""><i class="fa fa-arrow-down"></i></a>
+                                        <a href="{{ route('sliders.setOrder', [$item->id]) }}"><i class="fa fa-arrow-down"></i></a>
                                     @endif
                                 </td>
                                 <td><span class="badge @if($item->active) badge-success @else badge-danger @endif">{{ $item->activeName }}</span></td>
