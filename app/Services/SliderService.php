@@ -121,4 +121,10 @@ class SliderService
     {
         return SliderData::fromModel($this->getOne($id));
     }
+
+    public function getAllSliders()
+    {
+        $sliders = SliderModel::query()->orderBy('order')->where('active', true)->get();
+        return $sliders->transform(fn (SliderModel $data) => SliderData::fromModel($data));
+    }
 }

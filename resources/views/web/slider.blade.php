@@ -17,24 +17,31 @@
 
                         <!-- Start Hero -->
 
-                        <section
-                            class="cs_hero_1-wrap position-relative cs_hero_slider bg-primary">
+                        <section class="cs_hero_1-wrap position-relative cs_hero_slider bg-primary">
 
 
-                            <div
-                                class="cs_social_btns d-flex flex-column cs_column_gap_15 cs_row_gap_15 cs_transition_5 position-absolute cs_zindex_5 ">
+                            <div class="cs_social_btns d-flex flex-column cs_column_gap_15 cs_row_gap_15 cs_transition_5 position-absolute cs_zindex_5 ">
+                                <a href="https://bizmax-wp.laralink.com/#" class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="10" viewBox="0 0 320 512">
+                                        <path fill="#FFF" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+                                    {{--                                    <i class="fab fa-file"></i></a>--}}
+                                </a>
                                 <a href="https://bizmax-wp.laralink.com/#"
-                                   class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i
-                                        class="fab fa-facebook-f"></i></a><a
-                                    href="https://bizmax-wp.laralink.com/#"
-                                    class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i
-                                        class="fab fa-twitter"></i></a><a
-                                    href="https://bizmax-wp.laralink.com/#"
-                                    class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i
-                                        class="fab fa-linkedin-in"></i></a><a
-                                    href="https://bizmax-wp.laralink.com/#"
-                                    class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i
-                                        class="fab fa-dribbble"></i></a>
+                                    class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="40" width="20" viewBox="0 0 512 512">
+                                        <path  fill="#FFF" d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg>
+                                </a>
+                                <a href="https://bizmax-wp.laralink.com/#"
+                                   class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="40" width="20" viewBox="0 0 448 512">
+                                        <path fill="#FFF" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                                </a>
+                                <a href="https://bizmax-wp.laralink.com/#"
+                                    class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 0 496 512">
+                                        <path fill="#FFF" d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z"/></svg>
+                                </a>
 
                             </div>
 
@@ -47,71 +54,50 @@
                                          style="cursor: grab; transform: translate3d(-3843px, 0px, 0px); transition-duration: 0ms;"
                                          id="swiper-wrapper-d320b24bfa01489e"
                                          aria-live="off">
-                                        <div
-                                            class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
-                                            data-swiper-slide-index="0"
-                                            role="group" aria-label="1 / 3"
-                                            style="width: 1281px; transition: all;">
+                                        @foreach($sliders as $slider)
 
                                             <div
-                                                class="cs_hero cs_style_1 d-flex align-items-center justify-content-center background-filled position-relative overflow-hidden">
+                                                class="swiper-slide swiper-slide-visible swiper-slide-active "
+{{--                                                class="swiper-slide @if($loop->iteration == 1) swiper-slide-visible swiper-slide-active @elseif($loop->iteration == 2) swiper-slide-next @else swiper-slide-duplicate-prev @endif "--}}
+                                                data-swiper-slide-index="{{ $loop->iteration-1 }}"
+                                                role="group" aria-label="{{ $loop->iteration }} / {{ count($sliders) }}"
+                                                style="width: 1281px; transition: all;">
 
-                                                <figure
-                                                    class="cs_swiper_parallax_bg"
-                                                    style="background-image:
-                                                                                                url('https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_1.jpeg'); transform: translateX(1921.5px); transition: all;">
+                                                <div
+                                                    class="cs_hero cs_style_1 d-flex align-items-center justify-content-center background-filled position-relative overflow-hidden">
 
-                                                    <img decoding="async"
-                                                         src="{{ asset('source/hero_slider_1.jpeg') }}"
-                                                         alt="Slider"
-                                                         class="cs_entity_img">
+                                                    <figure
+                                                        class="cs_swiper_parallax_bg"
+                                                        style="background-image: url('{{ asset("sliders/$slider->file") }}'); transform: translateX(0px); transition: all;">
 
-                                                    <div
-                                                        class="bg-primary opacity-75 position-absolute w-100 h-100 start-0 top-0"></div>
-
-                                                </figure>
-
-                                                <div class="container">
-
-                                                    <div
-                                                        class="cs_hero_text position-relative cs_zindex_5 d-inline-block">
-
-                                                        <h2 class="text-white cs_mb_5 fw-normal cs_fs_18">
-                                                            This Week Only
-                                                            for World
-                                                            Premier</h2>
-
-                                                        <h1 class="text-white cs_mb_16 cs_fs_60 cs_fs_lg_46">
-
-                                                            Inventive and
-                                                            interested <br>
-                                                            in innovation
-
-                                                        </h1>
-
-                                                        <p class="text-white cs_mb_20">
-
-                                                            I have been a
-                                                            loyal customer
-                                                            of this auto
-                                                            parts company
-                                                            for years and I
-                                                            cannot <br>
-                                                            recommend them
-                                                            enough. Their
-                                                            extensive
-                                                            selection of
-                                                            high-quality
-                                                            parts and <br>
-                                                            accessories.
-
-                                                        </p>
+                                                        <img decoding="async"
+                                                             src="{{ asset("sliders/$slider->file") }}"
+                                                             alt="Slider"
+                                                             class="cs_entity_img">
 
                                                         <div
-                                                            class="cs_hero_btn">
+                                                            class="bg-primary opacity-75 position-absolute w-100 h-100 start-0 top-0"></div>
 
-                                                            <a href="https://bizmax-wp.laralink.com/contact"
-                                                               class="cs_btn cs_style_1 cs_fs_14 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden"><span>Get A Quote</span></a>
+                                                    </figure>
+
+                                                    <div class="container">
+
+                                                        <div
+                                                            class="cs_hero_text position-relative cs_zindex_5 d-inline-block">
+
+                                                            <h2 class="text-white cs_mb_5 fw-normal cs_fs_18">{{ $slider->titleH }}</h2>
+
+                                                            <h1 class="text-white cs_mb_16 cs_fs_60 cs_fs_lg_46">{{ $slider->contentH }}</h1>
+
+                                                            <p class="text-white cs_mb_20">{{ $slider->bodyH }} </p>
+
+                                                            <div
+                                                                class="cs_hero_btn">
+
+                                                                <a href="https://bizmax-wp.laralink.com/contact"
+                                                                   class="cs_btn cs_style_1 cs_fs_14 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden"><span>Get A Quote</span></a>
+
+                                                            </div>
 
                                                         </div>
 
@@ -120,612 +106,13 @@
                                                 </div>
 
                                             </div>
+                                        @endforeach
 
-                                        </div>
-                                        <div
-                                            class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
-                                            data-swiper-slide-index="1"
-                                            role="group" aria-label="2 / 3"
-                                            style="width: 1281px; transition: all;">
 
-                                            <div
-                                                class="cs_hero cs_style_1 d-flex align-items-center justify-content-center background-filled position-relative overflow-hidden">
-
-                                                <figure
-                                                    class="cs_swiper_parallax_bg"
-                                                    style="background-image: url('https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_2.jpeg'); transform: translateX(1281px); transition: all;">
-
-                                                    <img decoding="async"
-                                                         src="{{ asset('source/hero_slider_2.jpeg') }}"
-                                                         alt="Slider"
-                                                         class="cs_entity_img">
-
-                                                    <div
-                                                        class="bg-primary opacity-75 position-absolute w-100 h-100 start-0 top-0"></div>
-
-                                                </figure>
-
-                                                <div class="container">
-
-                                                    <div
-                                                        class="cs_hero_text position-relative cs_zindex_5 d-inline-block">
-
-                                                        <h2 class="text-white cs_mb_5 fw-normal cs_fs_18">
-                                                            This Week Only
-                                                            for World
-                                                            Premier</h2>
-
-                                                        <h1 class="text-white cs_mb_16 cs_fs_60 cs_fs_lg_46">
-
-                                                            Inventive and
-                                                            interested <br>
-                                                            in innovation
-
-                                                        </h1>
-
-                                                        <p class="text-white cs_mb_20">
-
-                                                            I have been a
-                                                            loyal customer
-                                                            of this auto
-                                                            parts company
-                                                            for years and I
-                                                            cannot <br>
-                                                            recommend them
-                                                            enough. Their
-                                                            extensive
-                                                            selection of
-                                                            high-quality
-                                                            parts and <br>
-                                                            accessories.
-
-                                                        </p>
-
-                                                        <div
-                                                            class="cs_hero_btn">
-
-                                                            <a href="https://bizmax-wp.laralink.com/contact"
-                                                               class="cs_btn cs_style_1 cs_fs_14 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden"><span>Get A Quote</span></a>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-                                        <div
-                                            class="swiper-slide swiper-slide-duplicate swiper-slide-prev"
-                                            data-swiper-slide-index="2"
-                                            role="group" aria-label="3 / 3"
-                                            style="width: 1281px; transition: all;">
-
-                                            <div
-                                                class="cs_hero cs_style_1 d-flex align-items-center justify-content-center background-filled position-relative overflow-hidden">
-
-                                                <figure
-                                                    class="cs_swiper_parallax_bg"
-                                                    style="background-image: url('https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_3.jpeg'); transform: translateX(640.5px); transition: all;">
-
-                                                    <img decoding="async"
-                                                         src="{{ asset('source/hero_slider_3.jpeg') }}"
-                                                         alt="Slider"
-                                                         class="cs_entity_img">
-
-                                                    <div
-                                                        class="bg-primary opacity-75 position-absolute w-100 h-100 start-0 top-0"></div>
-
-                                                </figure>
-
-                                                <div class="container">
-
-                                                    <div
-                                                        class="cs_hero_text position-relative cs_zindex_5 d-inline-block">
-
-                                                        <h2 class="text-white cs_mb_5 fw-normal cs_fs_18">
-                                                            This Week Only
-                                                            for World
-                                                            Premier</h2>
-
-                                                        <h1 class="text-white cs_mb_16 cs_fs_60 cs_fs_lg_46">
-
-                                                            Inventive and
-                                                            interested <br>
-                                                            in innovation
-
-                                                        </h1>
-
-                                                        <p class="text-white cs_mb_20">
-
-                                                            I have been a
-                                                            loyal customer
-                                                            of this auto
-                                                            parts company
-                                                            for years and I
-                                                            cannot <br>
-                                                            recommend them
-                                                            enough. Their
-                                                            extensive
-                                                            selection of
-                                                            high-quality
-                                                            parts and <br>
-                                                            accessories.
-
-                                                        </p>
-
-                                                        <div
-                                                            class="cs_hero_btn">
-
-                                                            <a href="https://bizmax-wp.laralink.com/contact"
-                                                               class="cs_btn cs_style_1 cs_fs_14 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden"><span>Get A Quote</span></a>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                        <div
-                                            class="swiper-slide swiper-slide-visible swiper-slide-active"
-                                            data-swiper-slide-index="0"
-                                            role="group" aria-label="1 / 3"
-                                            style="width: 1281px; transition: all;">
-
-                                            <div
-                                                class="cs_hero cs_style_1 d-flex align-items-center justify-content-center background-filled position-relative overflow-hidden">
-
-                                                <figure
-                                                    class="cs_swiper_parallax_bg"
-                                                    style="background-image: url('https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_1.jpeg'); transform: translateX(0px); transition: all;">
-
-                                                    <img decoding="async"
-                                                         src="{{ asset('source/hero_slider_1.jpeg') }}"
-                                                         alt="Slider"
-                                                         class="cs_entity_img">
-
-                                                    <div
-                                                        class="bg-primary opacity-75 position-absolute w-100 h-100 start-0 top-0"></div>
-
-                                                </figure>
-
-                                                <div class="container">
-
-                                                    <div
-                                                        class="cs_hero_text position-relative cs_zindex_5 d-inline-block">
-
-                                                        <h2 class="text-white cs_mb_5 fw-normal cs_fs_18">
-                                                            This Week Only
-                                                            for World
-                                                            Premier</h2>
-
-                                                        <h1 class="text-white cs_mb_16 cs_fs_60 cs_fs_lg_46">
-
-                                                            Inventive and
-                                                            interested <br>
-                                                            in innovation
-
-                                                        </h1>
-
-                                                        <p class="text-white cs_mb_20">
-
-                                                            I have been a
-                                                            loyal customer
-                                                            of this auto
-                                                            parts company
-                                                            for years and I
-                                                            cannot <br>
-                                                            recommend them
-                                                            enough. Their
-                                                            extensive
-                                                            selection of
-                                                            high-quality
-                                                            parts and <br>
-                                                            accessories.
-
-                                                        </p>
-
-                                                        <div
-                                                            class="cs_hero_btn">
-
-                                                            <a href="https://bizmax-wp.laralink.com/contact"
-                                                               class="cs_btn cs_style_1 cs_fs_14 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden"><span>Get A Quote</span></a>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-
-                                        <div
-                                            class="swiper-slide swiper-slide-next"
-                                            data-swiper-slide-index="1"
-                                            role="group" aria-label="2 / 3"
-                                            style="width: 1281px; transition: all;">
-
-                                            <div
-                                                class="cs_hero cs_style_1 d-flex align-items-center justify-content-center background-filled position-relative overflow-hidden">
-
-                                                <figure
-                                                    class="cs_swiper_parallax_bg"
-                                                    style="background-image: url('https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_2.jpeg'); transform: translateX(-640.5px); transition: all;">
-
-                                                    <img decoding="async"
-                                                         src="{{ asset('source/hero_slider_2.jpeg') }}"
-                                                         alt="Slider"
-                                                         class="cs_entity_img">
-
-                                                    <div
-                                                        class="bg-primary opacity-75 position-absolute w-100 h-100 start-0 top-0"></div>
-
-                                                </figure>
-
-                                                <div class="container">
-
-                                                    <div
-                                                        class="cs_hero_text position-relative cs_zindex_5 d-inline-block">
-
-                                                        <h2 class="text-white cs_mb_5 fw-normal cs_fs_18">
-                                                            This Week Only
-                                                            for World
-                                                            Premier</h2>
-
-                                                        <h1 class="text-white cs_mb_16 cs_fs_60 cs_fs_lg_46">
-
-                                                            Inventive and
-                                                            interested <br>
-                                                            in innovation
-
-                                                        </h1>
-
-                                                        <p class="text-white cs_mb_20">
-
-                                                            I have been a
-                                                            loyal customer
-                                                            of this auto
-                                                            parts company
-                                                            for years and I
-                                                            cannot <br>
-                                                            recommend them
-                                                            enough. Their
-                                                            extensive
-                                                            selection of
-                                                            high-quality
-                                                            parts and <br>
-                                                            accessories.
-
-                                                        </p>
-
-                                                        <div
-                                                            class="cs_hero_btn">
-
-                                                            <a href="https://bizmax-wp.laralink.com/contact"
-                                                               class="cs_btn cs_style_1 cs_fs_14 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden"><span>Get A Quote</span></a>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-
-                                        <div
-                                            class="swiper-slide swiper-slide-duplicate-prev"
-                                            data-swiper-slide-index="2"
-                                            role="group" aria-label="3 / 3"
-                                            style="width: 1281px; transition: all;">
-
-                                            <div
-                                                class="cs_hero cs_style_1 d-flex align-items-center justify-content-center background-filled position-relative overflow-hidden">
-
-                                                <figure
-                                                    class="cs_swiper_parallax_bg"
-                                                    style="background-image: url('https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_3.jpeg'); transform: translateX(-1281px); transition: all;">
-
-                                                    <img decoding="async"
-                                                         src="{{ asset('source/hero_slider_3.jpeg') }}"
-                                                         alt="Slider"
-                                                         class="cs_entity_img">
-
-                                                    <div
-                                                        class="bg-primary opacity-75 position-absolute w-100 h-100 start-0 top-0"></div>
-
-                                                </figure>
-
-                                                <div class="container">
-
-                                                    <div
-                                                        class="cs_hero_text position-relative cs_zindex_5 d-inline-block">
-
-                                                        <h2 class="text-white cs_mb_5 fw-normal cs_fs_18">
-                                                            This Week Only
-                                                            for World
-                                                            Premier</h2>
-
-                                                        <h1 class="text-white cs_mb_16 cs_fs_60 cs_fs_lg_46">
-
-                                                            Inventive and
-                                                            interested <br>
-                                                            in innovation
-
-                                                        </h1>
-
-                                                        <p class="text-white cs_mb_20">
-
-                                                            I have been a
-                                                            loyal customer
-                                                            of this auto
-                                                            parts company
-                                                            for years and I
-                                                            cannot <br>
-                                                            recommend them
-                                                            enough. Their
-                                                            extensive
-                                                            selection of
-                                                            high-quality
-                                                            parts and <br>
-                                                            accessories.
-
-                                                        </p>
-
-                                                        <div
-                                                            class="cs_hero_btn">
-
-                                                            <a href="https://bizmax-wp.laralink.com/contact"
-                                                               class="cs_btn cs_style_1 cs_fs_14 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden"><span>Get A Quote</span></a>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-
-                                        <div
-                                            class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
-                                            data-swiper-slide-index="0"
-                                            role="group" aria-label="1 / 3"
-                                            style="width: 1281px; transition: all;">
-
-                                            <div
-                                                class="cs_hero cs_style_1 d-flex align-items-center justify-content-center background-filled position-relative overflow-hidden">
-
-                                                <figure
-                                                    class="cs_swiper_parallax_bg"
-                                                    style="background-image: url('https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_1.jpeg'); transform: translateX(-1921.5px); transition: all;">
-
-                                                    <img decoding="async"
-                                                         src="{{ asset('source/hero_slider_1.jpeg') }}"
-                                                         alt="Slider"
-                                                         class="cs_entity_img">
-
-                                                    <div
-                                                        class="bg-primary opacity-75 position-absolute w-100 h-100 start-0 top-0"></div>
-
-                                                </figure>
-
-                                                <div class="container">
-
-                                                    <div
-                                                        class="cs_hero_text position-relative cs_zindex_5 d-inline-block">
-
-                                                        <h2 class="text-white cs_mb_5 fw-normal cs_fs_18">
-                                                            This Week Only
-                                                            for World
-                                                            Premier</h2>
-
-                                                        <h1 class="text-white cs_mb_16 cs_fs_60 cs_fs_lg_46">
-
-                                                            Inventive and
-                                                            interested <br>
-                                                            in innovation
-
-                                                        </h1>
-
-                                                        <p class="text-white cs_mb_20">
-
-                                                            I have been a
-                                                            loyal customer
-                                                            of this auto
-                                                            parts company
-                                                            for years and I
-                                                            cannot <br>
-                                                            recommend them
-                                                            enough. Their
-                                                            extensive
-                                                            selection of
-                                                            high-quality
-                                                            parts and <br>
-                                                            accessories.
-
-                                                        </p>
-
-                                                        <div
-                                                            class="cs_hero_btn">
-
-                                                            <a href="https://bizmax-wp.laralink.com/contact"
-                                                               class="cs_btn cs_style_1 cs_fs_14 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden"><span>Get A Quote</span></a>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-                                        <div
-                                            class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
-                                            data-swiper-slide-index="1"
-                                            role="group" aria-label="2 / 3"
-                                            style="width: 1281px; transition: all;">
-
-                                            <div
-                                                class="cs_hero cs_style_1 d-flex align-items-center justify-content-center background-filled position-relative overflow-hidden">
-
-                                                <figure
-                                                    class="cs_swiper_parallax_bg"
-                                                    style="background-image: url('https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_2.jpeg'); transform: translateX(-2562px); transition: all;">
-
-                                                    <img decoding="async"
-                                                         src="{{ asset('source/hero_slider_2.jpeg') }}"
-                                                         alt="Slider"
-                                                         class="cs_entity_img">
-
-                                                    <div
-                                                        class="bg-primary opacity-75 position-absolute w-100 h-100 start-0 top-0"></div>
-
-                                                </figure>
-
-                                                <div class="container">
-
-                                                    <div
-                                                        class="cs_hero_text position-relative cs_zindex_5 d-inline-block">
-
-                                                        <h2 class="text-white cs_mb_5 fw-normal cs_fs_18">
-                                                            This Week Only
-                                                            for World
-                                                            Premier</h2>
-
-                                                        <h1 class="text-white cs_mb_16 cs_fs_60 cs_fs_lg_46">
-
-                                                            Inventive and
-                                                            interested <br>
-                                                            in innovation
-
-                                                        </h1>
-
-                                                        <p class="text-white cs_mb_20">
-
-                                                            I have been a
-                                                            loyal customer
-                                                            of this auto
-                                                            parts company
-                                                            for years and I
-                                                            cannot <br>
-                                                            recommend them
-                                                            enough. Their
-                                                            extensive
-                                                            selection of
-                                                            high-quality
-                                                            parts and <br>
-                                                            accessories.
-
-                                                        </p>
-
-                                                        <div
-                                                            class="cs_hero_btn">
-
-                                                            <a href="https://bizmax-wp.laralink.com/contact"
-                                                               class="cs_btn cs_style_1 cs_fs_14 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden"><span>Get A Quote</span></a>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-                                        <div
-                                            class="swiper-slide swiper-slide-duplicate"
-                                            data-swiper-slide-index="2"
-                                            role="group" aria-label="3 / 3"
-                                            style="width: 1281px; transition: all;">
-
-                                            <div
-                                                class="cs_hero cs_style_1 d-flex align-items-center justify-content-center background-filled position-relative overflow-hidden">
-
-                                                <figure
-                                                    class="cs_swiper_parallax_bg"
-                                                    style="background-image: url('https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/hero_slider_3.jpeg'); transform: translateX(-3202.5px); transition: all;">
-
-                                                    <img decoding="async"
-                                                         src="{{ asset('source/hero_slider_3.jpeg') }}"
-                                                         alt="Slider"
-                                                         class="cs_entity_img">
-
-                                                    <div
-                                                        class="bg-primary opacity-75 position-absolute w-100 h-100 start-0 top-0"></div>
-
-                                                </figure>
-
-                                                <div class="container">
-
-                                                    <div
-                                                        class="cs_hero_text position-relative cs_zindex_5 d-inline-block">
-
-                                                        <h2 class="text-white cs_mb_5 fw-normal cs_fs_18">
-                                                            This Week Only
-                                                            for World
-                                                            Premier</h2>
-
-                                                        <h1 class="text-white cs_mb_16 cs_fs_60 cs_fs_lg_46">
-
-                                                            Inventive and
-                                                            interested <br>
-                                                            in innovation
-
-                                                        </h1>
-
-                                                        <p class="text-white cs_mb_20">
-
-                                                            I have been a
-                                                            loyal customer
-                                                            of this auto
-                                                            parts company
-                                                            for years and I
-                                                            cannot <br>
-                                                            recommend them
-                                                            enough. Their
-                                                            extensive
-                                                            selection of
-                                                            high-quality
-                                                            parts and <br>
-                                                            accessories.
-
-                                                        </p>
-
-                                                        <div
-                                                            class="cs_hero_btn">
-
-                                                            <a href="https://bizmax-wp.laralink.com/contact"
-                                                               class="cs_btn cs_style_1 cs_fs_14 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden"><span>Get A Quote</span></a>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
                                     </div>
 
-                                    <div class="cs_slider_navigation d-flex cs_row_gap_15 flex-column position-absolute
-
-				cs_zindex_4">
+                                    <div
+                                        class="cs_slider_navigation d-flex cs_row_gap_15 flex-column position-absolute cs_zindex_4">
 
                                         <div
                                             class="cs_swiper_button_prev filter cs_height_45 cs_width_45 bg-white rounded-circle d-flex align-items-center justify-content-center bg-accent-hover cs_transition_4"

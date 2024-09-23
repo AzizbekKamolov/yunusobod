@@ -5,10 +5,14 @@ use App\Http\Controllers\{AuthController,
     PermissionController,
     RoleController,
     SliderController,
-    UserController};
+    UserController,
+    WebController
+};
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'web.home')->name('home');
+Route::controller(WebController::class)->group(function () {
+    Route::get('/', 'home')->name('home');
+});
 Route::view('/saved_resource', 'web.saved_resource');
 Route::controller(AuthController::class)->group(function () {
     Route::get('/login', 'index')->name('login');
