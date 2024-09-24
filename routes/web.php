@@ -2,12 +2,13 @@
 
 use App\Http\Controllers\{AuthController,
     DashboardController,
+    DirectionController,
+    EmployeeController,
     PermissionController,
     RoleController,
     SliderController,
     UserController,
-    WebController
-};
+    WebController};
 use Illuminate\Support\Facades\Route;
 
 Route::controller(WebController::class)->group(function () {
@@ -69,5 +70,25 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
         Route::get('set-order/{id}', 'setOrder')->name('setOrder')->can('sliders.update');
         Route::get('edit/{id}', 'edit')->name('edit')->can('sliders.update');
         Route::get('delete/{id}', 'delete')->name('delete')->can('sliders.delete');
+    });
+    //directions
+    Route::controller(DirectionController::class)->name('directions.')->prefix('directions')->group(function () {
+        Route::get('/', 'index')->name('index')->can('directions.index');
+        Route::post('store', 'store')->name('store')->can('directions.store');
+        Route::get('create', 'create')->name('create')->can('directions.store');
+        Route::put('update/{id}', 'update')->name('update')->can('directions.update');
+        Route::get('set-order/{id}', 'setOrder')->name('setOrder')->can('directions.update');
+        Route::get('edit/{id}', 'edit')->name('edit')->can('directions.update');
+        Route::get('delete/{id}', 'delete')->name('delete')->can('directions.delete');
+    });
+    //employees
+    Route::controller(EmployeeController::class)->name('employees.')->prefix('employees')->group(function () {
+        Route::get('/', 'index')->name('index')->can('employees.index');
+        Route::post('store', 'store')->name('store')->can('employees.store');
+        Route::get('create', 'create')->name('create')->can('employees.store');
+        Route::put('update/{id}', 'update')->name('update')->can('employees.update');
+        Route::get('set-order/{id}', 'setOrder')->name('setOrder')->can('employees.update');
+        Route::get('edit/{id}', 'edit')->name('edit')->can('employees.update');
+        Route::get('delete/{id}', 'delete')->name('delete')->can('employees.delete');
     });
 });

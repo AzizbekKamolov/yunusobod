@@ -47,7 +47,7 @@ return [
     'select' => ':attribute tanlang ',
     'dont_delete_departments' => 'O\'chirishni iloji yo\'q',
     'search' => 'Qidirish ...',
-    'choose' => 'Tanlang' ,
+    'choose' => 'Tanlang',
     'close' => 'Yopish',
     'target_blank' => 'Yangi sahifada ochish',
     'show' => 'Ko\'rish',
@@ -67,7 +67,16 @@ return [
         "body" => "Text",
         "file" => "Fayl",
     ],
-
-
-
+    'directions' => [
+        'directions' => "Yo'nalishlar",
+        'direction' => "Yo'nalish",
+        'description' => "Izoh",
+        'title' => "Yo'nalish nomi",
+    ],
+    'employees' => [
+        'employees' => "Xodimlar",
+        'employee' => "Xodim",
+        'fio' => "FIO",
+        'experience' => "Tajriba",
+    ]
 ];

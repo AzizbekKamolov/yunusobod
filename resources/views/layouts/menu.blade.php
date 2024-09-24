@@ -15,6 +15,14 @@
                     <a href="{{ route('sliders.index') }}"><i class="fa fa-sliders"></i>
                         <span>{{__('web.sliders')}}</span></a>
                 </li>
+                <li @if(request()->routeIs('directions.*')) class="active" @endif >
+                    <a href="{{ route('directions.index') }}"><i class="fa fa-bar-chart"></i>
+                        <span>{{__('form.directions.directions')}}</span></a>
+                </li>
+                <li @if(request()->routeIs('directions.*')) class="active" @endif >
+                    <a href="{{ route('directions.index') }}"><i class="fa fa-users"></i>
+                        <span>{{__('form.employees.employees')}}</span></a>
+                </li>
                 @canany(['roles.index','permissions.index','users.index'])
                     <li class="@if(request()->routeIs('roles.*','permissions.*','users.*')) active open @endif">
                         <a href="javascript:void(0);"><i class="fa fa-cogs"></i>

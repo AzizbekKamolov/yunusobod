@@ -24,7 +24,20 @@ class PermissionSeeder extends Seeder
         ["name" => "users.update", "guard_name" => "web",],
         ["name" => "users.delete", "guard_name" => "web",],
 
+        ["name" => "sliders.index", "guard_name" => "web",],
+        ["name" => "sliders.store", "guard_name" => "web",],
+        ["name" => "sliders.update", "guard_name" => "web",],
+        ["name" => "sliders.delete", "guard_name" => "web",],
 
+        ["name" => "directions.index", "guard_name" => "web",],
+        ["name" => "directions.store", "guard_name" => "web",],
+        ["name" => "directions.update", "guard_name" => "web",],
+        ["name" => "directions.delete", "guard_name" => "web",],
+
+        ["name" => "employees.index", "guard_name" => "web",],
+        ["name" => "employees.store", "guard_name" => "web",],
+        ["name" => "employees.update", "guard_name" => "web",],
+        ["name" => "employees.delete", "guard_name" => "web",],
 
     ];
 
