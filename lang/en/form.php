@@ -67,4 +67,12 @@ return [
         "body" => "Text",
         "file" => "File",
     ],
+    'employees' => [
+        'employees' => "Employees",
+        'employee' => "Employee",
+        'photo' => "Employee photo",
+        'fio' => "FIO",
+        'about' => "About",
+        'experience' => "Experience",
+    ]
 ];

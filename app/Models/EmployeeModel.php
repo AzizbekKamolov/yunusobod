@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 /**
  * @property int $id;
  * @property string $fio;
+ * @property string $photo;
  * @property int $direction_id;
  * @property int $experience;
  * @property array $about;
@@ -23,10 +24,11 @@ class EmployeeModel extends Model
 {
     use HasFactory, EloquentFilterTrait;
 
-    protected $table = 'employee';
+    protected $table = 'employees';
     protected $fillable = [
         'id',
         'fio',
+        'photo',
         'direction_id',
         'experience',
         'about',
@@ -34,6 +36,9 @@ class EmployeeModel extends Model
         'order',
         'created_at',
         'updated_at',
+    ];
+    protected $casts = [
+        "about" => "array"
     ];
 
     public function direction(): BelongsTo

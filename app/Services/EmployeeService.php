@@ -4,13 +4,11 @@ declare(strict_types=1);
 namespace App\Services;
 
 use Akbarali\DataObject\DataObjectCollection;
-use App\ActionData\Direction\CreateDirectionActionData;
-use App\ActionData\Permission\CreatePermissionActionData;
-use App\ActionData\Direction\UpdateDirectionActionData;
-use App\DataObjects\Direction\DirectionData;
+use App\ActionData\Employee\CreateEmployeeActionData;
+use App\ActionData\Employee\UpdateEmployeeActionData;
+use App\DataObjects\Employee\EmployeeData;
 use App\Models\EmployeeModel;
 use Illuminate\Support\Facades\Storage;
-use Illuminate\Validation\ValidationException;
 
 class EmployeeService
 {
@@ -24,13 +22,13 @@ class EmployeeService
     public function paginate(int $page = 1, int $limit = 10, ?iterable $filters = null): DataObjectCollection
     {
         $model = EmployeeModel::applyEloquentFilters($filters)
-            ->orderBy('directions.order');
+            ->orderBy('employees.order');
 
         $totalCount = $model->count();
         $skip = $limit * ($page - 1);
         $items = $model->skip($skip)->take($limit)->get();
         $items->transform(function (EmployeeModel $data) {
-            return DirectionData::createFromEloquentModel($data);
+            return EmployeeData::createFromEloquentModel($data);
         });
         return new DataObjectCollection($items, $totalCount, $limit, $page);
     }
@@ -41,54 +39,65 @@ class EmployeeService
      */
     public function setOrder(int $id): void
     {
-        $direction = $this->getOne(abs($id));
+        $employee = $this->getOne(abs($id));
         if ($id < 0) {
-            $direction2 = EmployeeModel::query()->where('order', '<', $direction->order)->orderByDesc('order')->first();
+            $employee2 = EmployeeModel::query()->where('order', '<', $employee->order)->orderByDesc('order')->first();
         } else {
-            $direction2 = EmployeeModel::query()->where('order', '>', $direction->order)->orderBy('order')->first();
+            $employee2 = EmployeeModel::query()->where('order', '>', $employee->order)->orderBy('order')->first();
         }
-        if ($direction2) {
-            $ord = $direction->order;
-            $direction->order = $direction2->order;
-            $direction2->order = $ord;
-            $direction->update();
-            $direction2->update();
+        if ($employee2) {
+            $ord = $employee->order;
+            $employee->order = $employee2->order;
+            $employee2->order = $ord;
+            $employee->update();
+            $employee2->update();
         }
     }
 
 
     /**
-     * @param CreateDirectionActionData $actionData
-     * @return DirectionData
+     * @param CreateEmployeeActionData $actionData
+     * @return EmployeeData
      */
-    public function createDirection(CreateDirectionActionData $actionData): DirectionData
+    public function createEmployee(CreateEmployeeActionData $actionData): EmployeeData
     {
-        $direction = EmployeeModel::query()->create($actionData->all());
-        $direction->update(['order' => $direction->id]);
-        return DirectionData::createFromEloquentModel($direction);
+        $data = $actionData->all();
+        $data['photo'] = $actionData->photo->hashName();
+        Storage::disk('local')->put('employees/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
+        $employee = EmployeeModel::query()->create($data);
+        $employee->update(['order' => $employee->id]);
+        return EmployeeData::createFromEloquentModel($employee);
     }
 
 
     /**
-     * @param UpdateDirectionActionData $actionData
+     * @param UpdateEmployeeActionData $actionData
      * @param int $id
      * @return void
      */
-    public function updateDirection(UpdateDirectionActionData $actionData, int $id): void
+    public function updateEmployee(UpdateEmployeeActionData $actionData, int $id): void
     {
-        $direction = $this->getOne($id);
-
-        $direction->fill($actionData->all());
-        $direction->save();
+        $employee = $this->getOne($id);
+        $data = $actionData->all();
+        unset($data['photo']);
+        if ($actionData->photo) {
+            Storage::disk('local')->delete('employees/' . $employee->photo);
+            $data['photo'] = $actionData->photo->hashName();
+            Storage::disk('local')->put('employees/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
+        }
+        $employee->fill($data);
+        $employee->save();
     }
 
     /**
      * @param int $id
      * @return void
      */
-    public function deleteDirection(int $id): void
+    public function deleteEmployee(int $id): void
     {
         $data = $this->getOne($id);
+        Storage::disk('local')->delete('employees/' . $data->photo);
+
         $data->delete();
     }
 
@@ -103,16 +112,16 @@ class EmployeeService
 
     /**
      * @param int $id
-     * @return DirectionData
+     * @return EmployeeData
      */
-    public function getDirection(int $id): DirectionData
+    public function getEmployee(int $id): EmployeeData
     {
-        return DirectionData::fromModel($this->getOne($id));
+        return EmployeeData::fromModel($this->getOne($id));
     }
 
-    public function getAllDirections()
+    public function getAllEmployees()
     {
-        $directions = EmployeeModel::query()->orderBy('order')->where('status', true)->get();
-        return $directions->transform(fn (EmployeeModel $data) => DirectionData::fromModel($data));
+        $employees = EmployeeModel::query()->orderBy('order')->where('status', true)->get();
+        return $employees->transform(fn(EmployeeModel $data) => EmployeeData::fromModel($data));
     }
 }

@@ -4,10 +4,10 @@ declare(strict_types=1);
 namespace App\Http\Controllers;
 
 use Akbarali\ViewModel\PaginationViewModel;
-use App\ActionData\Direction\CreateDirectionActionData;
-use App\ActionData\Direction\UpdateDirectionActionData;
+use App\ActionData\Direction\CreateEmployeeActionData;
+use App\ActionData\Direction\UpdateEmployeeActionData;
 use App\Services\DirectionService;
-use App\ViewModels\Direction\DirectionViewModel;
+use App\ViewModels\Direction\EmployeeViewModel;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
@@ -28,7 +28,7 @@ class DirectionController extends Controller
         $filters = [];
 //        $filters[] = PermissionsFilter::getRequest($request);
         $collection = $this->service->paginate(page: (int)$request->get('page'), limit: (int)$request->get('limit', 10), filters: $filters);
-        return (new PaginationViewModel($collection, DirectionViewModel::class))->toView('admin.directions.index');
+        return (new PaginationViewModel($collection, EmployeeViewModel::class))->toView('admin.directions.index');
     }
 
     /**
@@ -36,16 +36,16 @@ class DirectionController extends Controller
      */
     public function create(): View
     {
-        $viewModel = DirectionViewModel::createEmpty();
+        $viewModel = EmployeeViewModel::createEmpty();
         return $viewModel->toView('admin.directions.create');
     }
 
     /**
-     * @param CreateDirectionActionData $actionData
+     * @param CreateEmployeeActionData $actionData
      * @return RedirectResponse
      * @throws ValidationException
      */
-    public function store(createDirectionActionData $actionData): RedirectResponse
+    public function store(CreateEmployeeActionData $actionData): RedirectResponse
     {
         $this->service->createDirection($actionData);
         return redirect()->route('directions.index')
@@ -70,17 +70,17 @@ class DirectionController extends Controller
     public function edit(int $id): View
     {
         $data = $this->service->getDirection($id);
-        $viewModel = DirectionViewModel::fromDataObject($data);
+        $viewModel = EmployeeViewModel::fromDataObject($data);
 
         return $viewModel->toView('admin.directions.edit');
     }
 
     /**
-     * @param UpdateDirectionActionData $actionData
+     * @param UpdateEmployeeActionData $actionData
      * @param int $id
      * @return RedirectResponse
      */
-    public function update(UpdateDirectionActionData $actionData, int $id): RedirectResponse
+    public function update(UpdateEmployeeActionData $actionData, int $id): RedirectResponse
     {
         $this->service->updateDirection($actionData, $id);
         return redirect()->route('directions.index')

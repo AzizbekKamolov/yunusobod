@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use Akbarali\ViewModel\PaginationViewModel;
-use App\ActionData\Direction\CreateDirectionActionData;
-use App\ActionData\Direction\UpdateDirectionActionData;
+use App\ActionData\Employee\CreateEmployeeActionData;
+use App\ActionData\Employee\UpdateEmployeeActionData;
 use App\Services\DirectionService;
+use App\Services\EmployeeService;
 use App\ViewModels\Direction\DirectionViewModel;
+use App\ViewModels\Employee\EmployeeViewModel;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
@@ -14,7 +16,7 @@ use Illuminate\View\View;
 
 class EmployeeController extends Controller
 {
-    public function __construct(protected DirectionService $service)
+    public function __construct(protected EmployeeService $service)
     {
     }
 
@@ -27,7 +29,7 @@ class EmployeeController extends Controller
         $filters = [];
 //        $filters[] = PermissionsFilter::getRequest($request);
         $collection = $this->service->paginate(page: (int)$request->get('page'), limit: (int)$request->get('limit', 10), filters: $filters);
-        return (new PaginationViewModel($collection, DirectionViewModel::class))->toView('admin.directions.index');
+        return (new PaginationViewModel($collection, EmployeeViewModel::class))->toView('admin.employees.index');
     }
 
     /**
@@ -35,20 +37,20 @@ class EmployeeController extends Controller
      */
     public function create(): View
     {
-        $viewModel = DirectionViewModel::createEmpty();
-        return $viewModel->toView('admin.directions.create');
+        $directions = (new DirectionService())->getAllDirections()->transform(fn($data) => DirectionViewModel::fromDataObject($data));
+        $viewModel = EmployeeViewModel::createEmpty();
+        return $viewModel->toView('admin.employees.create', compact('directions'));
     }
 
     /**
-     * @param CreateDirectionActionData $actionData
+     * @param CreateEmployeeActionData $actionData
      * @return RedirectResponse
-     * @throws ValidationException
      */
-    public function store(createDirectionActionData $actionData): RedirectResponse
+    public function store(CreateEmployeeActionData $actionData): RedirectResponse
     {
-        $this->service->createDirection($actionData);
-        return redirect()->route('directions.index')
-            ->with('success', trans('form.success_create', ['attribute' => trans('form.directions.directions')]));
+        $this->service->createEmployee($actionData);
+        return redirect()->route('employees.index')
+            ->with('success', trans('form.success_create', ['attribute' => trans('form.employees.employees')]));
     }
 
     /**
@@ -58,8 +60,8 @@ class EmployeeController extends Controller
     public function setOrder(int $id): RedirectResponse
     {
         $this->service->setOrder($id);
-        return redirect()->route('directions.index')
-            ->with('success', trans('form.success_update', ['attribute' => trans('form.directions.directions')]));
+        return redirect()->route('employees.index')
+            ->with('success', trans('form.success_update', ['attribute' => trans('form.employees.employees')]));
     }
 
     /**
@@ -68,22 +70,22 @@ class EmployeeController extends Controller
      */
     public function edit(int $id): View
     {
-        $data = $this->service->getDirection($id);
-        $viewModel = DirectionViewModel::fromDataObject($data);
-
-        return $viewModel->toView('admin.directions.edit');
+        $directions = (new DirectionService())->getAllDirections()->transform(fn($data) => DirectionViewModel::fromDataObject($data));
+        $data = $this->service->getEmployee($id);
+        $viewModel = EmployeeViewModel::fromDataObject($data);
+        return $viewModel->toView('admin.employees.edit', compact('directions'));
     }
 
     /**
-     * @param UpdateDirectionActionData $actionData
+     * @param UpdateEmployeeActionData $actionData
      * @param int $id
      * @return RedirectResponse
      */
-    public function update(UpdateDirectionActionData $actionData, int $id): RedirectResponse
+    public function update(UpdateEmployeeActionData $actionData, int $id): RedirectResponse
     {
-        $this->service->updateDirection($actionData, $id);
-        return redirect()->route('directions.index')
-            ->with('success', trans('form.success_update', ['attribute' => trans('form.directions.slider')]));
+        $this->service->updateEmployee($actionData, $id);
+        return redirect()->route('employees.index')
+            ->with('success', trans('form.success_update', ['attribute' => trans('form.employees.slider')]));
     }
 
     /**
@@ -92,8 +94,8 @@ class EmployeeController extends Controller
      */
     public function delete(int $id): RedirectResponse
     {
-        $this->service->deleteDirection($id);
-        return redirect()->route('directions.index')
-            ->with('success', trans('form.success_delete', ['attribute' => trans('form.directions.direction')]));
+        $this->service->deleteEmployee($id);
+        return redirect()->route('employees.index')
+            ->with('success', trans('form.success_delete', ['attribute' => trans('form.employees.direction')]));
     }
 }

@@ -5,12 +5,9 @@ namespace App\Services;
 
 use Akbarali\DataObject\DataObjectCollection;
 use App\ActionData\Direction\CreateDirectionActionData;
-use App\ActionData\Permission\CreatePermissionActionData;
 use App\ActionData\Direction\UpdateDirectionActionData;
 use App\DataObjects\Direction\DirectionData;
 use App\Models\DirectionModel;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Validation\ValidationException;
 
 class DirectionService
 {

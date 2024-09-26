@@ -19,8 +19,8 @@
                     <a href="{{ route('directions.index') }}"><i class="fa fa-bar-chart"></i>
                         <span>{{__('form.directions.directions')}}</span></a>
                 </li>
-                <li @if(request()->routeIs('directions.*')) class="active" @endif >
-                    <a href="{{ route('directions.index') }}"><i class="fa fa-users"></i>
+                <li @if(request()->routeIs('employees.*')) class="active" @endif >
+                    <a href="{{ route('employees.index') }}"><i class="fa fa-users"></i>
                         <span>{{__('form.employees.employees')}}</span></a>
                 </li>
                 @canany(['roles.index','permissions.index','users.index'])

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\DataObjects\EmployeeData;
+namespace App\DataObjects\Employee;
 
 use Akbarali\DataObject\DataObjectBase;
 use Carbon\Carbon;
@@ -10,6 +10,7 @@ class EmployeeData extends DataObjectBase
 {
     public int $id;
     public string $fio;
+    public string $photo;
     public int $direction_id;
     public int $experience;
     public array $about;

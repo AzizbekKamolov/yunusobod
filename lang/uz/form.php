@@ -77,6 +77,8 @@ return [
         'employees' => "Xodimlar",
         'employee' => "Xodim",
         'fio' => "FIO",
+        'photo' => "Xodim rasmi",
+        'about' => "Xodim haqida",
         'experience' => "Tajriba",
     ]
 ];

@@ -13,6 +13,7 @@ return new class extends Migration {
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
             $table->string('fio');
+            $table->string('photo')->nullable();
             $table->bigInteger('direction_id')->unsigned();
             $table->integer('experience')->default(1);
             $table->json('about');
