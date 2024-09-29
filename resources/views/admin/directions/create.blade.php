@@ -82,6 +82,22 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="form-row mt-3">
+                            <div class="col-md-12 mb-3">
+                                <label for="icon">{{ __('form.directions.icon') }}</label>
+                                <input type="file" class="form-control" id="icon" name="icon">
+                                @if($errors->has('icon'))
+                                    <div class="text-danger">{{ $errors->first('icon') }}</div>
+                                @endif
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="photo">{{ __('form.directions.photo') }}</label>
+                                <input type="file" class="form-control" id="photo" name="photo">
+                                @if($errors->has('photo'))
+                                    <div class="text-danger">{{ $errors->first('photo') }}</div>
+                                @endif
+                            </div>
+                        </div>
 
                         <div class="form-group text-center">
                             <a href="{{ route('directions.index') }}" class="btn btn-slack">{{{ __('form.cancel') }}}</a>

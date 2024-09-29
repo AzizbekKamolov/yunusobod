@@ -119,9 +119,12 @@ class EmployeeService
         return EmployeeData::fromModel($this->getOne($id));
     }
 
-    public function getAllEmployees()
+    public function getAllEmployees(int $limit = 24)
     {
-        $employees = EmployeeModel::query()->orderBy('order')->where('status', true)->get();
+        $employees = EmployeeModel::query()->orderBy('order')
+            ->where('status', true)
+            ->limit($limit)
+            ->get();
         return $employees->transform(fn(EmployeeModel $data) => EmployeeData::fromModel($data));
     }
 }

@@ -8,8 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * @property int $id;
+ * @property string $icon;
  * @property array $title;
  * @property array $description;
+ * @property string $photo;
  * @property int $status;
  * @property int $order;
  * @property string $created_at;
@@ -20,8 +22,10 @@ class DirectionModel extends Model
     protected $table = 'directions';
     protected $fillable = [
         'id',
+        'icon',
         'title',
         'description',
+        'photo',
         'status',
         'order',
         'created_at',

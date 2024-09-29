@@ -33,4 +33,30 @@ return [
         "send_email" => "Send Email",
         "address" => "Address",
     ],
+    "colleagues_of_advocates" => "Colleagues of advocates",
+    "about_us" => [
+        "title" => 'Prepare for Success by Growing with the Bar Association.',
+        'description' => "Providing legal advice, contract drafting, compliance assistance,
+         intellectual property protection, and other legal support for businesses.
+         Creating visual content, such as logos,
+         brochures, infographics, and other branding materials.",
+        "watch_the_video" => "Watch the video",
+        "work_experience" => "Work experience",
+    ],
+    "home" => [
+        "our_services" => "Our services",
+        "our_services_title" => "We Provide The Solution For Our Clients",
+        "our_services_description" => "After the independence of our country,
+         Tashkent city Yunusabad Bar Association was reorganized and
+         until today we provide qualified legal assistance to the citizens of our country.",
+    ],
+    "footer" => [
+        "page_navigation" => "Page navigation:",
+        "follow_social_networks" => "Follow Social Networks",
+        "contacts" => "Contacts:",
+        "executive_director" => "Executive Director",
+        "number" => "Number",
+        "head_of_department" => "Head of Department:",
+        "reception_of_college" => "Reception of College:",
+    ],
 ];

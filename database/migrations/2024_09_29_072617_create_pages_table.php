@@ -11,14 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('directions', function (Blueprint $table) {
+        Schema::create('pages', function (Blueprint $table) {
             $table->id();
-            $table->string('icon')->nullable();
-            $table->json('title');
-            $table->json('description')->nullable();
+            $table->string('action');
             $table->string('photo')->nullable();
-            $table->tinyInteger('status')->default(1);
-            $table->bigInteger('order')->default(1);
+            $table->longText('description_uz')->nullable();
+            $table->longText('description_ru')->nullable();
+            $table->longText('description_en')->nullable();
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('directions');
+        Schema::dropIfExists('pages');
     }
 };

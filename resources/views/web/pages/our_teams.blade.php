@@ -12,7 +12,7 @@
                                                                           title="Go to Bizmax."
                                                                           href="https://bizmax-wp.laralink.com"
                                                                           class="home"><span
-                                property="name">{{ config('app.name') }}</span></a><meta property="position" content="1"></span> &gt;
+                                property="name">{{ __('web.colleagues_of_advocates') }}</span></a><meta property="position" content="1"></span> &gt;
                     <span property="itemListElement" typeof="ListItem"><span property="name"
                                                                              class="post post-page current-item">{{ __('web.menus.our_teams') }}</span><meta
                             property="url" content="https://bizmax-wp.laralink.com/contact/"><meta property="position"
@@ -87,8 +87,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section
-                            class="elementor-section elementor-inner-section elementor-element elementor-element-d89cb3b elementor-section-boxed elementor-section-height-default elementor-section-height-default animated fadeIn"
+                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-d89cb3b elementor-section-boxed elementor-section-height-default elementor-section-height-default animated fadeIn"
                             data-id="d89cb3b" data-element_type="section"
                             data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
                             <div class="elementor-container elementor-column-gap-default">
@@ -107,8 +106,7 @@
                                                             @foreach($employees as $employee)
                                                                 <div class="col-lg-4 col-md-6 col-sm-6">
 
-                                                                    <div class="cs_team cs_style_1 text-center cs_mt_30 overflow-hidden cs_rounded_50
-					">
+                                                                    <div class="cs_team cs_style_1 text-center cs_mt_30 overflow-hidden cs_rounded_50">
 
                                                                         <div
                                                                             class="cs_team_member position-relativecs_rounded_50">

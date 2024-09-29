@@ -9,6 +9,8 @@ use Carbon\Carbon;
 class DirectionViewModel extends BaseViewModel
 {
     public int $id;
+    public ?string $icon;
+    public ?string $photo;
     public array $title;
     public ?string $titleH;
     public ?string $title_uz;

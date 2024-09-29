@@ -15,7 +15,7 @@
                                                                           title="Go to Bizmax."
                                                                           href="#"
                                                                           class="home"><span
-                                property="name">{{ config('app.name') }}</span></a><meta property="position" content="1"></span> &gt;
+                                property="name">{{ __('web.colleagues_of_advocates') }}</span></a><meta property="position" content="1"></span> &gt;
                     <span property="itemListElement" typeof="ListItem"><span property="name"
                                                                              class="post post-page current-item">{{ __('web.menus.contact_us') }}</span><meta
                             property="url" content="#"><meta property="position"

@@ -72,6 +72,8 @@ return [
         'direction' => "Yo'nalish",
         'description' => "Izoh",
         'title' => "Yo'nalish nomi",
+        'icon' => "Icon",
+        'photo' => "Rasm",
     ],
     'employees' => [
         'employees' => "Xodimlar",
@@ -87,5 +89,12 @@ return [
         'name' => "Nomi",
         'icon' => "Ikonka",
         'url' => "Url",
-    ]
+    ],
+    'pages' => [
+        'pages' => "Sahifalar",
+        'page' => "Sahifa",
+        'photo' => "Sahifa banneri(rasmi)",
+        'action' => "Sahifa",
+        'description' => "Izoh",
+    ],
 ];

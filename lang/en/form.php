@@ -67,6 +67,14 @@ return [
         "body" => "Text",
         "file" => "File",
     ],
+    'directions' => [
+        'directions' => "Directions",
+        'direction' => "Direction",
+        'description' => "Description",
+        'title' => "Direction name",
+        'icon' => "Icon",
+        'photo' => "Photo",
+    ],
     'employees' => [
         'employees' => "Employees",
         'employee' => "Employee",
@@ -74,5 +82,19 @@ return [
         'fio' => "FIO",
         'about' => "About",
         'experience' => "Experience",
-    ]
+    ],
+    'social_networks' => [
+        'social_networks' => "Social networks",
+        'social_network' => "Social network",
+        'name' => "Namw",
+        'icon' => "Icon",
+        'url' => "Url",
+    ],
+    'pages' => [
+        'pages' => "Pages",
+        'page' => "Page",
+        'photo' => "Page banner(image)",
+        'action' => "Page",
+        'description' => "Description",
+    ],
 ];

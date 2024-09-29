@@ -33,4 +33,29 @@ return [
         "send_email" => "Email yuborish",
         "address" => "Manzil",
     ],
+    "colleagues_of_advocates" => "Advokatlar uyushmalari",
+    "about_us" => [
+        'title' => "Advokatlar uyushmasi bilan O'sish yo'li bilan muvaffaqiyatga tayyorlaning.",
+        'description' => "Yuridik maslahatlar berish, shartnomalar tuzish, muvofiqlikni ta'minlash,
+       intellektual mulkni himoya qilish va tadbirkorlik sub'ektlariga boshqa huquqiy yordam
+       ko'rsatish. Vizual tarkibni yaratish, masalan, logotiplar, broshyuralar, infografika va boshqa brending materiallari.",
+        "watch_the_video" => "Videoni ko'rish",
+        "work_experience" => "Ish tajribasi",
+    ],
+    "home" => [
+        "our_services" => "Bizning xizmatlarimiz",
+        "our_services_title" => "Biz mijozlarimiz uchun yechimni taqdim etamiz",
+        "our_services_description" => "Mamlakatimiz mustaqillikka erishgach, Toshkent
+        shahar Yunusobod advokatlar kollegiyasi etib qayta tashkil etildi va shu kungacha
+        yurtimiz fuqarolariga malakali yuridik yordam ko‘rsatib kelmoqdamiz",
+    ],
+    "footer" => [
+      "page_navigation" => "Sahifalar:",
+      "follow_social_networks" => "Bizni ijtimoiy tarmoqlarda kuzatib boring:",
+      "contacts" => "Kontaktlar",
+      "executive_director" => "Ijrochi direktor",
+      "number" => "Nomer",
+      "head_of_department" => "Bo'lim boshlig'i",
+      "reception_of_college" => "Qabul kommisisyasi",
+    ],
 ];

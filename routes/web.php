@@ -4,12 +4,14 @@ use App\Http\Controllers\{AuthController,
     DashboardController,
     DirectionController,
     EmployeeController,
+    PageController,
     PermissionController,
     RoleController,
     SliderController,
     SocialNetworkController,
     UserController,
-    WebController};
+    WebController
+};
 use Illuminate\Support\Facades\Route;
 
 Route::controller(WebController::class)->group(function () {
@@ -100,7 +102,7 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
         Route::get('edit/{id}', 'edit')->name('edit')->can('employees.update');
         Route::get('delete/{id}', 'delete')->name('delete')->can('employees.delete');
     });
-    //employees
+    //social networks
     Route::controller(SocialNetworkController::class)->name('social_networks.')->prefix('social-networks')->group(function () {
         Route::get('/', 'index')->name('index')->can('social_networks.index');
         Route::post('store', 'store')->name('store')->can('social_networks.store');
@@ -109,5 +111,14 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
         Route::get('set-order/{id}', 'setOrder')->name('setOrder')->can('social_networks.update');
         Route::get('edit/{id}', 'edit')->name('edit')->can('social_networks.update');
         Route::get('delete/{id}', 'delete')->name('delete')->can('social_networks.delete');
+    });
+    //Pages
+    Route::controller(PageController::class)->name('pages.')->prefix('pages')->group(function () {
+        Route::get('/', 'index')->name('index')->can('pages.index');
+        Route::post('store', 'store')->name('store')->can('pages.store');
+        Route::get('create', 'create')->name('create')->can('pages.store');
+        Route::put('update/{id}', 'update')->name('update')->can('pages.update');
+        Route::get('edit/{id}', 'edit')->name('edit')->can('pages.update');
+        Route::get('delete/{id}', 'delete')->name('delete')->can('pages.delete');
     });
 });

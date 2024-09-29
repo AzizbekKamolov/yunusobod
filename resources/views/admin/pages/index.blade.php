@@ -5,11 +5,11 @@
             <div class="card mb-5 shadow-1">
                 <div class="card-header">
                     <h4 class="card-header-title">
-                        {{ __('form.directions.directions') }}
+                        {{ __('form.pages.pages') }}
                     </h4>
                     {{--                    <div class="">--}}
-                    @can('directions.store')
-                        <a href="{{ route("directions.create") }}" class="btn btn-outline-success">
+                    @can('pages.store')
+                        <a href="{{ route("pages.create") }}" class="btn btn-outline-success">
                             <i class="fa fa-plus button-2x"> {{ __('form.add') }}</i></a>
                         {{--                    </div>--}}
                     @endcan
@@ -19,12 +19,10 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>{{ __('form.directions.title') }}</th>
-                            <th>{{ __('form.directions.description') }}</th>
-                            <th>{{ __('form.directions.icon') }}</th>
-                            <th>Order</th>
-                            <th>{{ __('form.status') }}</th>
-                        @canany(['directions.update', 'directions.delete'])
+                            <th>{{ __('form.pages.action') }}</th>
+                            <th>{{ __('form.pages.photo') }}</th>
+{{--                            <th>{{ __('form.pages.description') }}</th>--}}
+                            @canany(['pages.update', 'pages.delete'])
                                 <th>{{ __('form.actions') }}</th>
                             @endcan
                         </tr>
@@ -33,27 +31,18 @@
                         @foreach($pagination->items() as $item)
                             <tr>
                                 <th scope="row">{{ ($pagination->currentpage()-1) * $pagination->perpage() + $loop->index + 1 }}</th>
-                                <td>{{ $item->titleH }}</td>
-                                <td>{{ $item->descriptionH }}</td>
-                                <td bgcolor="#5f9ea0">
-                                    <img src="{{ asset("/sliders/$item->icon") }}" width="50" alt="icon">
+                                <td>{{ __("web.menus.$item->action") }}</td>
+{{--                                <td>{!! $item->description !!}</td>--}}
+                                <td>
+                                    <img src="{{ asset("/sliders/$item->photo") }}" width="100" alt="photo">
                                 </td>
                                 <td>
-                                    @if(!$loop->first)
-                                        <a href="{{ route('directions.setOrder', [-$item->id]) }}"><i class="fa fa-arrow-up"></i></a>
-                                    @endif
-                                    @if(!$loop->last)
-                                        <a href="{{ route('directions.setOrder', [$item->id]) }}"><i class="fa fa-arrow-down"></i></a>
-                                    @endif
-                                </td>
-                                <td><span class="badge @if($item->status) badge-success @else badge-danger @endif">{{ $item->statusName }}</span></td>
-                                <td>
-                                    @can('directions.update')
-                                        <a href="{{ route("directions.edit", [$item->id]) }}">
+                                    @can('pages.update')
+                                        <a href="{{ route("pages.edit", [$item->id]) }}">
                                             <i class="fa fa-edit text-purple button-2x"></i></a>
                                     @endcan
-                                    @can('directions.delete')
-                                        <a href="{{ route("directions.delete", [$item->id]) }}" class=""
+                                    @can('pages.delete')
+                                        <a href="{{ route("pages.delete", [$item->id]) }}" class=""
                                            onclick="return confirm(this.getAttribute('data-message'));"
                                            data-message="{{ __('form.confirm_delete') }}">
                                             <i class="fa fa-trash-o text-danger button-2x"></i></a>

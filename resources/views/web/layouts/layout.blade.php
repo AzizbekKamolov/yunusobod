@@ -89,42 +89,17 @@
 <body
         class="home page-template-default page page-id-17 wp-custom-logo ehf-footer ehf-template-bizmax-wp ehf-stylesheet-bizmax-wp no-sidebar elementor-default elementor-kit-9 elementor-page elementor-page-17 e--ua-blink e--ua-chrome e--ua-webkit"
         data-elementor-device-mode="desktop">
-
-
-<div class="cs_preloader cs_accent_color cs_white_bg" style="display: none;">
-    <div class="cs_preloader bg-white d-flex justify-content-center align-items-center" style="display: none;">
-        <div class="cs_preloader_in" style="display: none;">
-            <img src="{{ asset('source/logo2.png') }}" alt="Bar Association Yunusobod">
-        </div>
-    </div>
-</div>
-
-<!-- back to top start -->
 <div class="progress-wrap">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
               style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
     </svg>
 </div>
+
 <!-- back to top end -->
 
-<div id="page" class="site">
-    @include('web.layouts.header')
-    <!-- End Header Section -->
-
-    <!-- it-offcanvus-area-end -->
-    <div id="smooth-wrapper">
-        <div id="smooth-content">
-            <main>
-
-                <!-- Breadcrumbs -->
-                @yield('content')
-
-                @include('web.layouts.footer')
-            </main>
-        </div><!-- #page -->
-    </div>
-</div>
+@yield('content')
+@include('web.layouts.footer')
 <link rel="stylesheet" id="e-animations-css" href="{{ asset('source/animations.min.css') }}" type="text/css"
       media="all">
 <script type="text/javascript" src="{{ asset('source/imagesloaded-pkgd.js') }}"

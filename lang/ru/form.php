@@ -67,6 +67,14 @@ return [
         "body" => "Текст",
         "file" => "Файл",
     ],
+    'directions' => [
+        'directions' => "Направления",
+        'direction' => "Направление",
+        'description' => "Описание",
+        'title' => "Название направления",
+        'icon' => "Icon",
+        'photo' => "Изображение",
+    ],
     'employees' => [
         'employees' => "Сотрудники",
         'employee' => "Сотрудник",
@@ -74,5 +82,19 @@ return [
         'photo' => "Фото сотрудника",
         'about' => "О сотруднике",
         'experience' => "Опыт",
-    ]
+    ],
+    'social_networks' => [
+        'social_networks' => "Социальные сети",
+        'social_network' => "Социальная сеть",
+        'name' => "Имя",
+        'icon' => "Icon",
+        'url' => "URL",
+    ],
+    'pages' => [
+        'pages' => "Страницы",
+        'page' => "Страница",
+        'photo' => "Баннер страницы(изображение)",
+        'action' => "Страница",
+        'description' => "Описание",
+    ],
 ];

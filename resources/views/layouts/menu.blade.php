@@ -28,6 +28,10 @@
                     <a href="{{ route('social_networks.index') }}"><i class="fa fa-share-alt-square"></i>
                         <span>{{__('form.social_networks.social_networks')}}</span></a>
                 </li>
+                <li @if(request()->routeIs('pages.*')) class="active" @endif >
+                    <a href="{{ route('pages.index') }}"><i class="fa fa-files-o"></i>
+                        <span>{{__('form.pages.pages')}}</span></a>
+                </li>
                 @canany(['roles.index','permissions.index','users.index'])
                     <li class="@if(request()->routeIs('roles.*','permissions.*','users.*')) active open @endif">
                         <a href="javascript:void(0);"><i class="fa fa-cogs"></i>

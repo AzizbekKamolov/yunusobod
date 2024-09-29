@@ -8,6 +8,7 @@ use App\ActionData\Direction\CreateDirectionActionData;
 use App\ActionData\Direction\UpdateDirectionActionData;
 use App\DataObjects\Direction\DirectionData;
 use App\Models\DirectionModel;
+use Illuminate\Support\Facades\Storage;
 
 class DirectionService
 {
@@ -60,7 +61,18 @@ class DirectionService
      */
     public function createDirection(CreateDirectionActionData $actionData): DirectionData
     {
-        $direction = DirectionModel::query()->create($actionData->all());
+        $data = $actionData->all();
+        unset($data['photo']);
+        unset($data['icon']);
+        if ($actionData->photo) {
+            $data['photo'] = $actionData->photo->hashName();
+            Storage::disk('local')->put('sliders/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
+        }
+        if ($actionData->icon) {
+            $data['icon'] = $actionData->icon->hashName();
+            Storage::disk('local')->put('sliders/' . $data['icon'], file_get_contents($actionData->icon->getRealPath()));
+        }
+        $direction = DirectionModel::query()->create($data);
         $direction->update(['order' => $direction->id]);
         return DirectionData::createFromEloquentModel($direction);
     }
@@ -74,8 +86,21 @@ class DirectionService
     public function updateDirection(UpdateDirectionActionData $actionData, int $id): void
     {
         $direction = $this->getOne($id);
+        $data = $actionData->all();
 
-        $direction->fill($actionData->all());
+        unset($data['photo']);
+        unset($data['icon']);
+        if ($actionData->photo) {
+            Storage::disk('local')->delete('sliders/' . $direction->photo);
+            $data['photo'] = $actionData->photo->hashName();
+            Storage::disk('local')->put('sliders/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
+        }
+        if ($actionData->icon) {
+            Storage::disk('local')->delete('sliders/' . $direction->icon);
+            $data['icon'] = $actionData->icon->hashName();
+            Storage::disk('local')->put('sliders/' . $data['icon'], file_get_contents($actionData->icon->getRealPath()));
+        }
+        $direction->fill($data);
         $direction->save();
     }
 

@@ -44,6 +44,11 @@ class PermissionSeeder extends Seeder
         ["name" => "social_networks.update", "guard_name" => "web",],
         ["name" => "social_networks.delete", "guard_name" => "web",],
 
+        ["name" => "pages.index", "guard_name" => "web",],
+        ["name" => "pages.store", "guard_name" => "web",],
+        ["name" => "pages.update", "guard_name" => "web",],
+        ["name" => "pages.delete", "guard_name" => "web",],
+
     ];
 
     /**

@@ -1,4 +1,7 @@
 @extends('dashboard.home')
+@section('head')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+@endsection
 @section('content')
     <div class="row clearfix">
         <div class="col-md-12 col-lg-12">
@@ -33,7 +36,7 @@
                         @foreach($pagination->items() as $item)
                             <tr>
                                 <th scope="row">{{ ($pagination->currentpage()-1) * $pagination->perpage() + $loop->index + 1 }}</th>
-                                <td bgcolor="#5f9ea0">
+                                <td bgcolor="#dee2e6">
                                     {!! $item->icon !!}
                                 </td>
                                 <td>{{ $item->name }}</td>

@@ -105,9 +105,12 @@ class SocialNetworkService
         return SocialNetworkData::fromModel($this->getOne($id));
     }
 
-    public function getAllSocialNetworks()
+    public function getAllSocialNetworks(int $limit = 8)
     {
-        $socialNetworks = SocialNetworkModel::query()->orderBy('order')->where('active', true)->get();
+        $socialNetworks = SocialNetworkModel::query()->orderBy('order')
+            ->limit($limit)
+            ->where('status', true)
+            ->get();
         return $socialNetworks->transform(fn(SocialNetworkModel $data) => SocialNetworkData::fromModel($data));
     }
 }
