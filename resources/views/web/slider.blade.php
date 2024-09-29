@@ -95,7 +95,7 @@
                                                                 class="cs_hero_btn">
 
                                                                 <a href="https://bizmax-wp.laralink.com/contact"
-                                                                   class="cs_btn cs_style_1 cs_fs_14 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden"><span>Get A Quote</span></a>
+                                                                   class="cs_btn cs_style_1 cs_fs_14 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden"><span>{{ __("web.sliders.free_consultation") }}</span></a>
 
                                                             </div>
 

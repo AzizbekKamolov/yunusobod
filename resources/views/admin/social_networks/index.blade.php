@@ -5,11 +5,11 @@
             <div class="card mb-5 shadow-1">
                 <div class="card-header">
                     <h4 class="card-header-title">
-                        {{ __('form.sliders.sliders') }}
+                        {{ __('form.social_networks.social_networks') }}
                     </h4>
                     {{--                    <div class="">--}}
-                    @can('sliders.store')
-                        <a href="{{ route("sliders.create") }}" class="btn btn-outline-success">
+                    @can('social_networks.store')
+                        <a href="{{ route("social_networks.create") }}" class="btn btn-outline-success">
                             <i class="fa fa-plus button-2x"> {{ __('form.add') }}</i></a>
                         {{--                    </div>--}}
                     @endcan
@@ -19,13 +19,12 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>{{ __('form.sliders.file') }}</th>
-                            <th>{{ __('form.sliders.title') }}</th>
-                            <th>{{ __('form.sliders.content') }}</th>
-                            <th>{{ __('form.sliders.body') }}</th>
+                            <th>{{ __('form.social_networks.icon') }}</th>
+                            <th>{{ __('form.social_networks.name') }}</th>
+                            <th>{{ __('form.social_networks.url') }}</th>
                             <th>Order</th>
                             <th>{{ __('form.status') }}</th>
-                        @canany(['sliders.update', 'sliders.delete'])
+                            @canany(['social_networks.update', 'social_networks.delete'])
                                 <th>{{ __('form.actions') }}</th>
                             @endcan
                         </tr>
@@ -34,28 +33,32 @@
                         @foreach($pagination->items() as $item)
                             <tr>
                                 <th scope="row">{{ ($pagination->currentpage()-1) * $pagination->perpage() + $loop->index + 1 }}</th>
-                                <td>
-                                    <img src="{{ asset("sliders/$item->file") }}" width="80" alt="file">
+                                <td bgcolor="#5f9ea0">
+                                    {!! $item->icon !!}
                                 </td>
-                                <td>{{ $item->titleH }}</td>
-                                <td>{{ $item->contentH }}</td>
-                                <td>{{ $item->bodyH }}</td>
+                                <td>{{ $item->name }}</td>
+                                <td>{{ $item->url }}</td>
                                 <td>
                                     @if(!$loop->first)
-                                        <a href="{{ route('sliders.setOrder', [-$item->id]) }}"><i class="fa fa-arrow-up"></i></a>
+                                        <a href="{{ route('social_networks.setOrder', [-$item->id]) }}"><i
+                                                class="fa fa-arrow-up"></i></a>
                                     @endif
                                     @if(!$loop->last)
-                                        <a href="{{ route('sliders.setOrder', [$item->id]) }}"><i class="fa fa-arrow-down"></i></a>
+                                        <a href="{{ route('social_networks.setOrder', [$item->id]) }}"><i
+                                                class="fa fa-arrow-down"></i></a>
                                     @endif
                                 </td>
-                                <td><span class="badge @if($item->active) badge-success @else badge-danger @endif">{{ $item->activeName }}</span></td>
                                 <td>
-                                    @can('sliders.update')
-                                        <a href="{{ route("sliders.edit", [$item->id]) }}">
+                                    <span
+                                        class="badge @if($item->status) badge-success @else badge-danger @endif">{{ $item->statusName }}</span>
+                                </td>
+                                <td>
+                                    @can('social_networks.update')
+                                        <a href="{{ route("social_networks.edit", [$item->id]) }}">
                                             <i class="fa fa-edit text-purple button-2x"></i></a>
                                     @endcan
-                                    @can('sliders.delete')
-                                        <a href="{{ route("sliders.delete", [$item->id]) }}" class=""
+                                    @can('social_networks.delete')
+                                        <a href="{{ route("social_networks.delete", [$item->id]) }}" class=""
                                            onclick="return confirm(this.getAttribute('data-message'));"
                                            data-message="{{ __('form.confirm_delete') }}">
                                             <i class="fa fa-trash-o text-danger button-2x"></i></a>

@@ -21,22 +21,22 @@
                                 {{--                                    <a href="https://bizmax-wp.laralink.com/about-us/">Bosh sahifa</a>--}}
                                 {{--                                </li>--}}
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758">
-                                    <a href="">{{ __('web.menus.about_us') }}</a>
+                                    <a href="{{ route('about') }}">{{ __('web.menus.about_us') }}</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-760">
-                                    <a href="https://bizmax-wp.laralink.com/about-us/">{{ __('web.menus.activity') }}</a>
+                                    <a href="{{ route('activity') }}">{{ __('web.menus.activity') }}</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758">
-                                    <a href="https://bizmax-wp.laralink.com/about-us/">{{ __('web.menus.our_teams') }}</a>
+                                    <a href="{{ route('ourTeams') }}">{{ __('web.menus.our_teams') }}</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758">
-                                    <a href="https://bizmax-wp.laralink.com/about-us/">{{ __('web.menus.statistics') }}</a>
+                                    <a href="{{ route('statistics') }}">{{ __('web.menus.statistics') }}</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758">
-                                    <a href="https://bizmax-wp.laralink.com/about-us/">{{ __('web.menus.our_partners') }}</a>
+                                    <a href="{{ route('partners') }}">{{ __('web.menus.our_partners') }}</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758">
-                                    <a href="https://bizmax-wp.laralink.com/about-us/">{{ __('web.menus.contact_us') }}</a>
+                                    <a href="{{ route('contact') }}">{{ __('web.menus.contact_us') }}</a>
                                 </li>
                             </ul>
                         </div>
@@ -51,24 +51,25 @@
                               </span>
                             <div
                                 class="cs_header_search_form position-absolute bg-black-5 cs_transition_3 cs_rounded_5 end-0 cs_pt_20 cs_pb_20 cs_pl_20 cs_pr_20"
-                                style="width: 70px">
+                                style="width: 70px;background-color: rgba(24, 25, 29, 0.5);">
 
                                 @if(app()->getLocale() !== 'uz')
-                                    <a href="{{ route('dashboard.changeLang',['uz']) }}"><span class="cs_header_search_btn d-flex text-uppercase"
-                                                     style="margin-bottom: 10px;">UZ</span>
+                                    <a href="{{ route('dashboard.changeLang',['uz']) }}"><span
+                                            class="cs_header_search_btn d-flex text-uppercase"
+                                            style="margin-bottom: 10px;">UZ</span>
                                     </a>
                                 @endif
                                 @if(app()->getLocale() !== 'ru')
-                                        <a href="{{ route('dashboard.changeLang',['ru']) }}">
+                                    <a href="{{ route('dashboard.changeLang',['ru']) }}">
                                             <span class="cs_header_search_btn d-flex text-uppercase"
                                                   style="margin-bottom: 10px;">RU</span>
-                                        </a>
+                                    </a>
                                 @endif
                                 @if(app()->getLocale() !== 'en')
-                                        <a href="{{ route('dashboard.changeLang',['en']) }}">
+                                    <a href="{{ route('dashboard.changeLang',['en']) }}">
                                     <span class="cs_header_search_btn d-flex text-uppercase"
                                           style="margin-bottom: 3px;">EN</span>
-                                        </a>
+                                    </a>
                                 @endif
 
 

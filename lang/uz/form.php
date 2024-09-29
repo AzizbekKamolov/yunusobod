@@ -80,5 +80,12 @@ return [
         'photo' => "Xodim rasmi",
         'about' => "Xodim haqida",
         'experience' => "Tajriba",
+    ],
+    'social_networks' => [
+        'social_networks' => "Ijtimoy tarmoqlar",
+        'social_network' => "Ijtimoy tarmoq",
+        'name' => "Nomi",
+        'icon' => "Ikonka",
+        'url' => "Url",
     ]
 ];

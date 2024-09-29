@@ -7,13 +7,22 @@ use App\Http\Controllers\{AuthController,
     PermissionController,
     RoleController,
     SliderController,
+    SocialNetworkController,
     UserController,
     WebController};
 use Illuminate\Support\Facades\Route;
 
 Route::controller(WebController::class)->group(function () {
     Route::get('/', 'home')->name('home');
+    Route::get('/about-us', 'about')->name('about');
+    Route::get('/activity', 'activity')->name('activity');
+    Route::get('/our-teams', 'ourTeams')->name('ourTeams');
+    Route::get('/statistics', 'statistics')->name('statistics');
+    Route::get('/partners', 'partners')->name('partners');
+    Route::get('/contact', 'contact')->name('contact');
+
 });
+
 Route::view('/saved_resource', 'web.saved_resource');
 Route::controller(AuthController::class)->group(function () {
     Route::get('/login', 'index')->name('login');
@@ -90,5 +99,15 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
         Route::get('set-order/{id}', 'setOrder')->name('setOrder')->can('employees.update');
         Route::get('edit/{id}', 'edit')->name('edit')->can('employees.update');
         Route::get('delete/{id}', 'delete')->name('delete')->can('employees.delete');
+    });
+    //employees
+    Route::controller(SocialNetworkController::class)->name('social_networks.')->prefix('social-networks')->group(function () {
+        Route::get('/', 'index')->name('index')->can('social_networks.index');
+        Route::post('store', 'store')->name('store')->can('social_networks.store');
+        Route::get('create', 'create')->name('create')->can('social_networks.store');
+        Route::put('update/{id}', 'update')->name('update')->can('social_networks.update');
+        Route::get('set-order/{id}', 'setOrder')->name('setOrder')->can('social_networks.update');
+        Route::get('edit/{id}', 'edit')->name('edit')->can('social_networks.update');
+        Route::get('delete/{id}', 'delete')->name('delete')->can('social_networks.delete');
     });
 });

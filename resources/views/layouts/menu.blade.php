@@ -13,7 +13,7 @@
                 </li>
                 <li @if(request()->routeIs('sliders.*')) class="active" @endif >
                     <a href="{{ route('sliders.index') }}"><i class="fa fa-sliders"></i>
-                        <span>{{__('web.sliders')}}</span></a>
+                        <span>{{__('form.sliders.sliders')}}</span></a>
                 </li>
                 <li @if(request()->routeIs('directions.*')) class="active" @endif >
                     <a href="{{ route('directions.index') }}"><i class="fa fa-bar-chart"></i>
@@ -22,6 +22,11 @@
                 <li @if(request()->routeIs('employees.*')) class="active" @endif >
                     <a href="{{ route('employees.index') }}"><i class="fa fa-users"></i>
                         <span>{{__('form.employees.employees')}}</span></a>
+                </li>
+
+                <li @if(request()->routeIs('social_networks.*')) class="active" @endif >
+                    <a href="{{ route('social_networks.index') }}"><i class="fa fa-share-alt-square"></i>
+                        <span>{{__('form.social_networks.social_networks')}}</span></a>
                 </li>
                 @canany(['roles.index','permissions.index','users.index'])
                     <li class="@if(request()->routeIs('roles.*','permissions.*','users.*')) active open @endif">
