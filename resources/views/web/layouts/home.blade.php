@@ -5,8 +5,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
-
-    <title>Bar Association Yunusobod</title>
+{{--    <title>Bar Association Yunusobod</title>--}}
+    @yield('head')
     <meta name="robots" content="noindex, nofollow">
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
     <link rel="alternate" type="application/rss+xml" title="Bizmax » Feed" href="https://bizmax-wp.laralink.com/feed/">

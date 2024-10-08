@@ -60,4 +60,7 @@ return [
       "head_of_department" => "Bo'lim boshlig'i",
       "reception_of_college" => "Qabul kommisisyasi",
     ],
+    "partners" => [
+      "title" => "Hamkorlarimiz"
+    ],
 ];

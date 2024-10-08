@@ -1,3 +1,6 @@
+@section('head')
+    <title>{{ __('web.menus.about_us') }}</title>
+@endsection
 @extends('web.layouts.home')
 @section('content')
     <div class="container-elementor" style="margin-bottom: 200px">

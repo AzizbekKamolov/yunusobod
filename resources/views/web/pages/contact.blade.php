@@ -1,3 +1,6 @@
+@section('head')
+    <title>{{ __('web.menus.contact_us') }}</title>
+@endsection
 @extends('web.layouts.home')
 @section('content')
     <main>
@@ -6,8 +9,13 @@
         <!-- breadcrumb-area-start-->
         <div
             class="cs_page_header position-relative background-filled d-flex align-items-center justify-content-between"
-            data-src="https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/page_header_1.jpeg"
-            style="background-image: url('https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/page_header_1.jpeg');">
+            @if($item->photo)
+                data-src="{{ asset("/sliders/$item->photo") }}"
+            style="background-image: url('{{ asset("/sliders/$item->photo") }}');"
+            @else
+                data-src="{{ asset('/source/page_header_1.jpeg') }}"
+            style="background-image: url('{{ asset('/source/page_header_1.jpeg') }}');"
+            @endif>
             <div class="container position-relative z-index-1">
                 <nav aria-label="breadcrumb" class="breadcrumb-nav cs_fs_18 cs_mb_5">
                     <!-- Breadcrumb NavXT 7.3.1 -->
@@ -264,7 +272,8 @@
                                                                     <h2 class="m-0 fw-medium cs_fs_22 cs_fs_lg_18 cs_lh_base"
                                                                         style="color:#18191d"><a
                                                                             href="tel:070 4531 9507 "
-                                                                            style="color:#18191d">+998 (99) 987 55 35</a>
+                                                                            style="color:#18191d">+998 (99) 987 55
+                                                                            35</a>
 
                                                                     </h2>
 
@@ -356,17 +365,17 @@
                                                             <div class="elementor-custom-embed">
                                                                 <iframe
                                                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3905.7905077774412!2d69.27406270110801!3d41.37892771716679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8cd72cb3b5eb%3A0xc9eb81fe639aca9e!2sDom%2014%2C%20Karakamish%20St%2C%20100190%2C%20Tashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1728124291553!5m2!1sen!2s"
-{{--                                                                    width="600" height="450" style="border:0;"--}}
+                                                                    {{--                                                                    width="600" height="450" style="border:0;"--}}
                                                                     allowfullscreen="" loading="lazy"
                                                                     referrerpolicy="no-referrer-when-downgrade"
                                                                     title="{{ __('web.address') }}"
                                                                     aria-label="{{ __('web.address') }}"
                                                                 >
                                                                 </iframe>
-{{--                                                                <iframe loading="lazy"--}}
-{{--                                                                        src="https://maps.google.com/maps?q=Parsippany%2C%20NJ%2007054%2C%20United%20States&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near"--}}
-{{--                                                                        title="Parsippany, NJ 07054, United States"--}}
-{{--                                                                        aria-label="Parsippany, NJ 07054, United States"></iframe>--}}
+                                                                {{--                                                                <iframe loading="lazy"--}}
+                                                                {{--                                                                        src="https://maps.google.com/maps?q=Parsippany%2C%20NJ%2007054%2C%20United%20States&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near"--}}
+                                                                {{--                                                                        title="Parsippany, NJ 07054, United States"--}}
+                                                                {{--                                                                        aria-label="Parsippany, NJ 07054, United States"></iframe>--}}
                                                             </div>
                                                         </div>
                                                     </div>

@@ -1,5 +1,5 @@
 @section('head')
-    <title>{{ __('web.menus.our_teams') }}</title>
+    <title>{{ __('web.menus.our_partners') }}</title>
 @endsection
 @extends('web.layouts.home')
 @section('content')
@@ -20,13 +20,14 @@
                                                                           title="Go to Bizmax."
                                                                           href="https://bizmax-wp.laralink.com"
                                                                           class="home"><span
-                                property="name">{{ __('web.colleagues_of_advocates') }}</span></a><meta property="position" content="1"></span> &gt;
+                                property="name">{{ __('web.colleagues_of_advocates') }}</span></a><meta
+                            property="position" content="1"></span> &gt;
                     <span property="itemListElement" typeof="ListItem"><span property="name"
-                                                                             class="post post-page current-item">{{ __('web.menus.our_teams') }}</span><meta
+                                                                             class="post post-page current-item">{{ __('web.menus.our_partners') }}</span><meta
                             property="url" content="https://bizmax-wp.laralink.com/contact/"><meta property="position"
                                                                                                    content="2"></span>
                 </nav>
-                <h1 class="cs_fs_48 cs_fs_lg_36 text-white m-0">{{ __('web.menus.our_teams') }}</h1>
+                <h1 class="cs_fs_48 cs_fs_lg_36 text-white m-0">{{ __('web.menus.our_partners') }}</h1>
             </div>
             <div class="position-absolute end-0 bottom-0">
                 <svg width="660" height="497" viewBox="0 0 660 497" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,12 +77,12 @@
 
                                                     <div class="cs_section_heading_in">
 
-                                                        <h3 class="cs_fs_20 cs_fs_lg_18 text-accent fw-normal cs_lh_base cs_mb_10 wow fadeInLeft"
-                                                            data-wow-duration="0.8s" data-wow-delay="0.2s"
-                                                            style="color:#18191d">{{ __('web.our_teams.title') }}</h3>
+{{--                                                        <h3 class="cs_fs_20 cs_fs_lg_18 text-accent fw-normal cs_lh_base cs_mb_10 wow fadeInLeft"--}}
+{{--                                                            data-wow-duration="0.8s" data-wow-delay="0.2s"--}}
+{{--                                                            style="color:#18191d">{{ __('web.partners.title') }}</h3>--}}
 
                                                         <h2 class="section-title-heading  cs_fs_48 cs_fs_lg_36 cs_mb_20"
-                                                            style="color:#18191d">{!!  __('web.our_teams.about') !!}</h2>
+                                                            style="color:#18191d">{!!  __('web.partners.title') !!}</h2>
 
                                                         <div class="cs_section_text m-0" style="color:#666"></div>
 
@@ -95,7 +96,8 @@
                                 </div>
                             </div>
                         </section>
-                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-d89cb3b elementor-section-boxed elementor-section-height-default elementor-section-height-default animated fadeIn"
+                        <section
+                            class="elementor-section elementor-inner-section elementor-element elementor-element-d89cb3b elementor-section-boxed elementor-section-height-default elementor-section-height-default animated fadeIn"
                             data-id="d89cb3b" data-element_type="section"
                             data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
                             <div class="elementor-container elementor-column-gap-default">
@@ -111,10 +113,11 @@
                                                 <div class="bizmax-teams">
                                                     <div class="bizmax-clients__grid bizmax-team__grid">
                                                         <div class="row">
-                                                            @foreach($employees as $employee)
+                                                            @foreach($partners as $partner)
                                                                 <div class="col-lg-4 col-md-6 col-sm-6">
 
-                                                                    <div class="cs_team cs_style_1 text-center cs_mt_30 overflow-hidden cs_rounded_50">
+                                                                    <div
+                                                                        class="cs_team cs_style_1 text-center cs_mt_30 overflow-hidden cs_rounded_50">
 
                                                                         <div
                                                                             class="cs_team_member position-relativecs_rounded_50">
@@ -124,25 +127,26 @@
 
                                                                                 <img decoding="async"
                                                                                      class="w-100 cs_rounded_50"
-                                                                                     src="{{ asset("/employees/$employee->photo") }}"
-                                                                                     alt="{{ $employee->fio }}">
+                                                                                     src="{{ asset("/sliders/$partner->photo") }}"
+                                                                                     alt="{{ $partner->name }}">
 
                                                                             </a>
 
-                                                                            <div class="cs_social_btns d-flex flex-wrap cs_column_gap_15 cs_row_gap_15 cs_transition_5 cs_fs_20 cs_fs_lg_18 position-absolute">
-                                                                                <a href="#"
-                                                                                   class="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i
-                                                                                        class="fab fa-facebook-f"></i></a>
+{{--                                                                            <div--}}
+{{--                                                                                class="cs_social_btns d-flex flex-wrap cs_column_gap_15 cs_row_gap_15 cs_transition_5 cs_fs_20 cs_fs_lg_18 position-absolute">--}}
+{{--                                                                                <a href="#"--}}
+{{--                                                                                   class="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i--}}
+{{--                                                                                        class="fab fa-facebook-f"></i></a>--}}
 
-                                                                                <a href="#"
-                                                                                   class="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i
-                                                                                        class="fab fa-twitter"></i></a>
+{{--                                                                                <a href="#"--}}
+{{--                                                                                   class="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i--}}
+{{--                                                                                        class="fab fa-twitter"></i></a>--}}
 
-                                                                                <a href="#"
-                                                                                   class="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i
-                                                                                        class="fab fa-dribbble"></i></a>
+{{--                                                                                <a href="#"--}}
+{{--                                                                                   class="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i--}}
+{{--                                                                                        class="fab fa-dribbble"></i></a>--}}
 
-                                                                            </div>
+{{--                                                                            </div>--}}
 
                                                                         </div>
 
@@ -153,17 +157,9 @@
                                                                                href="#">
 
                                                                                 <h2 class="text-white m-0 cs_fs_26 cs_mb_3">
-                                                                                    {{ $employee->fio }}</h2>
+                                                                                    {{ $partner->name }}</h2>
 
-                                                                                @foreach($directions as $direction)
-                                                                                    @if($direction->id == $employee->direction_id)
-                                                                                        <p class="text-white m-0">{{ $direction->titleH }}</p>
-                                                                                    @endif
-                                                                                @endforeach
-                                                                                <p class="text-white m-0">{{ __('form.employees.experience') }}
-                                                                                    : {{ $employee->experience }} {{ __('web.our_teams.year') }}</p>
-                                                                                <p class="text-white m-0">{{ $employee->aboutH }}</p>
-
+                                                                                <p class="text-white m-0">{{ $partner->aboutH }}</p>
                                                                             </a>
 
                                                                         </div>
@@ -180,6 +176,12 @@
                                     </div>
                                 </div>
                             </div>
+                        </section>
+
+
+                        <section class="container" style="width: 888px; left: 0px; margin-top: 100px;">
+                            {!! $item->description ?? '' !!}
+
                         </section>
                     </div>
                 </div>

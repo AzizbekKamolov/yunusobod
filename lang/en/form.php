@@ -97,4 +97,10 @@ return [
         'action' => "Page",
         'description' => "Description",
     ],
+    'partners' => [
+        'partners' => "Partners",
+        'partner' => "Partner",
+        'name' => "Name",
+        'about' => "About",
+    ],
 ];

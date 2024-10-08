@@ -102,4 +102,10 @@ return [
         'name' => "Nomi",
         'value' => "Qimati",
     ],
+    'partners' => [
+        'partners' => "Hamkorlar",
+        'partner' => "Hamkor",
+        'name' => "Nomi",
+        'about' => "Izoh",
+    ],
 ];

@@ -32,8 +32,10 @@
                                     <select name="action" id="action" class="form-control">
                                         <option value="about_us">{{ __('web.menus.about_us') }}</option>
                                         <option value="activity">{{ __('web.menus.activity') }}</option>
+                                        <option value="our_teams">{{ __('web.menus.our_teams') }}</option>
                                         <option value="statistics">{{ __('web.menus.statistics') }}</option>
-                                        <option value="partners">{{ __('web.menus.our_partners') }}</option>
+                                        <option value="our_partners">{{ __('web.menus.our_partners') }}</option>
+                                        <option value="contact_us">{{ __('web.menus.contact_us') }}</option>
                                     </select>
                                     @if($errors->has('action'))
                                         <div class="text-danger">{{ $errors->first('action') }}</div>

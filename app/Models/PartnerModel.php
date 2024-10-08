@@ -30,4 +30,7 @@ class PartnerModel extends Model
       "created_at",
       "updated_at",
     ];
+    protected $casts = [
+      "about" => "array"
+    ];
 }

@@ -61,4 +61,7 @@ return [
         "head_of_department" => "Начальник департамента",
         "reception_of_college" => "Приемная коллегии",
     ],
+    "partners" => [
+        "title" => "Партнеры"
+    ],
 ];

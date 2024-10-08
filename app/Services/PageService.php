@@ -8,6 +8,7 @@ use App\ActionData\Page\CreatePageActionData;
 use App\DataObjects\Page\PageData;
 use App\Models\PageModel;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;
 
 class PageService
@@ -43,7 +44,7 @@ class PageService
     {
         $data = $actionData->all();
         unset($data['file']);
-        if ($actionData->photo){
+        if ($actionData->photo) {
             $data['photo'] = $actionData->photo->hashName();
             Storage::disk('local')->put('sliders/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
 
@@ -61,16 +62,16 @@ class PageService
     public function updatePage(CreatePageActionData $actionData, int $id): void
     {
         $data = $actionData->all();
-        unset($data['file']);
+        unset($data['photo']);
         $page = $this->getOne($id);
-        if ($actionData->photo){
+        if ($actionData->photo) {
+//            $data['photo'] = Str::uuid()->toString() . '.' . $actionData->photo->getClientOriginalExtension();
             $data['photo'] = $actionData->photo->hashName();
             Storage::disk('local')->put('sliders/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
 
             Storage::disk('local')->delete('sliders/' . $page->photo);
         }
-        $page->fill($data);
-        $page->save();
+        $page->update($data);
     }
 
     /**

@@ -54,6 +54,11 @@ class PermissionSeeder extends Seeder
         ["name" => "settings.update", "guard_name" => "web",],
         ["name" => "settings.delete", "guard_name" => "web",],
 
+        ["name" => "partners.index", "guard_name" => "web",],
+        ["name" => "partners.store", "guard_name" => "web",],
+        ["name" => "partners.update", "guard_name" => "web",],
+        ["name" => "partners.delete", "guard_name" => "web",],
+
     ];
 
     /**

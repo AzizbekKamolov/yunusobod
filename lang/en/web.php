@@ -67,4 +67,7 @@ return [
         'name' => "Name",
         'value' => "Value",
     ],
+    "partners" => [
+        "title" => "Partners"
+    ],
 ];

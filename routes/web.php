@@ -5,6 +5,7 @@ use App\Http\Controllers\{AuthController,
     DirectionController,
     EmployeeController,
     PageController,
+    PartnerController,
     PermissionController,
     RoleController,
     SliderController,
@@ -119,5 +120,15 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
         Route::put('update/{id}', 'update')->name('update')->can('pages.update');
         Route::get('edit/{id}', 'edit')->name('edit')->can('pages.update');
         Route::get('delete/{id}', 'delete')->name('delete')->can('pages.delete');
+    });
+    //Pages
+    Route::controller(PartnerController::class)->name('partners.')->prefix('partners')->group(function () {
+        Route::get('/', 'index')->name('index')->can('partners.index');
+        Route::post('store', 'store')->name('store')->can('partners.store');
+        Route::get('create', 'create')->name('create')->can('partners.store');
+        Route::put('update/{id}', 'update')->name('update')->can('partners.update');
+        Route::get('set-order/{id}', 'setOrder')->name('setOrder')->can('partners.update');
+        Route::get('edit/{id}', 'edit')->name('edit')->can('partners.update');
+        Route::get('delete/{id}', 'delete')->name('delete')->can('partners.delete');
     });
 });

@@ -32,10 +32,12 @@
                                 <div class="col-md-12 mb-3">
                                     <label for="action">{{ __('form.pages.action') }}</label>
                                     <select name="action" id="action" class="form-control">
-                                        <option value="about_us" @selected($item->action === 'about_us')>{{ __('web.menus.about_us') }}</option>
-                                        <option value="activity" @selected($item->action === 'activity')>{{ __('web.menus.activity') }}</option>
-                                        <option value="statistics" @selected($item->action === 'statistics')>{{ __('web.menus.statistics') }}</option>
-                                        <option value="partners" @selected($item->action === 'partners')>{{ __('web.menus.our_partners') }}</option>
+                                        <option value="about_us" @selected($item->action == 'about_us')>{{ __('web.menus.about_us') }}</option>
+                                        <option value="activity" @selected($item->action == 'activity')>{{ __('web.menus.activity') }}</option>
+                                        <option value="our_teams" @selected($item->action == 'our_teams')>{{ __('web.menus.our_teams') }}</option>
+                                        <option value="statistics" @selected($item->action == 'statistics')>{{ __('web.menus.statistics') }}</option>
+                                        <option value="our_partners" @selected($item->action == 'our_partners')>{{ __('web.menus.our_partners') }}</option>
+                                        <option value="contact_us" @selected($item->action == 'contact_us')>{{ __('web.menus.contact_us') }}</option>
                                     </select>
                                     @if($errors->has('action'))
                                         <div class="text-danger">{{ $errors->first('action') }}</div>
