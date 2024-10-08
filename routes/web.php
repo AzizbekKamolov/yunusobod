@@ -10,8 +10,7 @@ use App\Http\Controllers\{AuthController,
     SliderController,
     SocialNetworkController,
     UserController,
-    WebController
-};
+    WebController};
 use Illuminate\Support\Facades\Route;
 
 Route::controller(WebController::class)->group(function () {

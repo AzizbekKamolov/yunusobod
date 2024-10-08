@@ -153,7 +153,7 @@
                                                                                     @endif
                                                                                 @endforeach
                                                                                 <p class="text-white m-0">{{ __('form.employees.experience') }}
-                                                                                    : {{ $employee->experience }}</p>
+                                                                                    : {{ $employee->experience }} {{ __('web.our_teams.year') }}</p>
                                                                                 <p class="text-white m-0">{{ $employee->aboutH }}</p>
 
                                                                             </a>

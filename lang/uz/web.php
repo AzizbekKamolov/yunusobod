@@ -1,5 +1,6 @@
 <?php
 return [
+    "address" => "Toshkent sh., Yunusobod tumani, Sodiq Azimov ko‘chasi, 14-uy, 9-kvartira",
     "menus" => [
         "home" => "Bosh sahifa",
         "about_us" => "Biz haqimizda",
@@ -13,6 +14,7 @@ return [
         "free_consultation" => "Bepul maslahat",
     ],
     "our_teams" => [
+        "year" => "Yil",
         "title" => "Jamoamiz a'zosi bilan tanishing",
         "about" => "Bizning professional <br>jamoa bilan tanishing",
     ],

@@ -96,7 +96,7 @@
                         </div>
                         <div class="form-row mt-3">
                             <div class="col-md-12 mb-3">
-                                <img src="{{ asset("/sliders/$item->icon") }}" width="100" alt="icon">
+                                <img src="{{ asset("/sliders/$item->icon") }}" width="100" alt="icon" style="background-color:#5f9ea0;">
                             </div>
                             <div class="col-md-12 mb-3">
                                 <label for="icon">{{ __('form.directions.icon') }}</label>

@@ -15,11 +15,12 @@
                                                                           title="Go to Bizmax."
                                                                           href="#"
                                                                           class="home"><span
-                                property="name">{{ __('web.colleagues_of_advocates') }}</span></a><meta property="position" content="1"></span> &gt;
+                                property="name">{{ __('web.colleagues_of_advocates') }}</span></a><meta
+                            property="position" content="1"></span> &gt;
                     <span property="itemListElement" typeof="ListItem"><span property="name"
                                                                              class="post post-page current-item">{{ __('web.menus.contact_us') }}</span><meta
                             property="url" content="#"><meta property="position"
-                                                                                                   content="2"></span>
+                                                             content="2"></span>
                 </nav>
                 <h1 class="cs_fs_48 cs_fs_lg_36 text-white m-0">{{ __('web.menus.contact_us') }}</h1>
             </div>
@@ -89,7 +90,8 @@
 
                                                         </div>
                                                     </div>
-                                                    <div class="elementor-element elementor-element-b4d1974 elementor-widget elementor-widget-bizmax-contact"
+                                                    <div
+                                                        class="elementor-element elementor-element-b4d1974 elementor-widget elementor-widget-bizmax-contact"
                                                         data-id="b4d1974" data-element_type="widget"
                                                         data-widget_type="bizmax-contact.default">
                                                         <div class="elementor-widget-container">
@@ -154,7 +156,8 @@
                                                                                             size="40" maxlength="400"
                                                                                             class="wpcf7-form-control wpcf7-tel wpcf7-text wpcf7-validates-as-tel"
                                                                                             aria-invalid="false"
-                                                                                            placeholder="{{ __('web.contact_us.phone') }}" value=""
+                                                                                            placeholder="{{ __('web.contact_us.phone') }}"
+                                                                                            value=""
                                                                                             type="tel"
                                                                                             name="phone"></span>
                                                                                 </p>
@@ -191,7 +194,8 @@
                                                                             <p>
                                                                                 <button
                                                                                     class="cs_btn cs_style_1 cs_fs_14 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden">
-                                                                                    <span>{{ __('web.contact_us.send_a_message') }}</span></button>
+                                                                                    <span>{{ __('web.contact_us.send_a_message') }}</span>
+                                                                                </button>
                                                                             </p>
                                                                         </div>
                                                                     </div>
@@ -227,7 +231,8 @@
                                                                         style="color:#18191d">{{ __('web.contact_us.title2') }}</h2>
 
                                                                     <div class="cs_section_text m-0" style="color:#666">
-                                                                        <p class="m-0">{{ __('web.contact_us.about') }}</p></div>
+                                                                        <p class="m-0">{{ __('web.contact_us.about') }}</p>
+                                                                    </div>
 
                                                                 </div>
 
@@ -259,7 +264,7 @@
                                                                     <h2 class="m-0 fw-medium cs_fs_22 cs_fs_lg_18 cs_lh_base"
                                                                         style="color:#18191d"><a
                                                                             href="tel:070 4531 9507 "
-                                                                            style="color:#18191d">+ 070 4531 9507 </a>
+                                                                            style="color:#18191d">+998 (99) 987 55 35</a>
 
                                                                     </h2>
 
@@ -308,8 +313,7 @@
 
                                                                     <h2 class="m-0 fw-medium cs_fs_22 cs_fs_lg_18 cs_lh_base"
                                                                         style="color:#18191d"><a href=""
-                                                                                                 style="color:#18191d">Yewtree
-                                                                            Cottage, Kings Pyon, HR4 8PZ</a>
+                                                                                                 style="color:#18191d">{{ __('web.address') }}</a>
 
                                                                     </h2>
 
@@ -350,10 +354,19 @@
                                                                     height: 300px
                                                                 }</style>
                                                             <div class="elementor-custom-embed">
-                                                                <iframe loading="lazy"
-                                                                        src="https://maps.google.com/maps?q=Parsippany%2C%20NJ%2007054%2C%20United%20States&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near"
-                                                                        title="Parsippany, NJ 07054, United States"
-                                                                        aria-label="Parsippany, NJ 07054, United States"></iframe>
+                                                                <iframe
+                                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3905.7905077774412!2d69.27406270110801!3d41.37892771716679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8cd72cb3b5eb%3A0xc9eb81fe639aca9e!2sDom%2014%2C%20Karakamish%20St%2C%20100190%2C%20Tashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1728124291553!5m2!1sen!2s"
+{{--                                                                    width="600" height="450" style="border:0;"--}}
+                                                                    allowfullscreen="" loading="lazy"
+                                                                    referrerpolicy="no-referrer-when-downgrade"
+                                                                    title="{{ __('web.address') }}"
+                                                                    aria-label="{{ __('web.address') }}"
+                                                                >
+                                                                </iframe>
+{{--                                                                <iframe loading="lazy"--}}
+{{--                                                                        src="https://maps.google.com/maps?q=Parsippany%2C%20NJ%2007054%2C%20United%20States&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near"--}}
+{{--                                                                        title="Parsippany, NJ 07054, United States"--}}
+{{--                                                                        aria-label="Parsippany, NJ 07054, United States"></iframe>--}}
                                                             </div>
                                                         </div>
                                                     </div>

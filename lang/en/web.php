@@ -1,5 +1,6 @@
 <?php
 return [
+    "address" => "Tashkent, Yunusabad district, Sodik Azimov Street, building 14, apt. 9",
     "menus" => [
         "home" => "Home",
         "about_us" => "About Us",
@@ -13,6 +14,7 @@ return [
         "free_consultation" => "Free consultation",
     ],
     "our_teams" => [
+        "year" => "Years",
         "title" => "Meet a member of our team",
         "about" => "Meet our professional team",
     ],
@@ -58,5 +60,11 @@ return [
         "number" => "Number",
         "head_of_department" => "Head of Department:",
         "reception_of_college" => "Reception of College:",
+    ],
+    'settings' => [
+        'settings' => "Settings",
+        'setting' => "Setting",
+        'name' => "Name",
+        'value' => "Value",
     ],
 ];

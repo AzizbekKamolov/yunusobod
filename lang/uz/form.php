@@ -25,7 +25,6 @@ return [
     ],
     'lang' => 'Tili',
     'admin' => 'Adminstrator',
-    'settings' => 'Sozlamalar',
     'edit' => 'Tahrirlash',
     'delete' => 'O\'chirish',
     'add' => 'Qo\'shish',
@@ -96,5 +95,11 @@ return [
         'photo' => "Sahifa banneri(rasmi)",
         'action' => "Sahifa",
         'description' => "Izoh",
+    ],
+    'settings' => [
+        'settings' => "Sozlamalar",
+        'setting' => "Sozlama",
+        'name' => "Nomi",
+        'value' => "Qimati",
     ],
 ];

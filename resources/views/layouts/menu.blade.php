@@ -35,7 +35,7 @@
                 @canany(['roles.index','permissions.index','users.index'])
                     <li class="@if(request()->routeIs('roles.*','permissions.*','users.*')) active open @endif">
                         <a href="javascript:void(0);"><i class="fa fa-cogs"></i>
-                            <span>{{__('form.settings')}}</span><i class="accordion-icon fa fa-angle-left"></i></a>
+                            <span>{{__('form.settings.settings')}}</span><i class="accordion-icon fa fa-angle-left"></i></a>
                         <ul class="sub-menu" style="display:block">
                             @can('users.index')
                                 <li @if(request()->routeIs('users.*')) class="active" @endif ><a

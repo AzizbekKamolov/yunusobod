@@ -34,8 +34,7 @@
                                                 data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
                                                     <h2 class="elementor-heading-title elementor-size-default">
-                                                        <a href="tel:+07045319507%20">+ 070 4531
-                                                            9507 </a></h2></div>
+                                                        <a href="tel:+998 (99) 987 55 35">+998 (99) 987 55 35</a></h2></div>
                                             </div>
                                         </div>
                                     </div>
@@ -65,8 +64,7 @@
                                                 data-id="b2904ee" data-element_type="widget"
                                                 data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
-                                                    <p class="elementor-heading-title elementor-size-default">
-                                                        Send Email</p></div>
+                                                    <p class="elementor-heading-title elementor-size-default">{{ __('web.contact_us.email_address') }}</p></div>
                                             </div>
                                             <div
                                                 class="elementor-element elementor-element-c37dc42 elementor-widget elementor-widget-heading"
@@ -128,7 +126,7 @@
                                                         }</style>
                                                     <div class="cs_text_widget">
                                                         <p>{{ __('web.contact_us.address') }}:</p>
-                                                        <p>Msldns sldkfns lsdkf</p>
+                                                        <p>{{ __('web.address') }}</p>
                                                         <br>
                                                         <p>{{ __('web.footer.follow_social_networks') }}</p>
                                                     </div>
@@ -512,11 +510,11 @@
                                                 data-widget_type="text-editor.default">
                                                 <div class="elementor-widget-container">
                                                     <span>{{ __('web.footer.executive_director') }}</span>
-                                                    <p>{{ __('web.footer.number') }}: +998 (93) 111 11 11</p>
+                                                    <p>{{ __('web.footer.number') }}: +998 (99) 987 55 35</p>
                                                     <span>{{ __('web.footer.head_of_department') }}</span>
-                                                    <p>{{ __('web.footer.number') }}: +998 (93) 111 11 11</p>
+                                                    <p>{{ __('web.footer.number') }}: +998 (99) 987 55 35</p>
                                                     <span>{{ __('web.footer.reception_of_college') }}</span>
-                                                    <p>{{ __('web.footer.number') }}: +998 (93) 111 11 11</p>
+                                                    <p>{{ __('web.footer.number') }}: +998 (99) 987 55 35</p>
                                                 </div>
                                             </div>
                                             {{--                                            <div--}}
