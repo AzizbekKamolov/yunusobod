@@ -15,8 +15,8 @@ class CreatePageActionData extends ActionDataBase
 
     protected array $rules = [
         'action' => "required|string",
-        'description_uz' => "required|string",
-        'description_ru' => "required|string",
-        'description_en' => "required|string",
+        'description_uz' => "nullable|string",
+        'description_ru' => "nullable|string",
+        'description_en' => "nullable|string",
     ];
 }

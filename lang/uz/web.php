@@ -52,15 +52,36 @@ return [
         yurtimiz fuqarolariga malakali yuridik yordam ko‘rsatib kelmoqdamiz",
     ],
     "footer" => [
-      "page_navigation" => "Sahifalar:",
-      "follow_social_networks" => "Bizni ijtimoiy tarmoqlarda kuzatib boring:",
-      "contacts" => "Kontaktlar",
-      "executive_director" => "Ijrochi direktor",
-      "number" => "Nomer",
-      "head_of_department" => "Bo'lim boshlig'i",
-      "reception_of_college" => "Qabul kommisisyasi",
+        "page_navigation" => "Sahifalar:",
+        "follow_social_networks" => "Bizni ijtimoiy tarmoqlarda kuzatib boring:",
+        "contacts" => "Kontaktlar",
+        "executive_director" => "Ijrochi direktor",
+        "number" => "Nomer",
+        "head_of_department" => "Bo'lim boshlig'i",
+        "reception_of_college" => "Qabul kommisisyasi",
     ],
     "partners" => [
-      "title" => "Hamkorlarimiz"
+        "title" => "Hamkorlarimiz"
+    ],
+    "statistics" => [
+        "title" => "Bizning ko'rsatkichlarimiz raqamlarda",
+        "statistics" => [
+            [
+                "amount" => "98%",
+                "description" => "Fuqarolik ishlari bo'yicha muvaffaqiyatli holatlar",
+            ],
+            [
+                "amount" => "97%",
+                "description" => "Jinoiy ishlar bo'yicha muvaffaqiyatli holatlar",
+            ],
+            [
+                "amount" => "100%",
+                "description" => "Iqtisodiy ishlar bo'yicha muvaffaqiyatli holatlar",
+            ],
+            [
+                "amount" => "99%",
+                "description" => "Korporativ nizolarda muvaffaqiyatli holatlar",
+            ],
+        ],
     ],
 ];

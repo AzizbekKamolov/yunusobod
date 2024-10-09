@@ -70,4 +70,25 @@ return [
     "partners" => [
         "title" => "Partners"
     ],
+    "statistics" => [
+        "title" => "Our performance in numbers",
+        "statistics" => [
+            [
+                "amount" => "98%",
+                "description" => "Successful cases in civil cases",
+            ],
+            [
+                "amount" => "97%",
+                "description" => "Successful cases in criminal cases",
+            ],
+            [
+                "amount" => "100%",
+                "description" => "Successful cases in economic cases",
+            ],
+            [
+                "amount" => "99%",
+                "description" => "Successful cases in corporate disputes",
+            ],
+        ],
+    ],
 ];

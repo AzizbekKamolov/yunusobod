@@ -65,7 +65,7 @@ class WebController extends Controller
         $item = PageViewModel::fromDataObject($page);
         $socialNetworks = $this->networkService->getAllSocialNetworks()->transform(fn($socialNetwork) => SocialNetworkViewModel::fromDataObject($socialNetwork));
 
-        return view('web.pages.contact', compact('socialNetworks', 'item'));
+        return view('web.pages.statistics', compact('socialNetworks', 'item'));
     }
 
     public function partners(): View
