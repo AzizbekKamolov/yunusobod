@@ -32,6 +32,7 @@ Route::controller(AuthController::class)->group(function () {
 });
 Route::controller(DashboardController::class)->name('dashboard.')->group(function () {
     Route::get('change-lang/{lang}', 'changeLang')->name('changeLang');
+    Route::post('feedback', 'feedback')->name('feedback');
 });
 Route::middleware(['auth'])->prefix('admin')->group(function () {
     Route::controller(DashboardController::class)->name('dashboard.')->group(function () {

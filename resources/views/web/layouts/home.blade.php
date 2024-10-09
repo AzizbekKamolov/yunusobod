@@ -94,7 +94,7 @@
 <div class="cs_preloader cs_accent_color cs_white_bg" style="display: none;">
     <div class="cs_preloader bg-white d-flex justify-content-center align-items-center" style="display: none;">
         <div class="cs_preloader_in" style="display: none;">
-            <img src="{{ asset('source/logo2.png') }}" alt="Bar Association Yunusobod">
+            <img src="{{ asset('/source/logos/logo2.png') }}" alt="Bar Association Yunusobod">
         </div>
     </div>
 </div>

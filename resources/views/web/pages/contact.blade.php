@@ -98,36 +98,21 @@
 
                                                         </div>
                                                     </div>
-                                                    <div
-                                                        class="elementor-element elementor-element-b4d1974 elementor-widget elementor-widget-bizmax-contact"
+                                                    <div class="elementor-element elementor-element-b4d1974 elementor-widget elementor-widget-bizmax-contact"
                                                         data-id="b4d1974" data-element_type="widget"
                                                         data-widget_type="bizmax-contact.default">
                                                         <div class="elementor-widget-container">
 
-                                                            <div class="wpcf7 js" id="wpcf7-f4665-p65-o1" lang="en-US"
+                                                            <div class="" id="wpcf7-f4665-p65-o1" lang="en-US"
                                                                  dir="ltr">
                                                                 <div class="screen-reader-response"><p role="status"
                                                                                                        aria-live="polite"
                                                                                                        aria-atomic="true"></p>
                                                                     <ul></ul>
                                                                 </div>
-                                                                <form action="/contact/#wpcf7-f4665-p65-o1"
-                                                                      method="post" class="wpcf7-form init"
-                                                                      aria-label="Contact form" novalidate="novalidate"
-                                                                      data-status="init">
-                                                                    <div style="display: none;">
-                                                                        <input type="hidden" name="_wpcf7" value="4665">
-                                                                        <input type="hidden" name="_wpcf7_version"
-                                                                               value="5.9.8">
-                                                                        <input type="hidden" name="_wpcf7_locale"
-                                                                               value="en_US">
-                                                                        <input type="hidden" name="_wpcf7_unit_tag"
-                                                                               value="wpcf7-f4665-p65-o1">
-                                                                        <input type="hidden"
-                                                                               name="_wpcf7_container_post" value="65">
-                                                                        <input type="hidden"
-                                                                               name="_wpcf7_posted_data_hash" value="">
-                                                                    </div>
+                                                                <form action="{{ route('dashboard.feedback') }}"
+                                                                      method="post">
+                                                                    @csrf
                                                                     <div class="row bizmax-form">
                                                                         <div class="col-lg-6">
                                                                             <div class="contact__form-input">
