@@ -32,12 +32,11 @@ class RequestController extends Controller
      * @param int $id
      * @return View
      */
-    public function edit(int $id): View
+    public function check(int $id): RedirectResponse
     {
-        $data = $this->service->edit($id);
-        $viewModel = RequestViewModel::fromDataObject($data);
-
-        return $viewModel->toView('admin.requests.edit');
+         $this->service->check($id);
+        return redirect()->route('requests.index')
+            ->with('success', trans('form.success_update', ['attribute' => trans('form.requests.request')]));
     }
 
     /**

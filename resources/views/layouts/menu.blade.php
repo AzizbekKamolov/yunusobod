@@ -11,31 +11,48 @@
                     <a href="{{ route('dashboard.index') }}"><i class="fa fa-home"></i>
                         <span>{{__('form.dashboard')}}</span></a>
                 </li>
+                @can('requests.index')
+                <li @if(request()->routeIs('requests.*')) class="active" @endif >
+                    <a href="{{ route('requests.index') }}"><i class="fa fa-question-circle"></i>
+                        <span>{{__('form.requests.requests')}}</span></a>
+                </li>
+                @endcan
+                @can('sliders.index')
                 <li @if(request()->routeIs('sliders.*')) class="active" @endif >
                     <a href="{{ route('sliders.index') }}"><i class="fa fa-sliders"></i>
                         <span>{{__('form.sliders.sliders')}}</span></a>
                 </li>
+                @endcan
+                @can('directions.index')
                 <li @if(request()->routeIs('directions.*')) class="active" @endif >
                     <a href="{{ route('directions.index') }}"><i class="fa fa-bar-chart"></i>
                         <span>{{__('form.directions.directions')}}</span></a>
                 </li>
+                @endcan
+                @can('employees.index')
                 <li @if(request()->routeIs('employees.*')) class="active" @endif >
                     <a href="{{ route('employees.index') }}"><i class="fa fa-users"></i>
                         <span>{{__('form.employees.employees')}}</span></a>
                 </li>
-
+                @endcan
+                @can('social_networks.index')
                 <li @if(request()->routeIs('social_networks.*')) class="active" @endif >
                     <a href="{{ route('social_networks.index') }}"><i class="fa fa-share-alt-square"></i>
                         <span>{{__('form.social_networks.social_networks')}}</span></a>
                 </li>
+                @endcan
+                @can('pages.index')
                 <li @if(request()->routeIs('pages.*')) class="active" @endif >
                     <a href="{{ route('pages.index') }}"><i class="fa fa-files-o"></i>
                         <span>{{__('form.pages.pages')}}</span></a>
                 </li>
+                @endcan
+                @can('partners.index')
                 <li @if(request()->routeIs('partners.*')) class="active" @endif >
                     <a href="{{ route('partners.index') }}"><i class="fa fa-calendar"></i>
                         <span>{{__('form.partners.partners')}}</span></a>
                 </li>
+                @endcan
                 @canany(['roles.index','permissions.index','users.index'])
                     <li class="@if(request()->routeIs('roles.*','permissions.*','users.*')) active open @endif">
                         <a href="javascript:void(0);"><i class="fa fa-cogs"></i>

@@ -3,6 +3,7 @@
 return [
     'dashboard' => "Bosh sahifa",
     'panel' => 'Admin panel',
+    'checked' => 'Tekshirilgan',
     'roles' => [
         'role' => 'Rol',
         'roles' => 'Rollar',
@@ -34,6 +35,7 @@ return [
     'total' => 'Jami',
     'save' => 'Saqlash',
     'confirm_delete' => 'Haqiqatan ham oʻchirib tashlamoqchimisiz ?',
+    'confirm_check' => "Haqiqatan ham o'zgartirmoqchimisiz ?",
     'success_create' => ':attribute muvofaqiyatli yaratildi !',
     'success_update' => ':attribute muvofaqiyatli o\'zgartirildi !',
     'success_delete' => ':attribute muvofaqiyatli o\'chirildi !',
@@ -107,5 +109,14 @@ return [
         'partner' => "Hamkor",
         'name' => "Nomi",
         'about' => "Izoh",
+    ],
+    'requests' => [
+        'requests' => "Murojaatlar",
+        'request' => "Murojaat",
+        'fio' => "FIO",
+        'phone' => "Telefon raqam",
+        'email' => "Email",
+        'title' => "Sarlavha",
+        'content' => "Matn",
     ],
 ];

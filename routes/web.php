@@ -7,6 +7,7 @@ use App\Http\Controllers\{AuthController,
     PageController,
     PartnerController,
     PermissionController,
+    RequestController,
     RoleController,
     SliderController,
     SocialNetworkController,
@@ -73,6 +74,12 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
         Route::get('delete/{id}', 'delete')->name('delete')->can('users.delete');
     });
     Route::get('profile', [UserController::class, 'profile'])->name('user.profile');
+
+
+    Route::controller(RequestController::class)->name('requests.')->prefix('requests')->group(function () {
+        Route::get('/', 'index')->name('index')->can('requests.index');
+        Route::get('check/{id}', 'check')->name('check')->can('requests.update');
+    });
     //sliders
     Route::controller(SliderController::class)->name('sliders.')->prefix('sliders')->group(function () {
         Route::get('/', 'index')->name('index')->can('sliders.index');

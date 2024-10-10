@@ -50,7 +50,7 @@ class DashboardController extends Controller
             "email" => "required|email",
             "phone" => "required|max:20",
             "title" => "required|max:255",
-            "content" => "required|max:255",
+            "content" => "required|max:1500",
         ]);
         RequestModel::query()->create($data);
         return redirect()->back()->with("success", trans('web.feedback'));

@@ -3,6 +3,7 @@
 return [
     'dashboard' => "Home",
     'panel' => 'Admin Panel',
+    'checked' => 'Checked',
     'roles' => [
         'role' => 'Role',
         'roles' => 'Roles',
@@ -34,6 +35,7 @@ return [
     'total' => 'Total',
     'save' => 'Save',
     'confirm_delete' => 'Are you sure you want to delete?',
+    'confirm_check' => "Are you sure you want to change?",
     'success_create' => ':attribute successfully created !',
     'success_update' => ':attribute successfully updated !',
     'success_delete' => ':attribute successfully deleted !',
@@ -102,5 +104,14 @@ return [
         'partner' => "Partner",
         'name' => "Name",
         'about' => "About",
+    ],
+    'requests' => [
+        'requests' => "Requests",
+        'request' => "Request",
+        'fio' => "FIO",
+        'phone' => "Phone number",
+        'email' => "Email",
+        'title' => "Title",
+        'content' => "Text",
     ],
 ];

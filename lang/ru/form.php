@@ -3,6 +3,7 @@
 return [
     'dashboard' => "Главная",
     'panel' => 'Панель администратора',
+    'checked' => 'Проверено',
     'roles' => [
         'role' => 'Роль',
         'roles' => 'Роли',
@@ -33,6 +34,7 @@ return [
     'total' => 'Всего',
     'save' => 'Сохранить',
     'confirm_delete' => 'Вы действительно хотите удалить?',
+    'confirm_check' => "Вы уверены, что хотите изменить?",
     'success_create' => ':attribute успешно создано !',
     'success_update' => ':attribute успешно обновлено !',
     'success_delete' => ':attribute успешно удалено !',
@@ -107,5 +109,14 @@ return [
         'partner' => "Партнер",
         'name' => "Имя",
         'about' => "Описание",
+    ],
+    'requests' => [
+        'requests' => "Запросы",
+        'request' => "Запрос",
+        'fio' => "ФИО",
+        'phone' => "Номер телефона",
+        'email' => "Электронная почта",
+        'title' => "Название",
+        'content' => "Текст",
     ],
 ];

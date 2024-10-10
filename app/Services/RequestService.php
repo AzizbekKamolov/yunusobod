@@ -18,7 +18,8 @@ class RequestService
      */
     public function paginate(int $page = 1, int $limit = 10, ?iterable $filters = null): DataObjectCollection
     {
-        $model = RequestModel::applyEloquentFilters($filters);
+        $model = RequestModel::applyEloquentFilters($filters)
+            ->orderByDesc('id');
 
         $totalCount = $model->count();
         $skip = $limit * ($page - 1);
@@ -28,7 +29,6 @@ class RequestService
         });
         return new DataObjectCollection($items, $totalCount, $limit, $page);
     }
-
 
 
     /**
@@ -57,5 +57,13 @@ class RequestService
     public function edit(int $id): RequestData
     {
         return RequestData::fromModel($this->getOne($id));
+    }
+
+    public function check(int $id): void
+    {
+        $data = $this->getOne($id);
+        if ($data->status == 0) {
+            $data->update(['status' => 1]);
+        }
     }
 }
