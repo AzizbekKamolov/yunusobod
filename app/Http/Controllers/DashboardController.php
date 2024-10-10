@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace App\Http\Controllers;
 
 
+use App\Models\RequestModel;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
@@ -13,8 +14,7 @@ class DashboardController extends Controller
 {
 
     public function __construct
-    (
-    )
+    ()
     {
 
     }
@@ -39,8 +39,20 @@ class DashboardController extends Controller
         return redirect()->back();
     }
 
-    public function feedback(Request $request)
+    /**
+     * @param Request $request
+     * @return RedirectResponse
+     */
+    public function feedback(Request $request): RedirectResponse
     {
-        dd($request->all());
+        $data = $request->validate([
+            "fio" => "required",
+            "email" => "required|email",
+            "phone" => "required|max:20",
+            "title" => "required|max:255",
+            "content" => "required|max:255",
+        ]);
+        RequestModel::query()->create($data);
+        return redirect()->back()->with("success", trans('web.feedback'));
     }
 }

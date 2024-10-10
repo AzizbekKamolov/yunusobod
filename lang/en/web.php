@@ -91,4 +91,5 @@ return [
             ],
         ],
     ],
+    "feedback" => "Thank you for your request. We will contact you soon!",
 ];

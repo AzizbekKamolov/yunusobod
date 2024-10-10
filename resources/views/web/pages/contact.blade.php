@@ -98,7 +98,8 @@
 
                                                         </div>
                                                     </div>
-                                                    <div class="elementor-element elementor-element-b4d1974 elementor-widget elementor-widget-bizmax-contact"
+                                                    <div
+                                                        class="elementor-element elementor-element-b4d1974 elementor-widget elementor-widget-bizmax-contact"
                                                         data-id="b4d1974" data-element_type="widget"
                                                         data-widget_type="bizmax-contact.default">
                                                         <div class="elementor-widget-container">
@@ -108,6 +109,10 @@
                                                                 <div class="screen-reader-response"><p role="status"
                                                                                                        aria-live="polite"
                                                                                                        aria-atomic="true"></p>
+                                                                    @if(session()->has('success'))
+                                                                        <h4
+                                                                            class="text-success">{{ session('success') }}</h4>
+                                                                    @endif
                                                                     <ul></ul>
                                                                 </div>
                                                                 <form action="{{ route('dashboard.feedback') }}"
@@ -123,9 +128,14 @@
                                                                                             aria-required="true"
                                                                                             aria-invalid="false"
                                                                                             placeholder="{{ __('web.contact_us.your_name') }}"
-                                                                                            value="" type="text"
-                                                                                            name="name"></span>
+                                                                                            value="{{ old('fio') }}"
+                                                                                            type="text"
+                                                                                            name="fio"></span>
                                                                                 </p>
+                                                                                @if($errors->has('fio'))
+                                                                                    <span
+                                                                                        class="text-danger">{{ $errors->first('fio') }}</span>
+                                                                                @endif
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-lg-6">
@@ -140,6 +150,10 @@
                                                                                             value="" type="email"
                                                                                             name="email"></span>
                                                                                 </p>
+                                                                                @if($errors->has('email'))
+                                                                                    <span
+                                                                                        class="text-danger">{{ $errors->first('email') }}</span>
+                                                                                @endif
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-lg-6">
@@ -154,6 +168,10 @@
                                                                                             type="tel"
                                                                                             name="phone"></span>
                                                                                 </p>
+                                                                                @if($errors->has('phone'))
+                                                                                    <span
+                                                                                        class="text-danger">{{ $errors->first('phone') }}</span>
+                                                                                @endif
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-lg-6">
@@ -166,8 +184,12 @@
                                                                                             aria-invalid="false"
                                                                                             placeholder="{{ __('web.contact_us.subject') }}"
                                                                                             value="" type="text"
-                                                                                            name="subject"></span>
+                                                                                            name="title"></span>
                                                                                 </p>
+                                                                                @if($errors->has('title'))
+                                                                                    <span
+                                                                                        class="text-danger">{{ $errors->first('title') }}</span>
+                                                                                @endif
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-12">
@@ -179,8 +201,12 @@
                                                                                             class="wpcf7-form-control wpcf7-textarea"
                                                                                             aria-invalid="false"
                                                                                             placeholder="{{ __('web.contact_us.message') }}"
-                                                                                            name="message"></textarea></span>
+                                                                                            name="content"></textarea></span>
                                                                                 </p>
+                                                                                @if($errors->has('content'))
+                                                                                    <span
+                                                                                        class="text-danger">{{ $errors->first('content') }}</span>
+                                                                                @endif
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-12">

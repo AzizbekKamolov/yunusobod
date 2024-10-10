@@ -84,4 +84,5 @@ return [
             ],
         ],
     ],
+    "feedback" => "Murojaatingiz uchun raxmat. Tez orada siz bilan bo'g'lanamiz!",
 ];
