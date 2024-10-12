@@ -1,5 +1,5 @@
 @section('head')
-    <title>{{ __('web.menus.our_partners') }}</title>
+    <title>{{ __('web.menus.our_partners') }}-{{ env('APP_NAME') }}</title>
 @endsection
 @extends('web.layouts.home')
 @section('content')
@@ -18,13 +18,13 @@
                     <!-- Breadcrumb NavXT 7.3.1 -->
                     <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage"
                                                                           title="Go to Bizmax."
-                                                                          href="https://bizmax-wp.laralink.com"
+                                                                          href="/"
                                                                           class="home"><span
                                 property="name">{{ __('web.colleagues_of_advocates') }}</span></a><meta
                             property="position" content="1"></span> &gt;
                     <span property="itemListElement" typeof="ListItem"><span property="name"
                                                                              class="post post-page current-item">{{ __('web.menus.our_partners') }}</span><meta
-                            property="url" content="https://bizmax-wp.laralink.com/contact/"><meta property="position"
+                            property="url" content="{{ route('contact') }}"><meta property="position"
                                                                                                    content="2"></span>
                 </nav>
                 <h1 class="cs_fs_48 cs_fs_lg_36 text-white m-0">{{ __('web.menus.our_partners') }}</h1>

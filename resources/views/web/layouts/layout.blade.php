@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="{{ app()->getLocale() }}">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="profile" href="https://gmpg.org/xfn/11">
-
-    <title>{{ __('web.colleagues_of_advocates') }}</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="{{ __('web.description') }}">
+    <meta name="keywords" content="{{ __('web.keywords') }}">
+    <meta name="author" content="Azizbek Kamolov">
+    <title>{{ __('web.colleagues_of_advocates') }}-{{ env('APP_NAME') }}</title>
     <meta name="robots" content="noindex, nofollow">
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
-    <link rel="alternate" type="application/rss+xml" title="Bizmax » Feed" href="https://bizmax-wp.laralink.com/feed/">
-    <link rel="alternate" type="application/rss+xml" title="Bizmax » Comments Feed"
-          href="https://bizmax-wp.laralink.com/comments/feed/">
-{{--    <script async="" src="{{ asset('source/./saved_resource') }}"></script>--}}
+
+    <link href="/source/favicons/android-chrome-192x192.png" sizes="192x192" type="image/png">
+    <link href="/source/favicons/android-chrome-512x512.png" izes="512x512" type="image/png">
+    <link href="/source/favicons/apple-touch-icon.png" sizes="72x72" type="image/png">
+    <link href="/source/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link href="/source/favicons/favicon.ico" rel="icon" type="image/x-icon">
+
+    <meta property="og:title" content="{{ __('web.colleagues_of_advocates') }}"/>
+    <meta property="og:url" content="https://bayunusobod.uz"/>
+
+    <link rel="shortcut icon" href="/source/favicons/favicon.ico">
+
+
+    {{--    <script async="" src="{{ asset('source/./saved_resource') }}"></script>--}}
     <link rel="stylesheet" href="{{ asset('source/widget-icon-list.min.css') }}">
     <link rel="stylesheet" id="hfe-widgets-style-css" href="{{ asset('/source/frontend.css') }}" type="text/css"
           media="all">
@@ -61,16 +72,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <script type="text/javascript" src="{{ asset('source/jquery.min.js') }}" id="jquery-core-js"></script>
     <script type="text/javascript" src="{{ asset('source/jquery-migrate.min.js') }}" id="jquery-migrate-js"></script>
-    <link rel="https://api.w.org/" href="https://bizmax-wp.laralink.com/wp-json/">
-    <link rel="alternate" title="JSON" type="application/json"
-          href="https://bizmax-wp.laralink.com/wp-json/wp/v2/pages/17">
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://bizmax-wp.laralink.com/xmlrpc.php?rsd">
-    <link rel="canonical" href="https://bizmax-wp.laralink.com/">
-    <link rel="shortlink" href="https://bizmax-wp.laralink.com/">
-    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
-          href="https://bizmax-wp.laralink.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbizmax-wp.laralink.com%2F">
-    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
-          href="https://bizmax-wp.laralink.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbizmax-wp.laralink.com%2F&amp;format=xml">
+
     <meta name="cdp-version" content="1.4.8">
     <meta name="generator"
           content="Elementor 3.23.4; features: e_optimized_css_loading, additional_custom_breakpoints, e_lazyload; settings: css_print_method-external, google_font-enabled, font_display-swap">
@@ -82,13 +84,15 @@
           href="{{ asset('source/logos/logo2.png') }}">
     <meta name="msapplication-TileImage"
           content="{{ asset('source/logos/logo2.png') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="{{ asset('source/ajax.php') }}" id="aHR0cHM6Ly9iaXptYXgtd3AubGFyYWxpbmsuY29t"></script>
 </head>
 
 <body
-        class="home page-template-default page page-id-17 wp-custom-logo ehf-footer ehf-template-bizmax-wp ehf-stylesheet-bizmax-wp no-sidebar elementor-default elementor-kit-9 elementor-page elementor-page-17 e--ua-blink e--ua-chrome e--ua-webkit"
-        data-elementor-device-mode="desktop">
+    class="home page-template-default page page-id-17 wp-custom-logo ehf-footer ehf-template-bizmax-wp ehf-stylesheet-bizmax-wp no-sidebar elementor-default elementor-kit-9 elementor-page elementor-page-17 e--ua-blink e--ua-chrome e--ua-webkit"
+    data-elementor-device-mode="desktop">
 <div class="progress-wrap">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"

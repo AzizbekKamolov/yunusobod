@@ -1,5 +1,5 @@
 @section('head')
-    <title>{{ __('web.menus.activity') }}</title>
+    <title>{{ __('web.menus.activity') }}-{{ env('APP_NAME') }}</title>
 @endsection
 @extends('web.layouts.home')
 @section('content')

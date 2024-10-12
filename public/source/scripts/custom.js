@@ -286,8 +286,8 @@ var elementorFrontendConfig = {
         "e_lazyload": true
     },
     "urls": {
-        "assets": "https:\/\/bizmax-wp.laralink.com\/wp-content\/plugins\/elementor\/assets\/",
-        "ajaxurl": "https:\/\/bizmax-wp.laralink.com\/wp-admin\/admin-ajax.php"
+        "assets": "/source/",
+        // "ajaxurl": "https:\/\/bizmax-wp.laralink.com\/wp-admin\/admin-ajax.php"
     },
     "nonces": {"floatingButtonsClickTracking": "efa09fff94"},
     "swiperClass": "swiper",

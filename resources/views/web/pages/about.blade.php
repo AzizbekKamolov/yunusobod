@@ -1,5 +1,5 @@
 @section('head')
-    <title>{{ __('web.menus.about_us') }}</title>
+    <title>{{ __('web.menus.about_us') }}-{{ env('APP_NAME') }}</title>
 @endsection
 @extends('web.layouts.home')
 @section('content')
@@ -131,15 +131,15 @@
 
                                                                         <div
                                                                                 class="cs_experience_box background-filled text-center bg-white cs_rounded_10 position-absolute bottom-0 end-0 cs_zindex_3 d-flex flex-column justify-content-center align-items-center"
-                                                                                style="background-image:url(https://bizmax-wp.laralink.com/wp-content/uploads/2023/09/experience_bg.jpeg);">
+                                                                                style="background-image:url({{ asset('/source/experience_bg.jpeg') }});">
 
                                                                             <img decoding="async"
-                                                                                 src="https://bizmax-wp.laralink.com/wp-content/uploads/2023/07/experience_icon-1-1.svg"
+                                                                                 src="{{ asset('/source/experience_icon-1-1.svg') }}"
                                                                                  alt="Icon" class="cs_mb_5">
 
                                                                             <h3 class="text-white cs_fs_60 cs_fs_lg_46 fw-bold lh_1 mb-0 d-flex justify-content-between">
 
-                                                                                <span data-count-to="40"
+                                                                                <span data-count-to="30"
                                                                                       class="odometer odometer-auto-theme"><div
                                                                                             class="odometer-inside"><span
                                                                                                 class="odometer-digit"><span
@@ -285,7 +285,7 @@
                                                                     <div
                                                                             class="d-flex align-items-center cs_row_gap_20 cs_column_gap_30 cs_column_gap_lg_20 flex-wrap">
 
-                                                                        <a href="https://bizmax-wp.laralink.com/contact"
+                                                                        <a href="{{ route('contact') }}"
                                                                            class="cs_btn cs_style_1 cs_fs_14 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden"><span>{{ __('web.sliders.free_consultation') }}</span></a>
 
                                                                         <a href="https://www.youtube.com/embed/VStvZjykQ00"

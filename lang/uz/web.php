@@ -38,9 +38,11 @@ return [
     "colleagues_of_advocates" => "Advokatlar uyushmalari",
     "about_us" => [
         'title' => "Advokatlar uyushmasi bilan O'sish yo'li bilan muvaffaqiyatga tayyorlaning.",
-        'description' => "Yuridik maslahatlar berish, shartnomalar tuzish, muvofiqlikni ta'minlash,
-       intellektual mulkni himoya qilish va tadbirkorlik sub'ektlariga boshqa huquqiy yordam
-       ko'rsatish. Vizual tarkibni yaratish, masalan, logotiplar, broshyuralar, infografika va boshqa brending materiallari.",
+        'description' => "Yunusobod advokatlar uyushmasi fuqarolar va korxonalar uchun huquqiy
+        yordam va maslahatlar taqdim etadi. Advokatlar muammolarni hal qilishda, qonunlarni
+        tushuntirishda va sud jarayonlarida himoya qilishda professional yondashuvni taklif etadi.
+        Mijozlar o'z huquqlari va majburiyatlari haqida to'g'ri ma'lumot olishlari uchun individual
+        xizmat ko'rsatiladi",
         "watch_the_video" => "Videoni ko'rish",
         "work_experience" => "Ish tajribasi",
     ],
@@ -58,7 +60,7 @@ return [
         "executive_director" => "Ijrochi direktor",
         "number" => "Nomer",
         "head_of_department" => "Bo'lim boshlig'i",
-        "reception_of_college" => "Qabul kommisisyasi",
+        "reception_of_college" => "Qabul kommisiyasi",
     ],
     "partners" => [
         "title" => "Hamkorlarimiz"
@@ -85,4 +87,11 @@ return [
         ],
     ],
     "feedback" => "Murojaatingiz uchun raxmat. Tez orada siz bilan bo'g'lanamiz!",
+    "keywords" => "bayunusobod.uz, Huquqiy yordam, Advokat, Advokatlar uyushmasi, Huquqiy maslahat",
+    "description" => "Yunusobod advokatlar uyushmasi fuqarolar va korxonalar uchun huquqiy yordam
+    va maslahatlar taqdim etadi. Advokatlar muammolarni hal qilishda, qonunlarni tushuntirishda va
+    sud jarayonlarida himoya qilishda professional yondashuvni taklif etadi. Mijozlar o'z huquqlari
+    va majburiyatlari haqida to'g'ri ma'lumot olishlari uchun individual xizmat ko'rsatiladi. Uyushma,
+    shuningdek, huquqiy bilimlarni oshirish uchun seminarlar va treninglar o'tkazadi, bu esa jamiyatda
+    huquqiy madaniyatni rivojlantirishga yordam beradi.",
 ];

@@ -72,7 +72,7 @@
                                                 data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
                                                     <h2 class="elementor-heading-title elementor-size-default">
-                                                        <a href="mailto:bizmax@laralink.com">bizmax@laralink.com</a>
+                                                        <a href="mailto:barassociation@gmail.com">barassociation@gmail.com</a>
                                                     </h2></div>
                                             </div>
                                         </div>

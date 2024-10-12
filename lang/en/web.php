@@ -38,10 +38,11 @@ return [
     "colleagues_of_advocates" => "Colleagues of advocates",
     "about_us" => [
         "title" => 'Prepare for Success by Growing with the Bar Association.',
-        'description' => "Providing legal advice, contract drafting, compliance assistance,
-         intellectual property protection, and other legal support for businesses.
-         Creating visual content, such as logos,
-         brochures, infographics, and other branding materials.",
+        'description' => "Yunusabad Lawyers Association is legal for citizens and businesses
+ offers help and advice. Lawyers solve problems, laws
+ offers a professional approach in explaining and defending in court proceedings.
+ Customers are individual so that they are properly informed about their rights and obligations
+ service is provided",
         "watch_the_video" => "Watch the video",
         "work_experience" => "Work experience",
     ],
@@ -92,4 +93,11 @@ return [
         ],
     ],
     "feedback" => "Thank you for your request. We will contact you soon!",
+    "keywords" => "bayunusabad.uz, Legal assistance, Lawyer, Lawyers association, Legal advice",
+    "description" => "Yunusabad Lawyers Association provides legal assistance for citizens and businesses
+ and provides advice. Lawyers help solve problems, explain laws and
+ offers a professional approach to legal defense. Customers have their rights
+ and individualized service so that they are properly informed about their obligations. association,
+ also conducts seminars and trainings to increase legal knowledge, which in the community
+ helps to develop legal culture.",
 ];

@@ -1,5 +1,5 @@
 @section('head')
-    <title>{{ __('web.menus.contact_us') }}</title>
+    <title>{{ __('web.menus.contact_us') }}-{{ env('APP_NAME') }}</title>
 @endsection
 @extends('web.layouts.home')
 @section('content')
@@ -38,7 +38,7 @@
                     <defs>
                         <linearGradient id="paint0_linear_81_9510" x1="330" y1="78.2497" x2="375.052" y2="780.743"
                                         gradientUnits="userSpaceOnUse">
-                            <stop stop-color="white" stop-opacity="0" offset="none"></stop>
+{{--                            <stop stop-color="white" stop-opacity="0" offset="none"></stop>--}}
                             <stop offset="0.9999" stop-color="#D9D9D9" stop-opacity="0.35"></stop>
                             <stop offset="1" stop-color="#222121" stop-opacity="0"></stop>
                             <stop offset="1" stop-color="#222121" stop-opacity="0"></stop>
@@ -272,7 +272,7 @@
                                                                 <div
                                                                     class="d-flex align-items-center justify-content-center cs_height_90 cs_width_90 cs_height_lg_80 cs_width_lg-80 cs_rounded_10 flex-none cs_mr_20 bg-accent">
                                                                     <img decoding="async"
-                                                                         src="https://bizmax-wp.laralink.com/wp-content/uploads/2023/07/1-1-1.png">
+                                                                         src="{{ asset('source/1-1-1.png') }}">
 
                                                                 </div>
 
@@ -298,7 +298,7 @@
                                                                 <div
                                                                     class="d-flex align-items-center justify-content-center cs_height_90 cs_width_90 cs_height_lg_80 cs_width_lg-80 cs_rounded_10 flex-none cs_mr_20 bg-accent">
                                                                     <img decoding="async"
-                                                                         src="https://bizmax-wp.laralink.com/wp-content/uploads/2023/07/2-1-1.png">
+                                                                         src="{{ asset('/source/2-1-1.png') }}">
 
                                                                 </div>
 
@@ -308,8 +308,8 @@
 
                                                                     <h2 class="m-0 fw-medium cs_fs_22 cs_fs_lg_18 cs_lh_base"
                                                                         style="color:#18191d"><a
-                                                                            href="mailto:bizmax@laralink.com"
-                                                                            style="color:#18191d">bizmax@laralink.com</a>
+                                                                            href="mailto:barassociation@gmail.com"
+                                                                            style="color:#18191d">barassociation@gmail.com</a>
 
                                                                     </h2>
 
@@ -323,7 +323,7 @@
                                                                 <div
                                                                     class="d-flex align-items-center justify-content-center cs_height_90 cs_width_90 cs_height_lg_80 cs_width_lg-80 cs_rounded_10 flex-none cs_mr_20 bg-accent">
                                                                     <img decoding="async"
-                                                                         src="https://bizmax-wp.laralink.com/wp-content/uploads/2023/07/3-1-1.png">
+                                                                         src="{{ asset('/source/3-1-1.png') }}">
 
                                                                 </div>
 
