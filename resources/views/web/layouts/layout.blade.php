@@ -17,8 +17,13 @@
     <link href="/source/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
     <link href="/source/favicons/favicon.ico" rel="icon" type="image/x-icon">
 
+
     <meta property="og:title" content="{{ __('web.colleagues_of_advocates') }}"/>
+    <meta property="og:description" content="{{ __('web.colleagues_of_advocates') }}"/>
+    <meta property="og:image" content="/source/favicons/favicon.ico"/>
     <meta property="og:url" content="https://bayunusobod.uz"/>
+    <meta property="og:site_name" content="https://bayunusobod.uz"/>
+    <meta property="og:type" content="https://bayunusobod.uz"/>
 
     <link rel="shortcut icon" href="/source/favicons/favicon.ico">
 
