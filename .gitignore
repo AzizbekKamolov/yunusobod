@@ -2,6 +2,8 @@
 /node_modules
 /public/build
 /public/hot
+/public/sliders
+/public/employees
 /public/storage
 /storage/*.key
 /vendor
