@@ -66,11 +66,13 @@ class DirectionService
         unset($data['icon']);
         if ($actionData->photo) {
             $data['photo'] = $actionData->photo->hashName();
-            Storage::disk('local')->put('sliders/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
+            $actionData->photo->move(public_path('sliders'), $data['photo']);
+//            Storage::disk('local')->put('sliders/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
         }
         if ($actionData->icon) {
             $data['icon'] = $actionData->icon->hashName();
-            Storage::disk('local')->put('sliders/' . $data['icon'], file_get_contents($actionData->icon->getRealPath()));
+            $actionData->icon->move(public_path('sliders'), $data['icon']);
+//            Storage::disk('local')->put('sliders/' . $data['icon'], file_get_contents($actionData->icon->getRealPath()));
         }
         $direction = DirectionModel::query()->create($data);
         $direction->update(['order' => $direction->id]);
@@ -91,14 +93,22 @@ class DirectionService
         unset($data['photo']);
         unset($data['icon']);
         if ($actionData->photo) {
-            Storage::disk('local')->delete('sliders/' . $direction->photo);
+            if (file_exists(public_path("sliders/$direction->photo"))){
+                unlink(public_path("sliders/$direction->photo"));
+            }
+//            Storage::disk('local')->delete('sliders/' . $direction->photo);
             $data['photo'] = $actionData->photo->hashName();
-            Storage::disk('local')->put('sliders/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
+            $actionData->photo->move(public_path('sliders'), $data['photo']);
+//            Storage::disk('local')->put('sliders/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
         }
         if ($actionData->icon) {
-            Storage::disk('local')->delete('sliders/' . $direction->icon);
+            if (file_exists(public_path("sliders/$direction->icon"))){
+                unlink(public_path("sliders/$direction->icon"));
+            }
+//            Storage::disk('local')->delete('sliders/' . $direction->icon);
             $data['icon'] = $actionData->icon->hashName();
-            Storage::disk('local')->put('sliders/' . $data['icon'], file_get_contents($actionData->icon->getRealPath()));
+            $actionData->icon->move(public_path('sliders'), $data['icon']);
+//            Storage::disk('local')->put('sliders/' . $data['icon'], file_get_contents($actionData->icon->getRealPath()));
         }
         $direction->fill($data);
         $direction->save();
@@ -111,6 +121,12 @@ class DirectionService
     public function deleteDirection(int $id): void
     {
         $data = $this->getOne($id);
+        if (file_exists(public_path("sliders/$data->photo"))){
+            unlink(public_path("sliders/$data->photo"));
+        }
+        if (file_exists(public_path("sliders/$data->icon"))){
+            unlink(public_path("sliders/$data->icon"));
+        }
         $data->delete();
     }
 

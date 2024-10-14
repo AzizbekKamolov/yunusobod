@@ -66,7 +66,9 @@ class SliderService
     {
         $data = $actionData->all();
         $data['file'] = $actionData->file->hashName();
-        Storage::disk('local')->put('sliders/' . $data['file'], file_get_contents($actionData->file->getRealPath()));
+
+        $actionData->file->move(public_path('sliders'), $data['file']);
+//        Storage::disk('local')->put('sliders/' . $data['file'], file_get_contents($actionData->file->getRealPath()));
         $slider = SliderModel::query()->create($data);
         $slider->update(['order' => $slider->id]);
         return SliderData::createFromEloquentModel($slider);
@@ -85,9 +87,14 @@ class SliderService
 
         unset($data['file']);
         if ($actionData->file) {
-            Storage::disk('local')->delete('sliders/' . $slider->file);
+            if (file_exists(public_path("sliders/$slider->file"))){
+                unlink(public_path("sliders/$slider->file"));
+            }
+//            Storage::disk('local')->delete('sliders/' . $slider->file);
             $data['file'] = $actionData->file->hashName();
-            Storage::disk('local')->put('sliders/' . $data['file'], file_get_contents($actionData->file->getRealPath()));
+            $actionData->file->move(public_path('sliders'), $data['file']);
+//            dd($a);
+//            Storage::disk('local')->put('sliders/' . $data['file'], file_get_contents($actionData->file->getRealPath()));
         }
         $slider->fill($data);
         $slider->save();
@@ -100,7 +107,10 @@ class SliderService
     public function deleteSlider(int $id): void
     {
         $data = $this->getOne($id);
-        Storage::disk('local')->delete('sliders/' . $data->file);
+        if (file_exists(public_path("sliders/$data->file"))){
+            unlink(public_path("sliders/$data->file"));
+        }
+//        Storage::disk('local')->delete('sliders/' . $data->file);
         $data->delete();
     }
 

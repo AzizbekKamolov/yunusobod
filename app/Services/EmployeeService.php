@@ -63,7 +63,10 @@ class EmployeeService
     {
         $data = $actionData->all();
         $data['photo'] = $actionData->photo->hashName();
-        Storage::disk('local')->put('employees/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
+
+        $actionData->photo->move(public_path('employees'), $data['photo']);
+//        Storage::disk('local')->put('employees/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
+
         $employee = EmployeeModel::query()->create($data);
         $employee->update(['order' => $employee->id]);
         return EmployeeData::createFromEloquentModel($employee);
@@ -81,9 +84,13 @@ class EmployeeService
         $data = $actionData->all();
         unset($data['photo']);
         if ($actionData->photo) {
-            Storage::disk('local')->delete('employees/' . $employee->photo);
+            if (file_exists(public_path("employees/$employee->photo"))){
+                unlink(public_path("employees/$employee->photo"));
+            }
+//            Storage::disk('local')->delete('employees/' . $employee->photo);
             $data['photo'] = $actionData->photo->hashName();
-            Storage::disk('local')->put('employees/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
+            $actionData->photo->move(public_path('employees'), $data['photo']);
+//            Storage::disk('local')->put('employees/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
         }
         $employee->fill($data);
         $employee->save();
@@ -96,7 +103,10 @@ class EmployeeService
     public function deleteEmployee(int $id): void
     {
         $data = $this->getOne($id);
-        Storage::disk('local')->delete('employees/' . $data->photo);
+        if (file_exists(public_path("employees/$data->photo"))){
+            unlink(public_path("employees/$data->photo"));
+        }
+//        Storage::disk('local')->delete('employees/' . $data->photo);
 
         $data->delete();
     }

@@ -67,7 +67,8 @@ class PartnerService
     {
         $data = $actionData->all();
         $data['photo'] = $actionData->photo->hashName();
-        Storage::disk('local')->put('sliders/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
+        $actionData->photo->move(public_path('sliders'), $data['photo']);
+//        Storage::disk('local')->put('sliders/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
         $partner = PartnerModel::query()->create($data);
         $partner->update(['order' => $partner->id]);
         return PartnerData::createFromEloquentModel($partner);
@@ -86,9 +87,13 @@ class PartnerService
 
         unset($data['photo']);
         if ($actionData->photo) {
-            Storage::disk('local')->delete('sliders/' . $partner->file);
+            if (file_exists(public_path("sliders/$partner->photo"))){
+                unlink(public_path("sliders/$partner->photo"));
+            }
+//            Storage::disk('local')->delete('sliders/' . $partner->file);
             $data['photo'] = $actionData->photo->hashName();
-            Storage::disk('local')->put('sliders/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
+            $actionData->photo->move(public_path('sliders'), $data['photo']);
+//            Storage::disk('local')->put('sliders/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
         }
         $partner->fill($data);
         $partner->save();
@@ -101,7 +106,10 @@ class PartnerService
     public function deletePartner(int $id): void
     {
         $data = $this->getOne($id);
-        Storage::disk('local')->delete('sliders/' . $data->photo);
+        if (file_exists(public_path("sliders/$data->photo"))){
+            unlink(public_path("sliders/$data->photo"));
+        }
+//        Storage::disk('local')->delete('sliders/' . $data->photo);
         $data->delete();
     }
 
