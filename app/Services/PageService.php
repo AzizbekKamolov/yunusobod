@@ -69,7 +69,7 @@ class PageService
         if ($actionData->photo) {
 //            $data['photo'] = Str::uuid()->toString() . '.' . $actionData->photo->getClientOriginalExtension();
             $data['photo'] = $actionData->photo->hashName();
-            if (file_exists(public_path("sliders/$page->photo"))){
+            if (is_file(public_path("sliders/$page->photo")) && file_exists(public_path("sliders/$page->photo"))){
                 unlink(public_path("sliders/$page->photo"));
             }
             $actionData->photo->move(public_path('sliders'), $data['photo']);
