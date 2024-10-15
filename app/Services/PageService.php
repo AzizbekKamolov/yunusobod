@@ -46,7 +46,9 @@ class PageService
         unset($data['file']);
         if ($actionData->photo) {
             $data['photo'] = $actionData->photo->hashName();
-            Storage::disk('local')->put('sliders/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
+
+            $actionData->photo->move(public_path('sliders'), $data['photo']);
+//            Storage::disk('local')->put('sliders/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
 
         }
         $page = PageModel::query()->create($data);
@@ -67,9 +69,13 @@ class PageService
         if ($actionData->photo) {
 //            $data['photo'] = Str::uuid()->toString() . '.' . $actionData->photo->getClientOriginalExtension();
             $data['photo'] = $actionData->photo->hashName();
-            Storage::disk('local')->put('sliders/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
-
-            Storage::disk('local')->delete('sliders/' . $page->photo);
+            if (file_exists(public_path("sliders/$page->photo"))){
+                unlink(public_path("sliders/$page->photo"));
+            }
+            $actionData->photo->move(public_path('sliders'), $data['photo']);
+//            Storage::disk('local')->put('sliders/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
+//
+//            Storage::disk('local')->delete('sliders/' . $page->photo);
         }
         $page->update($data);
     }
