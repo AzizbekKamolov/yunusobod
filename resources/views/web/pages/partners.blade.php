@@ -116,8 +116,7 @@
                                                             @foreach($partners as $partner)
                                                                 <div class="col-lg-4 col-md-6 col-sm-6">
 
-                                                                    <div
-                                                                        class="cs_team cs_style_1 text-center cs_mt_30 overflow-hidden cs_rounded_50">
+                                                                    <div class="cs_team cs_style_1 text-center cs_mt_30 overflow-hidden cs_rounded_50">
 
 {{--                                                                        <div--}}
 {{--                                                                            class="cs_team_member position-relativecs_rounded_50">--}}
@@ -150,7 +149,7 @@
 
 {{--                                                                        </div>--}}
 
-                                                                        <div
+                                                                        <div style="background-color:#ACC8E5;"
                                                                             class="cs_team_info cs_pt_127 cs_pl_15 cs_pr_15 cs_pb_25 cs_transition_4">
                                                                             @if($partner->photo)
                                                                                 <img decoding="async"
@@ -163,7 +162,7 @@
                                                                                href="#">
 
                                                                                 <h2 class="text-white m-0 cs_fs_26 cs_mb_3">
-                                                                                    {{ $partner->name }}</h2>
+                                                                                    <span style="color:#112A46;">{{ $partner->name }}</span></h2>
 
                                                                                 <p class="text-white m-0">{{ $partner->aboutH }}</p>
                                                                             </a>
