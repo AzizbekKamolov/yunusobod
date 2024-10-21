@@ -15,7 +15,7 @@ class SetLocalMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (app()->getLocale() !== $locale = session('locale', 'uz')) {
+        if (app()->getLocale() !== $locale = session('locale', 'ru')) {
             app()->setLocale($locale);
         }
         return $next($request);
