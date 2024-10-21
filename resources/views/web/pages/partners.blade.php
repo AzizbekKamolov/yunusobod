@@ -119,18 +119,18 @@
                                                                     <div
                                                                         class="cs_team cs_style_1 text-center cs_mt_30 overflow-hidden cs_rounded_50">
 
-                                                                        <div
-                                                                            class="cs_team_member position-relativecs_rounded_50">
+{{--                                                                        <div--}}
+{{--                                                                            class="cs_team_member position-relativecs_rounded_50">--}}
 
-                                                                            <a class="cs_team_link"
-                                                                               href="#">
+{{--                                                                            <a class="cs_team_link"--}}
+{{--                                                                               href="#">--}}
 
-                                                                                <img decoding="async"
-                                                                                     class="w-100 cs_rounded_50"
-                                                                                     src="{{ asset("/sliders/$partner->photo") }}"
-                                                                                     alt="{{ $partner->name }}">
+{{--                                                                                <img decoding="async"--}}
+{{--                                                                                     class="w-100 cs_rounded_50"--}}
+{{--                                                                                     src="{{ asset("/sliders/$partner->photo") }}"--}}
+{{--                                                                                     alt="{{ $partner->name }}">--}}
 
-                                                                            </a>
+{{--                                                                            </a>--}}
 
 {{--                                                                            <div--}}
 {{--                                                                                class="cs_social_btns d-flex flex-wrap cs_column_gap_15 cs_row_gap_15 cs_transition_5 cs_fs_20 cs_fs_lg_18 position-absolute">--}}
@@ -148,11 +148,14 @@
 
 {{--                                                                            </div>--}}
 
-                                                                        </div>
+{{--                                                                        </div>--}}
 
                                                                         <div
                                                                             class="cs_team_info cs_pt_127 cs_pl_15 cs_pr_15 cs_pb_25 cs_transition_4">
-
+                                                                            <img decoding="async"
+                                                                                 class="cs_rounded_45"
+                                                                                 src="{{ asset("/sliders/$partner->photo") }}"
+                                                                                 alt="{{ $partner->name }}">
                                                                             <a class="cs_team_link"
                                                                                href="#">
 
