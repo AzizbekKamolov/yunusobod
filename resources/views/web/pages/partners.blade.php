@@ -152,10 +152,13 @@
 
                                                                         <div
                                                                             class="cs_team_info cs_pt_127 cs_pl_15 cs_pr_15 cs_pb_25 cs_transition_4">
-                                                                            <img decoding="async"
-                                                                                 class="cs_rounded_45"
-                                                                                 src="{{ asset("/sliders/$partner->photo") }}"
-                                                                                 alt="{{ $partner->name }}">
+                                                                            @if($partner->photo)
+                                                                                <img decoding="async"
+                                                                                     class="cs_rounded_45"
+                                                                                     src="{{ asset("/sliders/$partner->photo") }}"
+                                                                                     alt="{{ $partner->name }}">
+                                                                            @endif
+
                                                                             <a class="cs_team_link"
                                                                                href="#">
 
