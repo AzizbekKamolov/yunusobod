@@ -14,6 +14,6 @@ class CreatePartnerActionData extends ActionDataBase
 
     protected array $rules = [
         'name' => "required|string",
-        'photo' => "required|mimes:jpeg,png,jpg,gif,svg|max:10000",
+        'photo' => "nullable|mimes:jpeg,png,jpg,gif,svg|max:10000",
     ];
 }

@@ -66,8 +66,13 @@ class PartnerService
     public function createPartner(CreatePartnerActionData $actionData): PartnerData
     {
         $data = $actionData->all();
-        $data['photo'] = $actionData->photo->hashName();
-        $actionData->photo->move(public_path('sliders'), $data['photo']);
+
+        unset($data['photo']);
+        if ($actionData->photo) {
+            $data['photo'] = $actionData->photo->hashName();
+            $actionData->photo->move(public_path('sliders'), $data['photo']);
+//            Storage::disk('local')->put('sliders/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
+        }
 //        Storage::disk('local')->put('sliders/' . $data['photo'], file_get_contents($actionData->photo->getRealPath()));
         $partner = PartnerModel::query()->create($data);
         $partner->update(['order' => $partner->id]);
