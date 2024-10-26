@@ -184,7 +184,7 @@
                         </section>
 
 
-                        <section class="container" style="width: 888px; left: 0px; margin-top: 100px;">
+                        <section class="container" style="max-width: 1200px; left: 0px; margin-top: 100px;">
                             {!! $item->description ?? '' !!}
 
                         </section>
