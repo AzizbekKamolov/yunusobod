@@ -86,7 +86,7 @@ return [
             ],
             [
                 "amount" => "98%",
-                "description" => "Ma'muriy ishlar bo'yicah mavaffaqiyatli holatlar",
+                "description" => "Ma'muriy ishlar bo'yiach mavaffaqiyatli holatlar",
             ],
         ],
     ],
