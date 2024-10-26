@@ -90,6 +90,10 @@ return [
                 "amount" => "99%",
                 "description" => "Successful cases in corporate disputes",
             ],
+            [
+                "amount" => "98%",
+                "description" => "Successful cases of administrative affairs",
+            ],
         ],
     ],
     "feedback" => "Thank you for your request. We will contact you soon!",

@@ -84,6 +84,10 @@ return [
                 "amount" => "99%",
                 "description" => "Korporativ nizolarda muvaffaqiyatli holatlar",
             ],
+            [
+                "amount" => "98%",
+                "description" => "Ma'muriy ishlar bo'yicah mavaffaqiyatli holatlar",
+            ],
         ],
     ],
     "feedback" => "Murojaatingiz uchun raxmat. Tez orada siz bilan bo'g'lanamiz!",
