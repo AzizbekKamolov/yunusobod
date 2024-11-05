@@ -34,7 +34,7 @@
                                                 data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
                                                     <h2 class="elementor-heading-title elementor-size-default">
-                                                        <a href="tel:+998 (99) 987 55 35">+998 (99) 987 55 35</a></h2></div>
+                                                        <a href="tel:+998 (71) 209 75 58">+998 (71) 209 75 58</a></h2></div>
                                             </div>
                                         </div>
                                     </div>
@@ -510,11 +510,11 @@
                                                 data-widget_type="text-editor.default">
                                                 <div class="elementor-widget-container">
                                                     <span>{{ __('web.footer.executive_director') }}</span>
-                                                    <p>{{ __('web.footer.number') }}: +998 (99) 987 55 35</p>
+                                                    <p>{{ __('web.footer.number') }}: +998 (71) 209 75 58</p>
                                                     <span>{{ __('web.footer.head_of_department') }}</span>
-                                                    <p>{{ __('web.footer.number') }}: +998 (99) 987 55 35</p>
+                                                    <p>{{ __('web.footer.number') }}: +998 (71) 209 75 84</p>
                                                     <span>{{ __('web.footer.reception_of_college') }}</span>
-                                                    <p>{{ __('web.footer.number') }}: +998 (99) 987 55 35</p>
+                                                    <p>{{ __('web.footer.number') }}: +998 (71) 209 75 58</p>
                                                 </div>
                                             </div>
                                             {{--                                            <div--}}
