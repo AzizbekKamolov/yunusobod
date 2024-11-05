@@ -8,7 +8,7 @@
                         <div class="logo">
                             <!-- Image Logo -->
                             <div class="img-logo">
-                                <a href="/"><img style="max-height:90px" src="{{ asset('source/logos/logo2.png') }}"
+                                <a href="/"><img style="max-height:120px" src="{{ asset('source/logos/logo2.png') }}"
                                                  alt="Yunusobod"></a>
                             </div>
                         </div>

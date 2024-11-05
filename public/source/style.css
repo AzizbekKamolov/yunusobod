@@ -1,6 +1,6 @@
 /*!
 Theme Name: Bizmax WP
-Theme URI: 
+Theme URI:
 Author: Laralink
 Author URI: https://themeforest.net/user/laralink
 Description: Corporate & Consulting Business WorPress Theme.
@@ -54,7 +54,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .cs_sticky_header_bg {
 	position: relative;
 	background: var(--heading-color);
-} 
+}
   .cs_site_header.cs_style_1 .cs_main_header {
 	background-color: rgba(24, 25, 29, 0.5);
   }
@@ -74,7 +74,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	position: relative;
   }
   .cs_site_header.cs_style_1 .cs_main_header_in {
-	height: 95px;
+	height: 130px;
   }
   .cs_site_header.cs_style_1 .cs_top_header_in {
 	height: 45px;
@@ -97,7 +97,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	-webkit-box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1);
 			box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1);
   }
-  
+
   .cs_top_header {
 	background: var(--heading-color);
 	border-bottom: 1px solid #3e3e3e;
@@ -117,12 +117,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	position: relative;
 	top: 1px;
   }
-  
+
   .cs_site_header_full_width .container {
 	max-width: 100% !important;
 	padding: 0 90px !important;
   }
-  
+
   .cs_site_header_style1 {
 	border-bottom: 1px solid #1a188d;
   }
@@ -138,7 +138,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	bottom: -4px;
 	background-color: #fff;
   }
-  
+
   .cs_header_search_form {
 	-webkit-box-shadow: 0px 4px 4px rgba(193, 193, 193, 0.25);
 			box-shadow: 0px 4px 4px rgba(193, 193, 193, 0.25);
@@ -176,12 +176,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   .cs_header_search_form .cs_header_search_sumbit_btn:hover {
 	color: var(--accent-color);
   }
-  
+
   .cs_header_search_wrap.active .cs_header_search_form {
 	opacity: 1;
 	visibility: visible;
   }
-  
+
   @media screen and (max-width: 1199px) {
 	.cs_main_header .container {
 	  max-width: 100%;
@@ -200,13 +200,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	padding: 0;
 	list-style: none;
   }
-  
+
   .cs_sticky_header {
 	position: fixed !important;
 	width: 100%;
 	z-index: 999;
   }
-  
+
   .cs-gescout_sticky {
 	position: fixed !important;
 	top: -110px;
@@ -222,14 +222,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	top: 0 !important;
 	opacity: 1;
   }
-  
+
   .cs_site_branding {
 	display: inline-block;
   }
   .cs_site_branding + .cs_nav {
 	margin-left: 65px;
   }
-  
+
   .cs_header_contact {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -244,7 +244,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 			flex: none;
 	margin-right: 12px;
   }
-  
+
   .cs_toolbox {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -256,7 +256,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   .cs_toolbox > *:not(:first-child) {
 	margin-left: 40px;
   }
-  
+
   .cs_header_search_btn {
 	-webkit-transition: all 0.4s ease;
 	transition: all 0.4s ease;
@@ -269,7 +269,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   .cs_nav .cs_nav_list ul li a {
 	font-weight: 400 !important;
 	}
-  
+
   @media screen and (min-width: 1200px) {
 	.cs_main_header {
 	  position: relative;
@@ -666,14 +666,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	  color: var(--heading-color);
 	}
   }
-  
+
 /*======================================
 	End Header CSS
 ========================================*/
 
 /*======================================
 	Blog CSS
-========================================*/  
+========================================*/
 
 .bizmax-entry-page ol li,.blog-single ol li {
   line-height: 30px;
@@ -845,7 +845,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   .blog__link-color-3 a span {
 	background-color: var(--it-common-pink-4);
   }
-  
+
   .blog-2__plr {
 	padding: 0 220px;
   }
@@ -1067,7 +1067,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   .blog-2__content-button {
 	padding-top: 30px;
   }
-  
+
   .blog-3__mlr {
 	margin: 0 200px;
   }
@@ -1362,7 +1362,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	  padding-right: 0;
 	}
   }
-  
+
   .blog-4__mlr {
 	margin: 0px 200px;
   }
@@ -1535,7 +1535,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	  font-size: 14px;
 	}
   }
-  
+
   .blog-5__plr {
 	padding: 0 200px;
   }
@@ -1573,7 +1573,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	transition: 0.3s;
 	border: 1px dashed transparent;
   }
- 
+
   .blog-5__item:hover {
 	background-color: var(--it-common-black-7);
 	border: 1px dashed #89abf1;
@@ -1705,14 +1705,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   .blog-5__item-box-4:hover .blog-5__title-sm.title-color-4 {
 	color: var(--it-common-green);
   }
-  
+
   @media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
 	.postbox__wrapper {
 	  padding-right: 0px;
 	  margin-bottom: 50px;
 	}
   }
-  
+
   .postbox__p-right {
 	margin-right: 20px;
   }
@@ -2000,7 +2000,7 @@ blockquote p {
 .blog-single .bottom-title h2 {
 	margin-bottom: 25px;
 }
-.comment-form .form-group label span, 
+.comment-form .form-group label span,
 .comment-form .comment-message label span {
 	color: var(--accent-color);
 }
@@ -2010,7 +2010,7 @@ blockquote p {
 .comment-form .comment-form-wrap {
 	margin-top: 20px;
 }
-.comment-form .form-group, 
+.comment-form .form-group,
 .comment-form .comment-message {
 	position: relative;
 	display: block;
@@ -2019,7 +2019,7 @@ blockquote p {
 .comment-form .form-group input:hover,
 .comment-form .form-group input:focus,
 .comment-form .comment-message textarea:hover{
-	
+
 }
 .comment-form .form-group input:hover,
 .comment-form .comment-message textarea:hover{
@@ -2069,7 +2069,7 @@ blockquote p {
 
 /*======================================
 	End Blog CSS
-========================================*/  
+========================================*/
 
 /*====================================
 	Page CSS
@@ -2108,7 +2108,7 @@ blockquote p {
 .error__heading {
 	margin: 0 0 5px;
 }
-  
+
 @media (max-width: 991px) {
 	.cs_footer_logo {
 	  display: none;
@@ -2338,7 +2338,7 @@ blockquote p {
 	background: var(--accent-color);
 	color: #fff;
 }
-.pagination-main .pagination-list li.prev a, 
+.pagination-main .pagination-list li.prev a,
 .pagination-main .pagination-list li.next a {
 	box-shadow: none;
 	padding: 0 20px;
@@ -2387,7 +2387,7 @@ p b, strong {
 .widget:last-child{
 	margin:0;
 }
-.wp-block-archives-dropdown label, 
+.wp-block-archives-dropdown label,
 .wp-block-search .wp-block-search__label {
 	color: #555;
 	font-weight: 500;
@@ -2982,8 +2982,8 @@ ol li ol {
 	max-width: 100%;
 	margin-bottom: 15px;
 }
-.calendar_wrap #wp-calendar thead th, 
-.calendar_wrap #wp-calendar tfoot td, 
+.calendar_wrap #wp-calendar thead th,
+.calendar_wrap #wp-calendar tfoot td,
 .wp-block-calendar table th {
 	background: #f6f6f6;
 	color: #555;
@@ -3117,7 +3117,7 @@ ul.wp-block-latest-posts li a {
 	padding-left: 95px;
 }
 .sidebar-main .wp-block-latest-posts.wp-block-latest-posts__list li:last-child {
-	padding: 0; 
+	padding: 0;
 	margin: 0;
 }
 .footer-news-list li .wp-block-latest-posts__post-title {
@@ -3282,7 +3282,7 @@ ul.wp-block-latest-posts li a {
 }
 
 .widget_categories ul li a,.widget_archive ul li a {
-	
+
 }
 .widget_categories ul li a,
 .widget_archive ul li a,
@@ -3661,7 +3661,7 @@ blockquote code {
 .footer .sidebar-main .widget ul li.recentcomments {
 	color: var(--accent-color);
 }
-.footer .widget_recent_entries .post-date, .footer .wp-block-latest-posts__post-author, 
+.footer .widget_recent_entries .post-date, .footer .wp-block-latest-posts__post-author,
 .footer .wp-block-latest-posts__post-date {
 	color: #fff;
 }
@@ -3821,7 +3821,7 @@ blockquote code {
   .cs_footer_top {
 	border-bottom: 1px solid #353535;
   }
-  
+
   .cs_copyright {
 	background-color: #1b1b1b;
 	color: #8a8a8a;
@@ -3832,12 +3832,12 @@ blockquote code {
   .cs_copyright a:hover {
 	text-decoration: underline;
   }
-  
+
   .cs_widget_title,
   .cs_newsletter_title {
 	line-height: 1.6em;
   }
-  
+
   .cs_menu_widget {
 	list-style: none;
 	margin: 0;
@@ -3846,14 +3846,14 @@ blockquote code {
 	grid-gap: 10px;
 	grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .cs_text_widget p {
 	margin: 0;
   }
   .cs_text_widget + .cs_social_btns {
 	margin-top: 30px;
   }
-  
+
   .cs_newsletter.cs_style_1 .cs_newsletter_input {
 	background-color: #2e2d2d !important;
 	padding: 10px 70px 10px 20px !important;
@@ -3873,12 +3873,12 @@ blockquote code {
   .cs_newsletter.cs_style_1 .cs_newsletter_btn:hover {
 	opacity: 0.8;
   }
-  
+
   @media (max-width: 767px) {
 	.cs_footer_logo {
 	  display: none;
 	}
-	
+
   }
   .footer-list-style ul {
 	list-style: none !important;
