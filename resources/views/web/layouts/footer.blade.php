@@ -34,7 +34,7 @@
                                                 data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
                                                     <h2 class="elementor-heading-title elementor-size-default">
-                                                        <a href="tel:+998 (71) 209 75 58">+998 (71) 209 75 58</a></h2></div>
+                                                        <a href="tel:+998712097558">+998 (71) 209 75 58</a></h2></div>
                                             </div>
                                         </div>
                                     </div>
